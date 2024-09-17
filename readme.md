@@ -15,6 +15,10 @@
 
 - Eclipse herunterladen und einrichten
 
+- Howto/Eclipse.md
+- Howto/Git.md
+
+
 ## Allgemein
 
 - Buch 1: Insel-Buch 
