@@ -7,8 +7,6 @@
 - 13:30 - 15:00 Uhr
 - 15:15 - 16:45 Uhr
 
-> OCA-Buch, Software auf CD?
-
 ## Aufgaben
 
 #### 17.09
@@ -18,30 +16,37 @@
 - Howto/Eclipse.md
 - Howto/Git.md
 
+- Themenliste im Comcave-Portal kennenlernen
+- OCP-Buch kennenlernen
 
 ## Allgemein
 
-- Buch 1: Insel-Buch 
+- Kurs-Repo: https://bitbucket.org/ccjavad/ocp_412641/src/main/
+- Kurs-Repo-Url zum Klonen: https://bitbucket.org/ccjavad/ocp_412641.git
+
+###### Buch 1: Insel-Buch 
 > Im Comcave-Portal oder https://openbook.rheinwerk-verlag.de/javainsel/
 
-- Buch 2: OCP-Buch
+###### Buch 2: OCP-Buch
 > Kommt per Post. Pdf-Datei unter Teams/Dateien.
 > Beachten Sie Hinweise im Appendix, um den Zugang zu hub.totalsem.com/mheclaim mit dem Fragenkatalog zu bekommen
 
-- eigenes Projekt ist optional. 
+###### Eigenes Projekt 
+> Das Projekt ist optional. 
 > Empfehlenswert ist es parallel zu dem Kurs zu machen.
 
 Mögliche Techniken dabei:
+
     - mit Umit-Tests
     - UML
     - Project Builder (Maven, Gradle)
     - Git
 	- ...
 
-- Comcave-Klausur: 02.12.2024
+###### Comcave-Klausur: 02.12.2024
 > Hilfsmittel: alle, Dauer: 2 Stunden, Multiple-Choice
 
-- Oracle-Prüfung: 19.12.2024 (ein möglicher Termin)
+###### Oracle-Prüfung: 19.12.2024 (ein möglicher Termin)
 > Beachten Sie die Datei 'Prüfungsnameldung.pdf' unter Teams/Dateien
 
 
