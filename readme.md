@@ -7,10 +7,20 @@
 - 13:30 - 15:00 Uhr
 - 15:15 - 16:45 Uhr
 
+> Bitte immer wieder die eigene Fehlzeiten überprüfen
+
 ## Aufgaben
 
 #### 18.09
+- Singleton
+
 - Optional: OCA-Themen nachschlagen: https://bitbucket.org/ccjavad/oca_412631/src/main/
+
+- Optional: Entwurfsmuster
+    - https://refactoring.guru/design-patterns/java
+    - http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries
+    - https://github.com/iluwatar/java-design-patterns
+
 
 #### 17.09
 

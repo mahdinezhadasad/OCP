@@ -33,7 +33,6 @@ class AppSettingsV1 {
 /*
  * eine weitere Variante einer Singleton-Klasse
  */
-
 class AppSettingsV2 {
 	
 	private static AppSettingsV2 instance;
@@ -53,16 +52,31 @@ class AppSettingsV2 {
 }
 
 
+/*
+ * eine weitere Variante einer Singleton-Klasse
+ */
+enum AppSettingsV3 {
+	INSTANCE
+}
+
+
 public class Singleton {
 
 	/*
 	 * Singleton: die Klasse so gestalten, dass nur ein einziges 
-	 * Objekt dieser Klasse erstellt werden kann. 
+	 * Objekt dieser Klasse erstellt werden kann.
+	 * 
+	 *  Exam! Achten Sie darauf, dass alle Konstruktoren private sind!
 	 */
 	public static void main(String[] args) {
 		
 //		new AppSettingsV1();
-//		new AppSettingsV1();
+//		new AppSettingsV2();
+//		new AppSettingsV3();
+
+		System.out.println( AppSettingsV1.INSTANCE );
+		System.out.println( AppSettingsV2.getInstance() );
+		System.out.println( AppSettingsV3.INSTANCE );
 
 	}
 
