@@ -9,10 +9,15 @@
 
 > Bitte immer wieder die eigene Fehlzeiten überprüfen
 
+> Dozent: wdh. Varargs
+
 ## Aufgaben
 
 #### 18.09
-- Singleton
+- Singleton (Realisierungen kennen!)
+- Fabrikmethoden (Aufrufe nachvollziehn können)
+- Builder (verkettete Methoden-Aufrufe nachvollziehn können)
+- Immutable Objects (Wissen, dass String, Wrapper-Klassen und Date&Time-Klassen immutable sind)
 
 - Optional: OCA-Themen nachschlagen: https://bitbucket.org/ccjavad/oca_412631/src/main/
 
@@ -20,6 +25,8 @@
     - https://refactoring.guru/design-patterns/java
     - http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries
     - https://github.com/iluwatar/java-design-patterns
+
+- Wdh. Diagramme/String-Pool.pdf
 
 
 #### 17.09
