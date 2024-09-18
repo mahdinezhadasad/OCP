@@ -9,6 +9,9 @@
 
 ## Aufgaben
 
+#### 18.09
+- Optional: OCA-Themen nachschlagen: https://bitbucket.org/ccjavad/oca_412631/src/main/
+
 #### 17.09
 
 - Eclipse herunterladen und einrichten
