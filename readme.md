@@ -9,8 +9,6 @@
 
 > Bitte immer wieder die eigene Fehlzeiten überprüfen
 
-> Dozent: wdh. Varargs
-
 ## Aufgaben
 
 #### 18.09
