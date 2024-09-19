@@ -1,6 +1,6 @@
-# Achtung! Morden (20.09) ist frei!
-# Achtung! Morden (20.09) ist frei!
-# Achtung! Morden (20.09) ist frei!
+# Achtung! Morgen (20.09) ist frei!
+# Achtung! Morgen (20.09) ist frei!
+# Achtung! Morgen (20.09) ist frei!
 
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
