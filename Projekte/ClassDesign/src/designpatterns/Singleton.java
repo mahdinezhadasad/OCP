@@ -32,6 +32,7 @@ class AppSettingsV1 {
 
 /*
  * eine weitere Variante einer Singleton-Klasse
+ * (Achtung in der Praxis! Diese Version ist nicht threadsicher)
  */
 class AppSettingsV2 {
 	
