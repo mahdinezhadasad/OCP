@@ -1,3 +1,7 @@
+# Achtung! Morden (20.09) ist frei!
+# Achtung! Morden (20.09) ist frei!
+# Achtung! Morden (20.09) ist frei!
+
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
 - 09:45 - 11:15 Uhr
@@ -10,6 +14,22 @@
 > Bitte immer wieder die eigene Fehlzeiten überprüfen
 
 ## Aufgaben
+
+#### 19.09
+- Projekt 'ClassDesign'
+- Packages 'wdh.*'
+
+- Wdh. StringPool
+- Wdh. Wrapper-Klassen
+    - Autoboxing/Autounboxing
+    - Konstantenpools für Byte, Short, Integer und Long
+
+- Wdh. Varargs-Methoden
+- Wdh. Überladen. Richtige überladene Methode finden.
+
+- Wdh. Interfaces 'Comparable' und 'Comparator'.
+
+- Aufgaben/Interfaces - Comparable - Comparator - OS.md
 
 #### 18.09
 - Singleton (Realisierungen kennen!)
