@@ -13,6 +13,18 @@
 
 ## Aufgaben
 
+#### 23.09
+
+- Eclipse-Plugin 'Umlet' installieren:
+    - Help/Eclipse Marketplace...
+    
+- Alternativ die Umlet-Diagramme betrachten/erstellen:
+   - Stand-alone-Umlet: https://umlet.com/changes.htm 
+   - Online-Version: https://www.umletino.com/
+
+- Projekt 'Exceptions'
+
+
 #### 19.09
 - Projekt 'ClassDesign'
 - Packages 'wdh.*'
