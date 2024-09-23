@@ -24,6 +24,11 @@
 
 - Projekt 'Exceptions'
 
+- Wdh. try/catch/finally
+- Multicatch (Regeln merken!)
+
+- Wdh. Checked Exceptions (auch beim Überschreiben)
+- Wdh. Klassendiagramm zu Throwable/Exception/Error
 
 #### 19.09
 - Projekt 'ClassDesign'
