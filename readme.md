@@ -22,7 +22,7 @@
    - Stand-alone-Umlet: https://umlet.com/changes.htm 
    - Online-Version: https://www.umletino.com/
 
-- Projekt 'Exceptions'
+- Projekt 'Exceptions' (nach Pull importieren)
 
 - Wdh. try/catch/finally
 - Multicatch (Regeln merken!)
