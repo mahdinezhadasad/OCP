@@ -1,6 +1,4 @@
-# Achtung! Morgen (20.09) ist frei!
-# Achtung! Morgen (20.09) ist frei!
-# Achtung! Morgen (20.09) ist frei!
+###### Achtung! Unterrichtsfreie Tage: 03.10, 31.10, 01.11, 20.11
 
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
@@ -11,7 +9,7 @@
 - 13:30 - 15:00 Uhr
 - 15:15 - 16:45 Uhr
 
-> Bitte immer wieder die eigene Fehlzeiten überprüfen
+> Bitte immer wieder eigene Fehlzeiten überprüfen
 
 ## Aufgaben
 
