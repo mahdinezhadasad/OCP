@@ -66,7 +66,7 @@ public class B09_Rethrow_Regeln {
 		} catch (Exception e) {
 			e = new ArithmeticException(); // löscht die Infos der try-Analyse
 			
-			// throw e; // cf: e hat den checked Typ
+//			throw e; // cf: e hat den checked Typ
 		}
 	}
 	
