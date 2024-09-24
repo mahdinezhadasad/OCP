@@ -13,6 +13,19 @@
 
 ## Aufgaben
 
+#### 24.09
+- Projekt 'Exceptions'
+
+- Package 'exceptions'
+- rethrow
+- try-with-resources
+
+- Package 'errors'
+- StackOverflowError erkennen
+- ExceptionInInitializerError erkennen
+
+- Optional: Aufgaben/Exceptions - ArrayListPositive.md
+
 #### 23.09
 
 - Eclipse-Plugin 'Umlet' installieren:
