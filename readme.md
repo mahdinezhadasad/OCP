@@ -19,10 +19,10 @@
     - Help/Eclipse Marketplace...
     
 - Alternativ die Umlet-Diagramme betrachten/erstellen:
-   - Stand-alone-Umlet: https://umlet.com/changes.htm 
-   - Online-Version: https://www.umletino.com/
+    - Stand-alone-Umlet: https://umlet.com/changes.htm 
+    - Online-Version: https://www.umletino.com/
 
-- Projekt 'Exceptions' (nach Pull importieren)
+- Projekt 'Exceptions'
 
 - Wdh. try/catch/finally
 - Multicatch (Regeln merken!)

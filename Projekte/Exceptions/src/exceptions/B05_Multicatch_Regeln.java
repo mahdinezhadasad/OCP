@@ -14,6 +14,11 @@ public class B05_Multicatch_Regeln {
 //			
 //		}
 
+		try {
+			
+		} catch (ArithmeticException | NullPointerException | IllegalArgumentException e) {
+			
+		}
 		
 		
 		/*
