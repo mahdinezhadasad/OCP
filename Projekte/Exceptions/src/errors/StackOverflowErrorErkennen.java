@@ -27,7 +27,12 @@ public class StackOverflowErrorErkennen {
 	 *      
 	 *      	ausgabe x'
 	 *      
-	 *          SOE
+	 *          print(x'' = 0) {
+	 *          
+	 *          	ausgabe x''
+	 *          	
+	 *          	...
+	 *          }
 	 *      }
 	 *   }
 	 */

@@ -5,6 +5,8 @@ class Blume {
 	static {
 		System.out.println(5/0); // ArithmeticException
 	}
+	
+	static int maxPreis = 33;
 }
 
 public class ExceptionInInitializerErrorErkennen {

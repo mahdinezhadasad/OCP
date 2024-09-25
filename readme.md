@@ -13,6 +13,14 @@
 
 ## Aufgaben
 
+#### 25.09
+- Projekt 'Exceptions'
+- Package 'errors'
+- Assertions
+
+- Projekt 'InnerClasses'
+
+
 #### 24.09
 - Projekt 'Exceptions'
 

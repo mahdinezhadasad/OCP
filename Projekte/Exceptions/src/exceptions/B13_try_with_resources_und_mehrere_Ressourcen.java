@@ -33,7 +33,7 @@ public class B13_try_with_resources_und_mehrere_Ressourcen {
 		 * 		close B
 		 */
 		try(MyResB rB = new MyResB(); 
-				MyResC rC = new MyResC()) {
+				MyResC rC = new MyResC();) {
 			
 		}
 
