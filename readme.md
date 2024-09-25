@@ -19,6 +19,10 @@
 - Assertions
 
 - Projekt 'InnerClasses'
+- statische und nichtstatische innere Klassen
+
+- Aufgaben/Nested - Auto.md
+- Optional. Aufgaben/Nested - Gebäude.md
 
 
 #### 24.09
