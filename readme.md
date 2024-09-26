@@ -13,6 +13,19 @@
 
 ## Aufgaben
 
+#### 26.09
+- Projekt 'InnerClasses'
+
+- lokale Klassen
+
+- kann eine lokale Klasse in ihren Methoden auf die lokalen Variablen der umschliessenden Methode zugreifen?
+
+- anonyme Klassen
+
+- Aufgaben/Nested - Predicate - Personen.md
+
+- wdh. statische/nichtstatische innere Klassen
+
 #### 25.09
 - Projekt 'Exceptions'
 - Package 'errors'
