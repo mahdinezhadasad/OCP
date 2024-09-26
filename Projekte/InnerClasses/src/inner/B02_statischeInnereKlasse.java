@@ -28,7 +28,7 @@ class Sonnensystem {
 	} // end of class Planet
 }
 
-public class B02_statische_innere_Klasse {
+public class B02_statischeInnereKlasse {
 
 	/*
 	 * bei den inneren Klassen: static = 'normal' 

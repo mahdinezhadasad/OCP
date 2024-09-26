@@ -25,10 +25,9 @@ public class Rennwagen {
 		
 		public String toString() {
 			return "Motor " + typ + " aus dem Rennwagen " 
-//						+ Rennwagen.this.hersteller; // auch ok
-						+ hersteller;
+						+ hersteller; // implizit Rennwagen.this.hersteller
 		}
-	}
+	} // end of class Motor
 	
 	/*
 	 * Weitere Elemente der Klasse Rennwagen
@@ -39,7 +38,7 @@ public class Rennwagen {
 
 	public Rennwagen(String hersteller) {
 		this.hersteller = hersteller;
-		this.motor = this.new Motor("Type1");
+		this.motor = new Motor("Type1"); // implizit this.new Motor("Type1");
 	}
 	
 	public void setFahrer(Fahrer fahrer) {

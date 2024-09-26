@@ -27,7 +27,7 @@ class Roboter {
 	} // end of class Arm
 }
 
-public class B03_nichtstatische_innere_Klasse {
+public class B03_nichtstatischeInnereKlasse {
 
 	/*
 	 * in Bezug auf die Instanzbildung ist eine nichtstatische 
