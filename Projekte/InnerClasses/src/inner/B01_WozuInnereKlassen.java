@@ -49,7 +49,7 @@ public class B01_WozuInnereKlassen {
 		// Bsp. aus der Standardbibliothek: 
 		// Die innere Klasse, die zum Erzeugen einer Liste
 		// in der Arrays.asList verwendet wird.
-		
+
 	}
 
 }
