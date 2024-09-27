@@ -13,6 +13,11 @@
 
 ## Aufgaben
 
+#### 27.09
+- Projekt 'InnerClasses'
+- anonyme Klassen mit Lambdas vergleichen
+
+
 #### 26.09
 - Projekt 'InnerClasses'
 
