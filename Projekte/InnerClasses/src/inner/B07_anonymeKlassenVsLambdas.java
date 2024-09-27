@@ -80,8 +80,30 @@ public class B07_anonymeKlassenVsLambdas {
 		
 		// v7.myMethod(); // cf: myMethod() gibt es nicht im Interface List
 		
+		/*
+		 * Anonyme Klasse hat eigene this-Referenz.
+		 * Eine Lambda hat keine eigenen this-Referenz.
+		 */
+		Runnable v8 = () -> {
+			System.out.println("*** run() der Lambda");
+			// System.out.println(this.getClass()); // cf: keine this in Lambda
+		};
+		
+		Runnable v9 = new Runnable() {
+			public void run() {
+				System.out.println("*** run() der anonymen Klasse");
+				System.out.println(" das Objekt hat den Typ: " + this.getClass());
+			}
+		};
+		
+		v8.run();
+		v9.run();
+		
+		System.out.println("---- nach run-Aufrufen");
+		System.out.println("Typ von Lambda-Objekt: " + v8.getClass());
+		System.out.println("Typ von Objekt der anonymen Klasse: " + v9.getClass());
 		
 		
-	}
+	} // end of main
 
 }

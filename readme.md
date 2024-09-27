@@ -17,6 +17,12 @@
 - Projekt 'InnerClasses'
 - anonyme Klassen mit Lambdas vergleichen
 
+- Projekt 'Functional'
+- Package 'func'
+- Funktionale Interfaces
+- Lambdas
+
+- Optional/Nested - Comparator.md
 
 #### 26.09
 - Projekt 'InnerClasses'
