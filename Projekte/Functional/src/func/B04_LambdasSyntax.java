@@ -2,14 +2,17 @@ package func;
 
 public class B04_LambdasSyntax {
 
-	static interface I1 {
+	interface I1 {
 		void m();
 	}
-	static interface I2 {
+	interface I2 {
 		void m(int x);
 	}
-	static interface I3 {
+	interface I3 {
 		void m(int x, String y);
+	}
+	interface I4 {
+		int m();
 	}
 	
 	public static void main(String[] args) {
@@ -66,7 +69,10 @@ public class B04_LambdasSyntax {
 		 *  Methoden-Rumpf (Körper)
 		 * 
 		 *  Kompakte Notation:
-		 *  	- Ohne der geschweiften Klammer (wenn es genau eine Anweisung gibt) 
+		 *  	Ohne der geschweiften Klammer
+		 *  		- wenn es genau eine Anweisung gibt
+		 *  		- Semikolon nach der Anweisung sollte auch weg
+		 *  		- return muss auch weg (bei nicht-void-Methoden) 
 		 */
 		
 		I1 v50 = () -> {};  // ausführlich, keine Anweisungen
@@ -74,10 +80,16 @@ public class B04_LambdasSyntax {
 		
 		I1 v52 = () -> System.out.println("mo");
 		
+		I4 v6 = () -> 42;
+		// I4 v61 = () -> return 42; // cf
+		
+//		doStuff( () -> { return 42 } ); // cf: ausführlich, Semikolon fehlt
+		doStuff( () -> { return 42; } ); 
+//		doStuff( () -> 42; ); // cf: kompakt, Semikolon nicht entfernt 
+		doStuff( () -> 42 );  
+		
 	} // end of main
 
-	interface I4 {
-		int m();
-	}
+	static void doStuff(I4 param) {}
 	
 }
