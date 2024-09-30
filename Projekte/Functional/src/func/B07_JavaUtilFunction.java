@@ -21,6 +21,16 @@ public class B07_JavaUtilFunction {
 		 * 
 		 */
 
+		
+		/*
+		 * Gruppe der Bi- und Binary-Interfaces
+		 * 
+		 */
+		
+		/*
+		 * Gruppe der Operatoren
+		 */
+		
 	}
 
 }

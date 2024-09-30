@@ -1,5 +1,7 @@
 ###### Achtung! Unterrichtsfreie Tage: 03.10, 31.10, 01.11, 20.11
 
+## Achtung! Der 03.10. (Do) ist frei!
+
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
 - 09:45 - 11:15 Uhr
@@ -12,6 +14,15 @@
 > Bitte immer wieder eigene Fehlzeiten überprüfen
 
 ## Aufgaben
+#### 30.09
+
+- Projekt 'Functional'
+- Predicate, Supplier, Consumer, Function
+- Bi-Interfaces
+- UnaryOperator/BinaryOperator
+
+- Aufgaben/Consumer - PutIntegers.md
+- Aufgaben/Lambdas - erweitert.md
 
 #### 27.09
 - Projekt 'InnerClasses'
