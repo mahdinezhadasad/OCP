@@ -3,7 +3,6 @@ package func;
 import java.util.function.Function;
 
 public class B14_MethodenreferenzV1 {
-
 	
 	/*
 	 * Variante 1: Referenz auf eine statische Methode
@@ -13,7 +12,8 @@ public class B14_MethodenreferenzV1 {
 	 * 1. Der Rumpf hat genau eine Anweisung
 	 * 
 	 * 2. Diese Anweisung ist der Aufruf einer statischen Methode
-	 *    (oder return mit dem Aufruf einer statischen Methode als Argument)
+	 *    (oder return mit dem Aufruf einer statischen Methode als 
+	 *    return-Argument)
 	 *    
 	 * 3. Alle Parameter der zu realisierenden abstrakten Methode
 	 *    werden als Argumente an die statische Methode übergeben

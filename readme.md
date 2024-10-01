@@ -19,6 +19,8 @@
 - Projekt 'Functional'
 - Methodenreferenzen (4 Varianten)
 
+- Aufgaben/BiFunction - MethodReference.md
+
 #### 30.09
 - Projekt 'Functional'
 - Predicate, Supplier, Consumer, Function
