@@ -2,6 +2,7 @@ package func;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class WdhLambdas2 {
@@ -41,6 +42,9 @@ public class WdhLambdas2 {
 		 * }
 		 * 
 		 */
+		
+		Function<Integer, Object> f1 = (Integer i) -> sb.append(i).append(" "); 
+		Function<Integer, Object> f2 = (Integer i) -> list.add(i); 
 
 	}
 

@@ -2,7 +2,7 @@ package aufgaben;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
+import java.util.function.Consumer;
 
 public class AufgabeConsumerPutIntegers {
 
@@ -23,8 +23,10 @@ public class AufgabeConsumerPutIntegers {
 											// die Zeile C kann entfernt werden
 	}
 
-	static void putIntegers(Predicate<Integer> p) {
-		
+	static void putIntegers(Consumer<Integer> c) {
+		for (int i = 1; i <= 4; i++) {
+			c.accept(i);
+		}
 	}
 	
 }

@@ -14,8 +14,12 @@
 > Bitte immer wieder eigene Fehlzeiten überprüfen
 
 ## Aufgaben
-#### 30.09
 
+#### 01.10
+- Projekt 'Functional'
+- Methodenreferenzen (4 Varianten)
+
+#### 30.09
 - Projekt 'Functional'
 - Predicate, Supplier, Consumer, Function
 - Bi-Interfaces
