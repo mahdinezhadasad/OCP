@@ -24,11 +24,17 @@ public class B07_JavaUtilFunction {
 		
 		/*
 		 * Gruppe der Bi- und Binary-Interfaces
+		 * 	- BiPredicate
+		 *  - BiConsumer
+		 *  - BiFunction
+		 *  - BinaryOperator 
 		 * 
 		 */
 		
 		/*
 		 * Gruppe der Operatoren
+		 * 	- UnaryOperator
+		 *  - BinaryOperator
 		 */
 		
 	}

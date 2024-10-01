@@ -1,5 +1,7 @@
 package func;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 import java.util.function.Consumer;
 
@@ -33,6 +35,15 @@ public class B09_Consumer {
 		Consumer<String> c3 = s -> System.out.println(s.toUpperCase());
 		
 		generateStrings(3, c3);
+		
+		/*
+		 * Bsp. aus der Standardbibliothek
+		 */
+		System.out.println("\n*** Bsp. aus der Standardbibliothek");
+		List<Integer> list = Arrays.asList(1, 2, 3, 4);
+		
+		Consumer<Integer> c4 = x -> System.out.println(x);
+		list.forEach(c4);
 	}
 
 	static void generateStrings(int count, Consumer<String> c) {
