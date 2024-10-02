@@ -2,7 +2,14 @@ package aufgaben;
 
 import java.util.function.BiFunction;
 
-class Auto {}
+class Auto {
+	/*
+	 * sinnlose Methode. Nur für die Lernaufgabe ok:
+	 */
+	Besitzer createBesitzer(Integer id) {
+		return new Besitzer(this, id);
+	}
+}
 
 class Besitzer {
 	
@@ -21,6 +28,12 @@ class Besitzer {
 	@Override
 	public String toString() {
 		return "Besitzer. id=" + id + ", Auto: " + a.hashCode();
+	}
+}
+
+class BesitzerBuilder {
+	Besitzer build(Auto a, Integer id) {
+		return new Besitzer(a, id);
 	}
 }
 
@@ -51,7 +64,7 @@ public class AufgabeBiFunctionMethodReference {
 		/*
 		 * A3
 		 * 
-		 * Besitzer apply(Auto a, Integer id) {
+		 * public Besitzer apply(Auto a, Integer id) {
 		 * 		return Klasse.statischeMethode(a, id);
 		 * }
 		 */
@@ -59,7 +72,43 @@ public class AufgabeBiFunctionMethodReference {
 		
 		Besitzer b3 = f3.apply(new Auto(), 3);
 		System.out.println("b3: " + b3);
+	
+		/*
+		 * A4
+		 * 
+		 * public Besitzer apply(Auto a, Integer id) {
+		 * 		return new Besitzer(a, id); 
+		 * }
+		 */
+		BiFunction<Auto, Integer, Besitzer> f4 = Besitzer::new;
 		
+		Besitzer b4 = f4.apply(new Auto(), 4);
+		System.out.println("b4: " + b4);
+		
+		/*
+		 * A5
+		 * 
+		 * public Besitzer apply(Auto a, Integer id) {
+		 * 		return obj.instanzMethode(a, id); 
+		 * }
+		 */
+		BesitzerBuilder obj = new BesitzerBuilder();
+		BiFunction<Auto, Integer, Besitzer> f5 = obj::build;
+		
+		Besitzer b5 = f5.apply(new Auto(), 5);
+		System.out.println("b5: " + b5);
+		
+		/*
+		 * A6
+		 * 
+		 * public Besitzer apply(Auto a, Integer id) {
+		 * 		return a.instanzMethode(id);
+		 * }
+		 */
+		BiFunction<Auto, Integer, Besitzer> f6 = Auto::createBesitzer;
+		
+		Besitzer b6 = f6.apply(new Auto(), 6);
+		System.out.println("b6: " + b6);
 	}
 
 }
