@@ -15,6 +15,15 @@
 
 ## Aufgaben
 
+#### 02.10
+- Projekt 'Functional'
+- Comparator-API
+
+- Über die Klasse 'Optional' lesen: https://www.oracle.com/technical-resources/articles/java/java8-optional.html
+
+- Optionale Aufgabe: Klasse Auto hat Attribute hersteller, modell und baujahr. Erzeugen Sie ein Array mit Autos und sortieren Sie das Array unterschiedlich. Verwenden Sie für die Vergleiche beim Sortieren unterschiedliche Comparatoren.
+
+
 #### 01.10
 - Projekt 'Functional'
 - Methodenreferenzen (4 Varianten)

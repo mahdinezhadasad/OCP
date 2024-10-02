@@ -37,6 +37,84 @@ public class B18_ComparatorAPI {
 		test_compare();
 		test_naturalOrder_reverseOrder();
 		test_comparing();
+		test_reversed();
+		test_thenComparing();
+	}
+	
+	/*
+	 * default Instanzmethode
+	 * 
+	 * 		Comparator thenComparing(Comparator next)
+	 */
+	static void test_thenComparing() {
+		System.out.println("\n*** thenComparing");
+		
+		Person p1 = new Person("Max", "Auerbach", 1990);
+		Person p2 = new Person("Max", "Mustermann", 1995);
+		
+		Comparator<Person> cmpNachname = Comparator.comparing(Person::getNachname);
+		
+		Comparator<Person> cmpVorname = Comparator.comparing(Person::getVorname);
+		
+		Comparator<Person> cmpGeburtsjahr = (x, y) -> x.getGeburtsjahr() - y.getGeburtsjahr();
+		
+//		Comparator<Person> cmpCombined = (x, y) -> {
+//			int result = cmpNachname.compare(x, y);
+//			if (result != 0) {
+//				return result;
+//			}
+//			
+//			result = cmpVorname.compare(x, y);
+//			if (result != 0) {
+//				return result;
+//			}
+//			
+//			return cmpGeburtsjahr.compare(x, y);
+//		};
+		
+		// Zuerst die Logik von cmpNachname,
+		// dann (wenn die Personen damit gleich sind)
+		// die Logik von cmpVorname:
+		Comparator<Person> cmpCombined = cmpNachname.thenComparing(cmpVorname);
+		
+		// Zuerst die Logik vom alten cmpCombined,
+		// dann (wenn die Personen damit gleich sind)
+		// die Logik vom cmpGeburtsjahr:
+		cmpCombined = cmpCombined.thenComparing(cmpGeburtsjahr);
+		
+		int res = cmpCombined.compare(p1, p2);
+		System.out.println("cmpCombined.compare(p1, p2): " + res);
+		
+		/*
+		 * Praxis:
+		 */
+		cmpCombined = cmpNachname.thenComparing(cmpVorname)
+				.thenComparing(cmpGeburtsjahr);
+	}
+	
+	/*
+	 * default Instanzmethode
+	 * 
+	 * 		Comparator reversed()
+	 */
+	static void test_reversed() {
+		System.out.println("\n*** reversed");
+		
+		String a = "aaaaa";
+		String b = "bb";
+		
+		// vergleicht Strings nach Länge
+		Comparator<String> c1 = Comparator.comparing(String::length);
+		
+		int result = c1.compare(a, b);
+		System.out.println("c1.compare(a, b): " + result); // positiv (a ist größer)
+		
+		// umgekehrte Logik
+		Comparator<String> c2 = c1.reversed();
+		
+		result = c2.compare(a, b);
+		System.out.println("c1.compare(a, b): " + result); // negativ (a ist kleiner)
+		
 	}
 
 	/*
