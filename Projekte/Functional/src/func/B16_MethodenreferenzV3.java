@@ -47,6 +47,10 @@ public class B16_MethodenreferenzV3 {
 		Double d3 = s3.get();
 		System.out.println("d3: " + d3);
 		
+		//Test
+		Supplier<Double> s4 = new Integer(42)::doubleValue;
+		Supplier<Double> s5 = Integer.valueOf("42")::doubleValue;
+		
 	}
 
 	

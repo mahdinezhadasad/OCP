@@ -55,7 +55,5 @@ public class B17_MethodenreferenzV4 {
 		// Test
 		// UnaryOperator<String> op4 = String::concat; // cf
 		
-		
 	}
-
 }
