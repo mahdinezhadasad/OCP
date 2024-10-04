@@ -79,8 +79,6 @@ public class B19_Optional {
 		 * 
 		 * 	 System.out.println( s.toUpperCase() );
 		 */
-		
 
 	}
-
 }

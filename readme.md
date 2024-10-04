@@ -1,6 +1,4 @@
-###### Achtung! Unterrichtsfreie Tage: 03.10, 31.10, 01.11, 20.11
-
-## Achtung! Der 03.10. (Do) ist frei!
+###### Achtung! Unterrichtsfreie Tage: 31.10, 01.11, 20.11
 
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
@@ -14,6 +12,13 @@
 > Bitte immer wieder eigene Fehlzeiten überprüfen
 
 ## Aufgaben
+
+#### 04.10
+- Projekt 'Functional'
+- Optional-API
+
+- Projekt 'Generics'
+
 
 #### 02.10
 - Projekt 'Functional'
