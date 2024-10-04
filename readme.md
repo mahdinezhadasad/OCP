@@ -20,6 +20,15 @@
 - Projekt 'Generics'
 - Aufgaben/Generics - Garage.md
 
+- Project 'Collections'
+- Wdh. Iterable, Collection, List
+- Wdh. List-API
+- Diagramme/ArrayList vs LinkedList.pdf
+
+- Alternativ die Umlet-Diagramme betrachten/erstellen:
+    - Stand-alone-Umlet: https://umlet.com/changes.htm 
+    - Online-Version: https://www.umletino.com/
+
 
 #### 02.10
 - Projekt 'Functional'
