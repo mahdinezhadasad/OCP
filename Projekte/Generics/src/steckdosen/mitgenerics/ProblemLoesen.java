@@ -1,5 +1,7 @@
 package steckdosen.mitgenerics;
 
+import java.util.ArrayList;
+
 interface TV {}
 
 class TVDE implements TV {}
