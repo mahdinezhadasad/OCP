@@ -61,7 +61,7 @@ public class B01_Collection_basic_API {
 		/*
 		 * weitere Methoden
 		 * 
-		 * toArray (überladen)
+		 * toArray (überladen) (Bsp. im Package 'list', B03)
 		 * addAll(Collection)
 		 * ...
 		 * 

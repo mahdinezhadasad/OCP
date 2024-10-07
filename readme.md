@@ -13,6 +13,16 @@
 
 ## Aufgaben
 
+#### 07.10
+- Project 'Collections'
+- Wdh. List-API
+
+- List/subList
+- Arrays/asList
+- Warum ist für contains/remove/indexOf wichtig, dass die Klasse der List-Elemente die equals überschreibt?
+
+- Aufgaben/List - Iterable.md
+
 #### 04.10
 - Projekt 'Functional'
 - Optional-API
