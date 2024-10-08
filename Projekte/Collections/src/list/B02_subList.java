@@ -40,6 +40,9 @@ public class B02_subList {
 		
 		List<Integer> subList = basisList.subList(fromIndex, toIndex);
 		
+		// subList = new ArrayList<>(subList); // so kann die Kopplung zu 
+												// Basisliste entfernt werden
+		
 		/*
 		 * 		 0   1   2          <- index in subList
 		 * 		[7, 11, 13]
