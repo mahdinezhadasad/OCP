@@ -13,6 +13,18 @@
 
 ## Aufgaben
 
+#### 08.10
+
+- Interface Set
+- Klasse HashSet
+- Diagramme/HashSet.pdf
+
+- Klasse TreeSet (noch keine speziellen Methoden auswendig lernen)
+
+- Aufgaben/Set - TextStatistics.md
+- Optional: Aufgaben/Set - TreeSet - Integer.md
+
+
 #### 07.10
 - Project 'Collections'
 - Wdh. List-API

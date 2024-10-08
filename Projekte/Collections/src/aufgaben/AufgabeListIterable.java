@@ -35,8 +35,39 @@ class MyList implements Iterable<String> {
 	}
 	
 	public Iterator<String> iterator() {
-		return new MyIterator();
+		return new Iterator<String> () {
+			private int nextIndex;
+
+			@Override
+			public boolean hasNext() {
+				return nextIndex < size(); // MyList.this.size()
+			}
+			
+			@Override
+			public String next() {
+				return get(nextIndex++); // MyList.this.get(nextIndex++);
+			}
+		}; 
 	}
+	
+//	public Iterator<String> iterator() {
+//		return new MyIterator(); // eigentlich this.new MyIterator();
+//	}
+//	
+//	private class MyIterator implements Iterator<String> {
+//		private int nextIndex;
+//
+//		@Override
+//		public boolean hasNext() {
+//			return nextIndex < size(); // MyList.this.size()
+//		}
+//		
+//		@Override
+//		public String next() {
+//			return get(nextIndex++); // MyList.this.get(nextIndex++);
+//		}
+//	}
+	
 }
 
 public class AufgabeListIterable {
