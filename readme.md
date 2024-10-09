@@ -13,6 +13,13 @@
 
 ## Aufgaben
 
+#### 09.10
+
+- Wdh. TreeSet
+- Aufgaben/Set - Abfahrtzeiten.md
+
+- Interface Queue
+
 #### 08.10
 
 - Interface Set
