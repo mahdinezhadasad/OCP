@@ -579,19 +579,19 @@ PriorityQueue
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>945</x>
-      <y>567</y>
-      <w>288</w>
-      <h>171</h>
+      <x>972</x>
+      <y>738</y>
+      <w>261</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>300.0;10.0;10.0;170.0</additional_attributes>
+    <additional_attributes>270.0;140.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1260</x>
-      <y>936</y>
+      <x>1242</x>
+      <y>1044</y>
       <w>144</w>
       <h>63</h>
     </coordinates>
@@ -599,5 +599,54 @@ PriorityQueue
 ArrayDeque
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1296</x>
+      <y>999</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1215</x>
+      <y>747</y>
+      <w>198</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>template=E
+&lt;&lt;interface&gt;&gt;
+Deque
+--
+TAIL-Methoden:
+add(e : E) : boolean
+offer(e : E) : boolean
+
+HEAD-Methoden:
+element() : E
+peek() : E
+remove() . E
+poll() : E
+push(e : E)
+pop() : E
+
+weitere Methoden...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1296</x>
+      <y>657</y>
+      <w>27</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
   </element>
 </diagram>

@@ -19,6 +19,10 @@
 - Aufgaben/Set - Abfahrtzeiten.md
 
 - Interface Queue
+- Interface Deque
+- Klasse ArrayDeque
+
+- Aufgaben/Deque - Palindrom.md
 
 #### 08.10
 
