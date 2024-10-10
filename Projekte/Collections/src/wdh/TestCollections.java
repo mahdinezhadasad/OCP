@@ -2,7 +2,7 @@ package wdh;
 
 import java.util.*;
 
-class Blume {
+class Blume implements Comparable<Blume> {
 	private int id;
 
 	public Blume(int id) {
@@ -12,15 +12,21 @@ class Blume {
 	public String toString() {
 		return String.valueOf(id);
 	}
+	
+	public int getId() {
+		return id;
+	}
 
-	@Override
 	public boolean equals(Object obj) {
 		return this.id == ((Blume)obj).id;
 	}
 	
-	@Override
 	public int hashCode() {
 		return id;
+	}
+	
+	public int compareTo(Blume b2) {
+		return id - b2.id;
 	}
 }
 
@@ -31,8 +37,15 @@ public class TestCollections {
 //		run(new LinkedList<>()); // 9 3 9 1
 //		run(new Vector<>()); 	 // 9 3 9 1
 //		run(new ArrayDeque<>()); // 9 3 9 1
+//		run(new HashSet<>());    // 1 3 9 in einer unbestimmten Reihenfolge
+//		run(new LinkedHashSet<>()); // 9 3 1
 		
-		run(new HashSet<>());    // 1, 3, 9 in einer unbestimmten Reihenfolge
+		run(new TreeSet<>());		// 1 3 9
+//		run(new PriorityQueue<>()); // 1 3 9 9 (Reihenfolge ist beim Iterieren nicht garantiert)
+		
+		Comparator<Blume> cmp = Comparator.comparing(Blume::getId);
+//		run(new TreeSet<>(cmp));
+//		run(new PriorityQueue<>(cmp));
 	}
 
 	static void run(Collection<Blume> coll) {
@@ -43,7 +56,7 @@ public class TestCollections {
 			coll.add(new Blume(1));
 			
 			System.out.println(coll);
-		} catch (Exception e) {
+		} catch (ClassCastException e) {
 			System.out.println("Exc");
 		}
 	}

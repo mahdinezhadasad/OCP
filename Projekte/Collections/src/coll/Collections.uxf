@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1.0">
-  <zoom_level>15</zoom_level>
+  <zoom_level>12</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1395</x>
-      <y>405</y>
-      <w>330</w>
-      <h>285</h>
+      <x>1008</x>
+      <y>324</y>
+      <w>264</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -25,10 +25,10 @@ isEmpty() : boolean
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1755</x>
-      <y>345</y>
-      <w>165</w>
-      <h>75</h>
+      <x>1296</x>
+      <y>276</y>
+      <w>132</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>dynamischer
 Container</panel_attributes>
@@ -37,10 +37,10 @@ Container</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1680</x>
-      <y>390</y>
-      <w>105</w>
-      <h>105</h>
+      <x>1236</x>
+      <y>312</y>
+      <w>84</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;50.0;50.0;10.0</additional_attributes>
@@ -48,10 +48,10 @@ Container</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1395</x>
-      <y>150</y>
-      <w>330</w>
-      <h>150</h>
+      <x>1008</x>
+      <y>120</y>
+      <w>264</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -64,10 +64,10 @@ iterator() : Iterator&lt;E&gt;
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1770</x>
-      <y>105</y>
-      <w>165</w>
-      <h>75</h>
+      <x>1308</x>
+      <y>84</y>
+      <w>132</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>Kann iteriert
 werden</panel_attributes>
@@ -76,10 +76,10 @@ werden</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1680</x>
-      <y>135</y>
-      <w>120</w>
-      <h>150</h>
+      <x>1236</x>
+      <y>108</y>
+      <w>96</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;80.0;60.0;10.0</additional_attributes>
@@ -87,10 +87,10 @@ werden</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1530</x>
-      <y>285</y>
-      <w>45</w>
-      <h>165</h>
+      <x>1116</x>
+      <y>228</y>
+      <w>36</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -98,10 +98,10 @@ werden</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>975</x>
-      <y>150</y>
-      <w>330</w>
-      <h>150</h>
+      <x>672</x>
+      <y>120</y>
+      <w>264</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -114,10 +114,10 @@ next() : E</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1215</x>
+      <x>864</x>
       <y>0</y>
-      <w>165</w>
-      <h>75</h>
+      <w>132</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>Kann iterieren
 </panel_attributes>
@@ -126,10 +126,10 @@ next() : E</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1110</x>
-      <y>60</y>
-      <w>210</w>
-      <h>135</h>
+      <x>780</x>
+      <y>48</y>
+      <w>168</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;70.0;120.0;10.0</additional_attributes>
@@ -137,10 +137,10 @@ next() : E</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1260</x>
-      <y>210</y>
-      <w>165</w>
-      <h>45</h>
+      <x>900</x>
+      <y>168</y>
+      <w>132</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
@@ -148,10 +148,10 @@ next() : E</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1395</x>
-      <y>795</y>
-      <w>330</w>
-      <h>165</h>
+      <x>1008</x>
+      <y>636</y>
+      <w>264</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -164,10 +164,10 @@ Methoden mit Index...
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1530</x>
-      <y>675</y>
-      <w>45</w>
-      <h>165</h>
+      <x>1116</x>
+      <y>540</y>
+      <w>36</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -175,10 +175,10 @@ Methoden mit Index...
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1785</x>
-      <y>810</y>
-      <w>165</w>
-      <h>120</h>
+      <x>1320</x>
+      <y>648</y>
+      <w>132</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>Sequenz
 mit Indexzugriff.
@@ -189,10 +189,10 @@ Geordnet.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1680</x>
-      <y>840</y>
-      <w>135</w>
-      <h>105</h>
+      <x>1236</x>
+      <y>672</y>
+      <w>108</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;50.0;70.0;10.0</additional_attributes>
@@ -200,10 +200,10 @@ Geordnet.</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1335</x>
-      <y>1185</y>
-      <w>225</w>
-      <h>105</h>
+      <x>960</x>
+      <y>948</y>
+      <w>180</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>template=E
 ArrayList
@@ -213,10 +213,10 @@ ArrayList
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1425</x>
-      <y>945</y>
-      <w>120</w>
-      <h>285</h>
+      <x>1032</x>
+      <y>756</y>
+      <w>96</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>60.0;10.0;10.0;170.0</additional_attributes>
@@ -224,10 +224,10 @@ ArrayList
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1575</x>
-      <y>1185</y>
-      <w>225</w>
-      <h>105</h>
+      <x>1152</x>
+      <y>948</y>
+      <w>180</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>template=E
 LinkedList
@@ -237,10 +237,10 @@ LinkedList
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1575</x>
-      <y>945</y>
-      <w>120</w>
-      <h>285</h>
+      <x>1152</x>
+      <y>756</y>
+      <w>96</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;170.0</additional_attributes>
@@ -248,10 +248,10 @@ LinkedList
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1275</x>
-      <y>1050</y>
-      <w>120</w>
-      <h>90</h>
+      <x>912</x>
+      <y>840</y>
+      <w>96</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>template=E
 Vector
@@ -262,10 +262,10 @@ Vector
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1305</x>
-      <y>945</y>
-      <w>210</w>
-      <h>150</h>
+      <x>936</x>
+      <y>756</y>
+      <w>168</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>120.0;10.0;10.0;80.0</additional_attributes>
@@ -273,10 +273,10 @@ Vector
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>735</x>
-      <y>810</y>
-      <w>300</w>
-      <h>105</h>
+      <x>480</x>
+      <y>648</y>
+      <w>240</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -287,10 +287,10 @@ Set
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>870</x>
-      <y>675</y>
-      <w>600</w>
-      <h>180</h>
+      <x>588</x>
+      <y>540</y>
+      <w>480</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>380.0;10.0;10.0;100.0</additional_attributes>
@@ -298,10 +298,10 @@ Set
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>435</x>
-      <y>750</y>
-      <w>165</w>
-      <h>105</h>
+      <x>240</x>
+      <y>600</y>
+      <w>132</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Menge
 einzigartiger
@@ -311,10 +311,10 @@ Elemente</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>585</x>
-      <y>780</y>
-      <w>180</w>
-      <h>105</h>
+      <x>360</x>
+      <y>624</y>
+      <w>144</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;10.0;100.0;50.0</additional_attributes>
@@ -322,10 +322,10 @@ Elemente</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>1080</y>
-      <w>150</w>
-      <h>90</h>
+      <x>324</x>
+      <y>864</y>
+      <w>120</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>template=E
 HashSet
@@ -336,10 +336,10 @@ HashSet
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>900</y>
-      <w>270</w>
-      <h>225</h>
+      <x>372</x>
+      <y>720</y>
+      <w>216</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>160.0;10.0;10.0;130.0</additional_attributes>
@@ -347,10 +347,10 @@ HashSet
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>1290</y>
-      <w>210</w>
-      <h>90</h>
+      <x>300</x>
+      <y>1032</y>
+      <w>168</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>template=E
 LinkedHashSet
@@ -360,10 +360,10 @@ LinkedHashSet
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>585</x>
-      <y>1155</y>
-      <w>45</w>
-      <h>180</h>
+      <x>360</x>
+      <y>924</y>
+      <w>36</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -371,10 +371,10 @@ LinkedHashSet
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>180</x>
-      <y>1230</y>
-      <w>180</w>
-      <h>75</h>
+      <x>36</x>
+      <y>984</y>
+      <w>144</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>Speichert die 
 Reihenfolge</panel_attributes>
@@ -383,43 +383,32 @@ Reihenfolge</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
-      <y>1050</y>
-      <w>210</w>
-      <h>105</h>
+      <x>576</x>
+      <y>1812</y>
+      <w>168</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>135</x>
-      <y>1035</y>
-      <w>240</w>
-      <h>60</h>
+      <x>0</x>
+      <y>828</y>
+      <w>192</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Hat Hashcode-Buckets</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>345</x>
-      <y>1260</y>
-      <w>195</w>
-      <h>105</h>
-    </coordinates>
-    <panel_attributes>lt=..</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;50.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>795</x>
-      <y>1290</y>
-      <w>255</w>
-      <h>165</h>
+      <x>528</x>
+      <y>1032</y>
+      <w>204</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -434,10 +423,10 @@ Methoden...
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>885</x>
-      <y>1170</y>
-      <w>45</w>
-      <h>165</h>
+      <x>600</x>
+      <y>936</y>
+      <w>36</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -445,10 +434,10 @@ Methoden...
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>795</x>
-      <y>1050</y>
-      <w>255</w>
-      <h>135</h>
+      <x>528</x>
+      <y>840</y>
+      <w>204</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -462,10 +451,10 @@ spezielle Methoden ...
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>885</x>
-      <y>900</y>
-      <w>45</w>
-      <h>195</h>
+      <x>600</x>
+      <y>720</y>
+      <w>36</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
@@ -473,10 +462,10 @@ spezielle Methoden ...
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>795</x>
-      <y>1530</y>
-      <w>255</w>
-      <h>105</h>
+      <x>528</x>
+      <y>1224</y>
+      <w>204</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>template=E
 TreeSet
@@ -486,10 +475,10 @@ TreeSet
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>885</x>
-      <y>1440</y>
-      <w>45</w>
-      <h>135</h>
+      <x>600</x>
+      <y>1152</y>
+      <w>36</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
@@ -497,10 +486,10 @@ TreeSet
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1155</x>
-      <y>1560</y>
-      <w>165</w>
-      <h>105</h>
+      <x>816</x>
+      <y>1248</y>
+      <w>132</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Sortiert
 Elemente
@@ -510,10 +499,10 @@ automatisch</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1005</x>
-      <y>1575</y>
-      <w>180</w>
-      <h>45</h>
+      <x>696</x>
+      <y>1260</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
@@ -521,10 +510,10 @@ automatisch</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2160</x>
-      <y>795</y>
-      <w>330</w>
-      <h>315</h>
+      <x>1620</x>
+      <y>636</y>
+      <w>264</w>
+      <h>252</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -544,10 +533,10 @@ poll() : E
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1635</x>
-      <y>675</y>
-      <w>705</w>
-      <h>165</h>
+      <x>1200</x>
+      <y>540</y>
+      <w>564</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;450.0;90.0</additional_attributes>
@@ -555,10 +544,10 @@ poll() : E
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2715</x>
-      <y>1095</y>
-      <w>240</w>
-      <h>105</h>
+      <x>2064</x>
+      <y>876</y>
+      <w>192</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>template=E
 PriorityQueue
@@ -568,10 +557,10 @@ PriorityQueue
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2445</x>
-      <y>945</y>
-      <w>390</w>
-      <h>195</h>
+      <x>1848</x>
+      <y>756</y>
+      <w>312</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;240.0;110.0</additional_attributes>
@@ -579,10 +568,10 @@ PriorityQueue
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1755</x>
-      <y>1230</y>
-      <w>435</w>
-      <h>240</h>
+      <x>1296</x>
+      <y>984</y>
+      <w>348</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>270.0;140.0;10.0;10.0</additional_attributes>
@@ -590,10 +579,10 @@ PriorityQueue
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2205</x>
-      <y>1740</y>
-      <w>240</w>
-      <h>105</h>
+      <x>1656</x>
+      <y>1392</y>
+      <w>192</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>template=E
 ArrayDeque
@@ -603,10 +592,10 @@ ArrayDeque
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2295</x>
-      <y>1665</y>
-      <w>45</w>
-      <h>120</h>
+      <x>1728</x>
+      <y>1332</y>
+      <w>36</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -614,10 +603,10 @@ ArrayDeque
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2160</x>
-      <y>1245</y>
-      <w>330</w>
-      <h>435</h>
+      <x>1620</x>
+      <y>996</y>
+      <w>264</w>
+      <h>348</h>
     </coordinates>
     <panel_attributes>template=E
 &lt;&lt;interface&gt;&gt;
@@ -641,12 +630,202 @@ weitere Methoden...</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2295</x>
-      <y>1095</y>
-      <w>45</w>
-      <h>195</h>
+      <x>1728</x>
+      <y>876</y>
+      <w>36</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>1452</y>
+      <w>276</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>template=K,V
+&lt;&lt;interface&gt;&gt;
+Map
+--
+Methoden...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>1488</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>348</x>
+      <y>1740</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>template=K,V
+HashMap
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>1596</y>
+      <w>216</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>324</x>
+      <y>1908</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>template=K,V
+LinkedHashMap
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>1800</y>
+      <w>36</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>552</x>
+      <y>1908</y>
+      <w>204</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>template=K,V
+&lt;&lt;interface&gt;&gt;
+NavigableMap
+--
+weitere spezielle
+Methoden...
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>1812</y>
+      <w>36</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>552</x>
+      <y>1716</y>
+      <w>204</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>template=K,V
+&lt;&lt;interface&gt;&gt;
+SortedMap
+--
+spezielle Methoden ...
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>1596</y>
+      <w>36</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>552</x>
+      <y>2100</y>
+      <w>204</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>template=K,V
+TreeMap
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>2028</y>
+      <w>36</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>1452</y>
+      <w>156</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Speichert
+Key-Value-Paare</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>840</y>
+      <w>168</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>168</x>
+      <y>1008</y>
+      <w>156</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;50.0</additional_attributes>
   </element>
 </diagram>

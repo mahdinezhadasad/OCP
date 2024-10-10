@@ -13,6 +13,14 @@
 
 ## Aufgaben
 
+#### 10.10
+
+- Interface Map
+- Klassen HashMap und TreeMap
+
+- Aufgaben/Map - Simple.md
+- Aufgaben/Map - TextStatistics.md
+
 #### 09.10
 
 - Wdh. TreeSet
