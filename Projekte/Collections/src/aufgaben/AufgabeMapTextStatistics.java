@@ -20,7 +20,10 @@ public class AufgabeMapTextStatistics {
 		Map<Character, Integer> mapCounts = stat.getCharCounts();
 		
 		System.out.println("\nCounts: ");
-		System.out.println(mapCounts);
+		for(Character ch : mapCounts.keySet()) {
+			Integer count = mapCounts.get(ch);
+			System.out.println(ch + ": " + count);
+		}
 	}
 
 }

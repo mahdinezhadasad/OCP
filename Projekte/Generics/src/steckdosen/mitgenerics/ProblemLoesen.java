@@ -58,7 +58,7 @@ public class ProblemLoesen {
 		Steckdose<TVDE> sdDE = new Steckdose<TVDE>();
 		sdDE.anschliessen(tvDE); // muss funktionieren
 //		sdDE.anschliessen(tvUK); // darf nicht kompilieren
-		
+
 //		sdUK = sdDE; // darf nicht kompilieren
 //		sdDE = sdUK; // darf nicht kompilieren
 		

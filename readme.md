@@ -13,8 +13,13 @@
 
 ## Aufgaben
 
+#### 11.10
+- Projekt 'Generics'
+
+
 #### 10.10
 
+- Projekt 'Collectons'
 - Interface Map
 - Klassen HashMap und TreeMap
 

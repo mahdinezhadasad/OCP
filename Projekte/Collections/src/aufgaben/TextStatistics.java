@@ -24,16 +24,19 @@ public class TextStatistics {
 	 * 
 	 * @return
 	 */
+//	public Collection<Character> getUniqueChars() {
+//		
+//		Collection<Character> coll = new HashSet<Character>();
+//		
+//		for(int i=0; i<text.length(); i++) {
+//			char ch = text.charAt(i);
+//			coll.add(ch);
+//		}
+//		
+//		return coll;
+//	}
 	public Collection<Character> getUniqueChars() {
-		
-		Collection<Character> coll = new HashSet<Character>();
-		
-		for(int i=0; i<text.length(); i++) {
-			char ch = text.charAt(i);
-			coll.add(ch);
-		}
-		
-		return coll;
+		return getCharCounts().keySet();
 	}
 	
 	/**
@@ -45,8 +48,6 @@ public class TextStatistics {
 	public Map<Character, Integer> getCharCounts() {
 		Map<Character, Integer> map = new HashMap<>();
 		
-		// text = "aaa"
-		
 		for(int i=0; i<text.length(); i++) {
 			char ch = text.charAt(i);
 			
@@ -56,8 +57,12 @@ public class TextStatistics {
 			//     das alte Value holen, inkrementieren, Map updaten
 			
 			Integer value = map.get(ch);
-			
-//			map.put(ch, 1);
+			if(value==null) {
+				map.put(ch, 1);
+			} else {
+				value++;
+				map.put(ch, value);
+			}
 		}
 		
 		return map;

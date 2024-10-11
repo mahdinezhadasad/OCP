@@ -1,12 +1,5 @@
 package generics;
 
-// Typparameter kann den Namen wie ein Java-Identifier
-// bekommen (sollte aber aus Grossbuchstaben bestehen)
-class C1 <bUchStaben_1234_$> { // geht, aber nicht so gut
-}
-class C2 <A> { // ok
-}
-
 public class B01_Begriffe {
 
 	public static void main(String[] args) {
