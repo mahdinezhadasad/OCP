@@ -31,7 +31,7 @@ public class B09_Consumer {
 		generateStrings(3, c2);
 		
 		
-		// Lambda ausführlich
+		// Lambda kompakt
 		Consumer<String> c3 = s -> System.out.println(s.toUpperCase());
 		
 		generateStrings(3, c3);
