@@ -16,6 +16,12 @@
 #### 11.10
 - Projekt 'Generics'
 
+- Wdh. Generics (mit Beispielen aus dem Projekt)
+- Wozu gibt es Platzhalter <? extends Typ> ?
+
+- Optional: Was bedeutet folgender Platzhalter im folgenden Code?
+		
+		List<?> list;
 
 #### 10.10
 

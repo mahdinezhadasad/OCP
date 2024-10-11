@@ -71,6 +71,15 @@ public class ProblemLoesen {
 		// da es den Type Bound gibt (T extends TV):
 //		Steckdose<String> sdSinnlos = new Steckdose<String>(); // cf 
 //		sdSinnlos.anschliessen("ich bin kein Fernseher");
+		
+		Steckdose<? extends TV> sdUniversell;
+		
+		sdUniversell = sdDE;
+		sdUniversell = sdUK;
+		
+//		sdUniversell.anschliessen(tvDE);
+//		sdUniversell.anschliessen(tvUK);
+		
 	}
 
 }
