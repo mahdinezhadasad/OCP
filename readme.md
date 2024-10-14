@@ -13,6 +13,19 @@
 
 ## Aufgaben
 
+#### 14.10
+- Projekt 'Generics'
+- ? extends
+- ? super
+- Erasure (nur Bsp. B08)
+- Diamond-Operator
+
+- Aufgaben/Generics - Platzhalter - Functional.md
+- Aufgaben/Generics - Tonträger.md
+
+- Optional/Generics - Zoo.md
+
+
 #### 11.10
 - Projekt 'Generics'
 
