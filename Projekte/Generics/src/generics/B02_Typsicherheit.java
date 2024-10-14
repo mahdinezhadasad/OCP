@@ -26,6 +26,8 @@ public class B02_Typsicherheit {
 		listInt.add(12); //Integer <- IS-A <- Integer
 //		listInt.add(false); // cf: Integer <- IST-KEIN <- Boolean
 		
+		Integer value = listInt.get(0);
+		
 		List<Boolean> listBool = new ArrayList<>();
 	
 		/*

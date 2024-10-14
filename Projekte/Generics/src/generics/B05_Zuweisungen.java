@@ -16,7 +16,7 @@ public class B05_Zuweisungen {
 		 */
 		Number  n1 = null;
 		Integer i1 = null;
-		Double  d1 = null;
+		Double  d1 = 12.3;
 
 		i1 = i1; // Integer <- IS-A <- Integer
 		n1 = i1; // Number <- IS-A <- Integer
