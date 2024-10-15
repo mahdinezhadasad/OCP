@@ -16,6 +16,13 @@
 
 ## Aufgaben
 
+#### 15.10
+- Projekt 'Generics'
+- generische Methoden
+
+- Aufgaben/Generics - Generische Methoden - Functional.md
+- Aufgaben/Generics - Generische Methoden.md
+
 #### 14.10
 - Projekt 'Generics'
 - ? extends
