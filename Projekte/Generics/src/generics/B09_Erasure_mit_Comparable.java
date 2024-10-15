@@ -1,6 +1,7 @@
 package generics;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 
 class PersonV1 {
@@ -71,5 +72,20 @@ public class B09_Erasure_mit_Comparable {
 		} catch (ClassCastException e) {
 			System.out.println("2. ClassCastException");
 		}
-	}
+		
+		/*
+		 * Ein weiteres Bsp. von Erasure:
+		 * 
+		 * Es ist nicht möglich eine Methode zu überladen,
+		 * wenn die Varianten sich nur durch Parametrisierungen 
+		 * unterscheiden.
+		 * 
+		 *  S. die Methoden m
+		 */
+		
+	} // end of main
+	
+//	static void m(Collection<Number> c) {}
+//	static void m(Collection<Integer> c) {} 
+	
 }
