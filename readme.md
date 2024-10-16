@@ -11,10 +11,14 @@
 
 > Bitte immer wieder eigene Fehlzeiten überprüfen
 
-
-> Dozent: Konstruktoren
-
 ## Aufgaben
+
+#### 16.10
+- Projekt 'Generics'
+- gemerische Methode explizit parametrisieren
+
+- Projekt 'ClassDesign'
+- Wdh. Konstruktoren (Package 'wdh.konstruktoren')
 
 #### 15.10
 - Projekt 'Generics'
