@@ -23,8 +23,9 @@ public class B12_generischeMethodeEntwickeln {
 //		getMax(12, date1);     // darf nicht kompilieren (Typsicherheit)
 //		getMax("moin", 33.0);  // darf nicht kompilieren (Typsicherheit)
 //		getMax(12, 33.0);      // darf nicht kompilieren
+//		getMax(new Thread(), new Thread()); // cf: Type Bound
 	}
-
+	
 	static <T extends Comparable<? super T>> T getMax(T a, T b) {
 		if(a.compareTo(b) > 0) {
 			return a;

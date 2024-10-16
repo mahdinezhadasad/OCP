@@ -1,5 +1,6 @@
 package generics;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -9,6 +10,9 @@ class NormaleKlasse {
 	void normaleMethode() {}
 	
 	<T> void generischeMethode() {}
+	
+//	<T> static void generischeMethodeFalsch() {} // cf
+//	static void <T> generischeMethodeFalsch2() {} // cf
 	
 	static <T> void generischeMethode2(T param) {}
 	
@@ -102,6 +106,14 @@ public class B11_generischeMethoden {
 		 */
 		List<String> listStr = Arrays.asList("mm", "bb", "ff", "aa");
 		Collections.sort(listStr);
+		
+		/*
+		 * Parametrisierung durch Argument List<LocalDate>:
+		 * 
+		 * 		void sort(List<LocalDate> list) 
+		 */
+		List<LocalDate> listDate = Collections.emptyList();
+		Collections.sort(listDate);
 		
 		/*
 		 * Parametrisierung durch Argument List<Thread>:
