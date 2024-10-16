@@ -20,6 +20,10 @@
 - Projekt 'ClassDesign'
 - Wdh. Konstruktoren (Package 'wdh.konstruktoren')
 
+- Aufgaben/Collections-Autos.md
+
+> Bitte auch das Bild 'Collections-Autos-01.png' beachten
+
 #### 15.10
 - Projekt 'Generics'
 - generische Methoden
