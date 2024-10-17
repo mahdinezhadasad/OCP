@@ -13,6 +13,15 @@
 
 ## Aufgaben
 
+#### 17.10
+
+- Aufgaben/Collections-Autos.md (Lösung im Projekt 'Collections', Package 'aufgaben.autos')
+
+> Bitte auch das Bild 'Collections-Autos-01.png' beachten
+
+- Optional: Methoden in Collection/List/Map, die das funktionale Programmieren mit Lambdas unterstützen
+
+
 #### 16.10
 - Projekt 'Generics'
 - gemerische Methode explizit parametrisieren

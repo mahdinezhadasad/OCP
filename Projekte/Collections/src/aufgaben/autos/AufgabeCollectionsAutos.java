@@ -3,6 +3,8 @@ package aufgaben.autos;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Deque;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -88,7 +90,96 @@ public class AufgabeCollectionsAutos {
 		
 		print(dequeBmw);
 		
+		/*
+		 * A7
+		 */
+		System.out.println("\n--------------");
+		System.out.println("----- A7 -----");
+		System.out.println("--------------");
+		print(hashSetBMW);
 		
+		System.out.println("hashSetBMW.contains(bmw1): " + 
+				hashSetBMW.contains(bmw1)); // true
+		
+		/*
+		 * A8
+		 */
+		System.out.println("\n--------------");
+		System.out.println("----- A8 -----");
+		System.out.println("--------------");
+		
+		bmw1.setBaujahr(3333); // Ändert auch den Hashcode des Objektes!
+		print(hashSetBMW);
+		
+		System.out.println("hashSetBMW.contains(bmw1): " + 
+				hashSetBMW.contains(bmw1)); // false: das Element kann nicht mehr gefunden werden
+		
+		/*
+		 * A9, A10
+		 */
+		System.out.println("\n--------------");
+		System.out.println("----- A9, 10 -----");
+		System.out.println("--------------");
+		listVW.add(new VW("Polo", 2200));
+		
+		print(listVW);
+		
+		// falsch: binarySearch braucht eine sortierte Liste:
+		int index = Collections.binarySearch(listVW, new VW("Polo", 2200));
+		System.out.println("index of Polo 2200: " + index); // 3 (zufällig richtig)
+		
+		// falsch: binarySearch braucht eine sortierte Liste:
+		index = Collections.binarySearch(listVW, new VW("Golf", 2024));
+		System.out.println("index of Golf 2024: " + index); // -2 
+		
+		/*
+		 * A11
+		 */
+		System.out.println("\n--------------");
+		System.out.println("----- A11 -----");
+		System.out.println("--------------");
+		
+		Collections.sort(listVW);
+		print(listVW);
+		
+		// richtig: binarySearch braucht eine sortierte Liste:
+		index = Collections.binarySearch(listVW, new VW("Polo", 2200));
+		System.out.println("index of Polo 2200: " + index); // 3
+		
+		// richtig: binarySearch braucht eine sortierte Liste:
+		index = Collections.binarySearch(listVW, new VW("Golf", 2024));
+		System.out.println("index of Golf 2024: " + index); // 1
+		
+		/*
+		 * A12, A13
+		 */
+		System.out.println("\n--------------");
+		System.out.println("----- A12, A13 -----");
+		System.out.println("--------------");
+		
+		Collections.sort(listVW, Comparator.reverseOrder());
+		print(listVW);
+		
+		// falsch: diese binarySearch braucht eine 'natürlich' sortierte Liste,
+		//         und vergleicht die Elemente 'natürlich' (als Comparable)
+		index = Collections.binarySearch(listVW, new VW("Polo", 2200));
+		System.out.println("index of Polo 2200: " + index); // -5
+
+		// richtig: überladene binarySearch einsetzen, die
+		//          denselben Comparator für die Vergleiche benutzt,
+		//          der beim Sortieren verwendet wurde		
+		index = Collections.binarySearch(listVW, 
+				new VW("Polo", 2200), Comparator.reverseOrder());
+		System.out.println("index of Polo 2200: " + index); // 0
+
+		/*
+		 * A14
+		 */
+		System.out.println("\n*** suche nach Polo 3300");
+		VW key = new VW("Polo", 3300);
+		Comparator<VW> cmp = Comparator.reverseOrder();
+		index = Collections.binarySearch(listVW, key, cmp);
+		System.out.println("index = " + index); // -1
 		
 	} // end of main
 
