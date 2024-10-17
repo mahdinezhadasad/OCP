@@ -20,7 +20,7 @@
 - Projekt 'ClassDesign'
 - Wdh. Konstruktoren (Package 'wdh.konstruktoren')
 
-- Aufgaben/Collections-Autos.md
+- Aufgaben/Collections-Autos.md (Lösung im Projekt 'Collections', Package 'aufgaben.autos')
 
 > Bitte auch das Bild 'Collections-Autos-01.png' beachten
 
