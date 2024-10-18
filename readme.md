@@ -16,7 +16,11 @@
 #### 18.10
 - Projekt 'Functional'
 - Package 'collections'
+- Collection-API (functional)
+- Map-API (functional)
 
+- Aufgaben/Collections - Functional.md
+- Optional: Aufgaben/Maps - Fill - Functional.md
 
 #### 17.10
 
