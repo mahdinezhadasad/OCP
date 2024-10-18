@@ -13,6 +13,11 @@
 
 ## Aufgaben
 
+#### 18.10
+- Projekt 'Functional'
+- Package 'collections'
+
+
 #### 17.10
 
 - Aufgaben/Collections-Autos.md (Lösung im Projekt 'Collections', Package 'aufgaben.autos')
