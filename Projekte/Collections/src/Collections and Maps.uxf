@@ -828,4 +828,29 @@ Key-Value-Paare</panel_attributes>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;10.0;110.0;50.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>132</x>
+      <y>1628</y>
+      <w>110</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>template=K,V
+Hashtable
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>165</x>
+      <y>1463</y>
+      <w>385</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>330.0;10.0;10.0;160.0</additional_attributes>
+  </element>
 </diagram>
