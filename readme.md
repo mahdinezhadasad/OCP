@@ -287,10 +287,10 @@ Mögliche Techniken dabei:
     - Git
 	- ...
 
-###### Comcave-Klausur: 02.12.2024
+##### Comcave-Klausur: 02.12.2024
 > Hilfsmittel: alle, Dauer: 2 Stunden, Multiple-Choice
 
-###### Oracle-Prüfung: 19.12.2024 (ein möglicher Termin)
+##### Oracle-Prüfung: 19.12.2024 (ein möglicher Termin)
 > Beachten Sie die Datei 'Prüfungsnameldung.pdf' unter Teams/Dateien
 
 
