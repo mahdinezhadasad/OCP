@@ -32,6 +32,7 @@ public class B04_Streams_terminal {
 		System.out.println("anzahl = " + anzahl);
 		
 		IntStream stream = new Random().ints(10, 100, 200);
+		
 		// min und max
 		System.out.println("min = " + stream.min());
 		stream = new Random().ints(10, 100, 200);
