@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -43,6 +45,20 @@ public class B08_Streams_Dateien {
 		Files.lines(path)
 		.collect(Collectors.groupingBy(classifier,Collectors.counting()))
 		.forEach((key, value) -> System.out.println(key + ": " + value));
+		
+		// Anzahl der Gesamt-Zeichen (mit Leerzeichen) im Stream (erwartes Ergebnis ca. 200)
+		Integer identity = 0;
+		
+		BiFunction<Integer, String, Integer> acc = (teilGesamt, name) -> teilGesamt + name.length();
+		
+		BinaryOperator<Integer> comb = (i1, i2) -> i1 + i2;
+		
+		Integer anzahlZeichen = Files.lines(path).reduce(identity, acc, comb);
+		System.out.println("************");
+		System.out.println("anzahlZeichen = " + anzahlZeichen);
+		
+		long anzahlZeichenAsLong = Files.lines(path).mapToInt(String::length).sum();
+		System.out.println("anzahlZeichenAsLong = " + anzahlZeichenAsLong);
 	}
 
 }
