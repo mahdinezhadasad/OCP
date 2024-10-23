@@ -31,7 +31,7 @@ public class B01_Streams {
 		datenquelle.stream().filter(i -> i != null).filter(i -> i < 0).forEach(System.out::println);
 		
 		System.out.println("**************");
-		
+		 
 		// Paralleler Stream 
 		datenquelle.parallelStream().map(i -> i + 1).map(i -> i * 2).forEach(System.out::println);
 	}
