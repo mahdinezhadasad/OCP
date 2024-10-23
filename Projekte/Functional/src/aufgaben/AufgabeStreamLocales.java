@@ -13,14 +13,8 @@ public class AufgabeStreamLocales {
 	public static void main(String[] args) {
 		// a1();
 		// a2();
-		Locale[] locales = Locale.getAvailableLocales();
+		// a3();
 		
-		Arrays.stream(locales)
-			.filter(locale -> locale.getDisplayCountry().contains("t"))
-			.sorted(Comparator.comparing(Locale::getDisplayLanguage))
-			.findFirst()
-			.ifPresent(System.out::println);
-			;
 	}
 
 	static void a1() {
@@ -47,6 +41,23 @@ public class AufgabeStreamLocales {
 		// Test
 		Arrays.stream(locales).filter(pred).forEach(System.out::println);
 		Arrays.stream(locales).filter(pred).map(Locale::getDisplayCountry).forEach(System.out::println);
+	}
+	
+	static void a3() {
+		Locale[] locales = Locale.getAvailableLocales();
+		
+		Arrays.stream(locales)
+			.filter(locale -> locale.getDisplayCountry().contains("t"))
+			.sorted(Comparator.comparing(Locale::getDisplayLanguage))
+			.findFirst()
+			.ifPresent(System.out::println);
+			;
+			
+		Arrays.stream(locales)
+			.filter(locale -> locale.getDisplayCountry().contains("t"))
+			.min(Comparator.comparing(Locale::getDisplayLanguage))
+			.ifPresent(System.out::println);
+			;
 	}
 
 }
