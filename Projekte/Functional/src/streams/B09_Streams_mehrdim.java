@@ -1,7 +1,7 @@
 package streams;
 
 import java.util.Arrays;
-import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Stream;
 
 public class B09_Streams_mehrdim {
@@ -17,7 +17,7 @@ public class B09_Streams_mehrdim {
 		
 		Stream<Stream<Integer>> streamGesamt = Stream.of(stream2021, stream2022, stream2023);
 		
-		streamGesamt.flatMap(stream -> stream).filter(umsatz -> umsatz >= 2000).forEach(System.out::println);
+		streamGesamt.flatMap(Function.identity()).filter(umsatz -> umsatz >= 2000).forEach(System.out::println);
 	}
 
 }
