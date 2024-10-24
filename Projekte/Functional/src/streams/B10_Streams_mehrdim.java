@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-public class B09_Streams_mehrdim {
+public class B10_Streams_mehrdim {
 
 	public static void main(String[] args) {
 		Integer[] umsaetze2021 = {2000, 1500, 3500, 2750};

@@ -9,7 +9,7 @@ import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class B08_Streams_Dateien {
+public class B09_Streams_Dateien {
 
 	public static void main(String[] args) throws IOException {
 		Path path = Paths.get("herrscher.txt");
