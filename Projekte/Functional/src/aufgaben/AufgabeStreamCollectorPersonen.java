@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import person.Person;
 
-public class AufgabeCollectorPersonen {
+public class AufgabeStreamCollectorPersonen {
 	
 	static Person[] personen = {
 			new Person("Tom", "Bauarbeiter(in)"),	

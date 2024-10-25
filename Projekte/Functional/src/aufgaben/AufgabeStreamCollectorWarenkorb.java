@@ -18,6 +18,11 @@ public class AufgabeStreamCollectorWarenkorb {
 	}
 
 	public static void main(String[] args) {
+//		a1();
+//		a2();
+	}
+	
+	static void a2() {
 		List<Bestellung> bestellungen = new ArrayList<>();
 		bestellungen.add(new Bestellung("Brot", 3));
 		bestellungen.add(new Bestellung("Wurst", 1));
