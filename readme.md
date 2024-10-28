@@ -20,6 +20,9 @@
 
 - Projekt 'Words' (Hilfsprojekt mit Daten für weitere Tests/Aufgaben)
 
+- Aufgaben/Words - funkt. Streams.md
+
+
 #### 18.10
 - Projekt 'Functional'
 - Package 'collections'
