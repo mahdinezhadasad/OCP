@@ -1,4 +1,5 @@
 ###### Achtung! Unterrichtsfreie Tage: 31.10, 01.11, 20.11
+# Achtung! 31.10 und 01.11 ist frei!
 
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
@@ -12,6 +13,10 @@
 > Bitte immer wieder eigene Fehlzeiten überprüfen
 
 ## Aufgaben
+
+#### 28.10
+- Projekt 'Functional'
+- Package 'streams.wdh'
 
 #### 18.10
 - Projekt 'Functional'
