@@ -18,6 +18,8 @@
 - Projekt 'Functional'
 - Package 'streams.wdh'
 
+- Projekt 'Words' (Hilfsprojekt mit Daten für weitere Tests/Aufgaben)
+
 #### 18.10
 - Projekt 'Functional'
 - Package 'collections'
