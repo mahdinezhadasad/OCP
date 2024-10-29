@@ -22,6 +22,8 @@
 
 - Aufgaben/Words - funkt. Streams.md. Lösung im Package 'aufgaben.words'
 
+> Die Lösung ist noch nicht komplett
+
 
 #### 18.10
 - Projekt 'Functional'
