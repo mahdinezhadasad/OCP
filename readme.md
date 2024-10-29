@@ -1,5 +1,5 @@
 ###### Achtung! Unterrichtsfreie Tage: 31.10, 01.11, 20.11
-# Achtung! 31.10 und 01.11 ist frei!
+# Achtung! 31.10 und 01.11 sind frei!
 
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
