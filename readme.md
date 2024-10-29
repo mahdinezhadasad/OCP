@@ -20,7 +20,7 @@
 
 - Projekt 'Words' (Hilfsprojekt mit Daten für weitere Tests/Aufgaben)
 
-- Aufgaben/Words - funkt. Streams.md
+- Aufgaben/Words - funkt. Streams.md. Lösung im Package 'aufgaben.words'
 
 
 #### 18.10
