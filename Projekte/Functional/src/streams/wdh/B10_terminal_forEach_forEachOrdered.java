@@ -4,10 +4,15 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 public class B10_terminal_forEach_forEachOrdered {
 
+	/*
+	 * void forEach(Consumer<? super T> action);
+	 * void forEachOrdered(Consumer<? super T> action);
+	 */
 	public static void main(String[] args) {
 		
 		List<Integer> list = Arrays.asList(-7, 13, 11, -9, 5);

@@ -14,6 +14,16 @@
 
 ## Aufgaben
 
+#### 29.10
+- Projekt 'Functional'
+- Package 'streams.wdh'
+
+- Projekt 'Words' (Hilfsprojekt mit Daten für weitere Tests/Aufgaben)
+
+- Aufgaben/Words - funkt. Streams.md. Lösung im Package 'aufgaben.words'
+
+> Die Lösung ist noch nicht komplett
+
 #### 28.10
 - Projekt 'Functional'
 - Package 'streams.wdh'
