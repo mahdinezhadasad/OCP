@@ -16,8 +16,10 @@ public class B18_terminal_reduce_v3 {
      *     - kann den Datentyp ändern
 	 */
 	public static void main(String[] args) {
-//		bsp1();
+		bsp1();
 		bsp2();
+		bsp3();
+		bsp4();
 	}
 	
 	
@@ -74,7 +76,7 @@ public class B18_terminal_reduce_v3 {
 		
 		Integer idt = 0;
 		BiFunction<Integer, Integer, Integer> acc = (a, b) -> a + b;
-		BinaryOperator<Integer> cmb = (x, y) -> x*1111111; // sinnlos, wird später geändert!
+		BinaryOperator<Integer> cmb = (x, y) -> x + y; 
 		
 		Integer sum = list.stream().reduce(idt, acc, cmb);
 		
@@ -133,7 +135,7 @@ public class B18_terminal_reduce_v3 {
 		
 		String idt = "";
 		BiFunction<String, Integer, String> acc = (String s, Integer i) -> s + i;
-		BinaryOperator<String> cmb = (s1, s2) -> "moin"; // sinnlos, wird später geändert
+		BinaryOperator<String> cmb = (s1, s2) -> s1 + s2;
 		
 		String s = list.stream() // Stream<Integer>
 				.reduce(idt, acc, cmb);
@@ -153,8 +155,44 @@ public class B18_terminal_reduce_v3 {
 	
 	/*
 	 * - parallel
-	 * - Datentyp wird nicht geändert
+	 * - Datentyp wird nicht geändert (Aufgabe: Summe berechnen)
 	 * 
+	 * Beispiel für zwei CPUs: 
+	 * 
+	 * 
+	 * CPU A 							CPU B
+	 * Daten: 1, 2 						Daten: 3, 4, 5
+	 * 
+	 * Schritt 1.						Schritt 1.
+	 * 
+	 * a = 0 (Identity)					a = 0 (Identity)
+	 * b = 1 (Element 1)				b = 3 (eigenes Element 1)
+	 * 
+	 * erg = acc.apply(a, b) = 1		erg = acc.apply(a, b) = 3
+	 * 
+	 * Schritt 2.						Schritt 2.
+	 * 
+	 * a = 1 (Erg. aus Schritt 1)		a = 3 (Erg. aus Schritt 1)
+	 * b = 2 (nächstes Element)			b = 4 (nächstes Element)
+	 * 
+	 * erg = acc.apply(a, b) = 3		erg = acc.apply(a, b) = 7
+	 * 
+	 * 									Schritt 3.
+	 * 
+	 * 									a = 7 (Erg. aus dem Schritt 2)
+	 * 									b = 5 (nächstes Element)
+	 * 
+	 * 									erg = acc.apply(a, b) = 12
+	 * 
+	 * Teilergebnisse zum Gesamtergebnis
+	 * kombinieren:
+	 * 
+	 * x = 3 (Ergebnis der CPU A)
+	 * y = 12 (Ergebnis der CPU B)
+	 * 
+	 * erg = cmb.apply(x, y)
+	 * 
+	 * Gesamtergebnis zurückliefern
 	 */
 	
 	static void bsp3() {
@@ -163,22 +201,74 @@ public class B18_terminal_reduce_v3 {
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 		
 		Integer idt = 0;
-		BiFunction<Integer, Integer, Integer> acc = null;
+		BiFunction<Integer, Integer, Integer> acc = (a, b) -> a + b;
+		BinaryOperator<Integer> cmb = (x, y) -> x + y;
 		
 		Integer sum = list.stream()
 				.parallel()
 				.reduce(idt, acc, cmb);
+		
+		System.out.println("Summe: " + sum);
 	}
 	
+	
+	
+	/*
+	 * - parallel
+	 * - Datentyp wird geändert (Aufgabe: Integer zu Strings, die Strings konkatenieren)
+	 * 
+	 * Beispiel für zwei CPUs: 
+	 * 
+	 * 
+	 * CPU A 							CPU B
+	 * Daten: 1, 2 						Daten: 3, 4, 5
+	 * 
+	 * Schritt 1.						Schritt 1.
+	 * 
+	 * a = "" (Identity)				a = "" (Identity)
+	 * b = 1 (Element 1)				b = 3 (eigenes Element 1)
+	 * 
+	 * erg = acc.apply(a, b) = "1"		erg = acc.apply(a, b) = "3"
+	 * 
+	 * Schritt 2.						Schritt 2.
+	 * 
+	 * a = "1" (Erg. aus Schritt 1)		a = "3" (Erg. aus Schritt 1)
+	 * b = 2 (nächstes Element)			b = 4 (nächstes Element)
+	 * 
+	 * erg = acc.apply(a, b) = "12"		erg = acc.apply(a, b) = "34"
+	 * 
+	 * 									Schritt 3.
+	 * 
+	 * 									a = "34" (Erg. aus dem Schritt 2)
+	 * 									b = 5 (nächstes Element)
+	 * 
+	 * 									erg = acc.apply(a, b) = "345"
+	 * 
+	 * Teilergebnisse zum Gesamtergebnis
+	 * kombinieren:
+	 * 
+	 * x = "12" (Ergebnis der CPU A)
+	 * y = "345" (Ergebnis der CPU B)
+	 * 
+	 * erg = cmb.apply(x, y)
+	 * 
+	 * Gesamtergebnis zurückliefern
+	 */
+	
+	static void bsp4() {
+		System.out.println("*** Bsp. 4");
+		
+		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+		
+		String idt = "";
+		BiFunction<String, Integer, String> acc = (s, i) -> s + i;
+		BinaryOperator<String> cmb = (x, y) -> x + y;
+		
+		String s = list.parallelStream()
+			.reduce(idt, acc, cmb);
+		
+		System.out.println("Ergebnis: " + s);
+	}	
+	
 }
-
-
-
-
-
-
-
-
-
-
 
