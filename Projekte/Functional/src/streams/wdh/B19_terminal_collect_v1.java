@@ -70,7 +70,7 @@ public class B19_terminal_collect_v1 {
 		BiConsumer<List<Integer>, Integer> acc = 
 				(targetList, nextElement) -> targetList.add(nextElement);
 				
-		BiConsumer<List<Integer>, List<Integer>> cmb = (a, b) -> a.addAll(b); 	
+		BiConsumer<List<Integer>, List<Integer>> cmb = (list1, list2) -> list1.addAll(list2); 	
 		
 		List<Integer> list = Arrays.stream(array)
 			.collect(supp, acc, cmb);
@@ -93,26 +93,31 @@ public class B19_terminal_collect_v1 {
 		 * targetList = Zielcontainer A					targetList = Zielcontainer B
 		 * nextElement = 1								nextElement = 4
 		 * 
-		 * acc.apply(targetList, nextElement)			acc.apply(targetList, nextElement)
+		 * acc.accept(targetList, nextElement)			acc.accept(targetList, nextElement)
 		 * 
 		 * Schritt 2									Schritt 2
 		 * 
 		 * targetList = Zielcontainer A					targetList = Zielcontainer B
 		 * nextElement = 2								nextElement = 5
 		 * 
-		 * acc.apply(targetList, nextElement)			 acc.apply(targetList, nextElement)
+		 * acc.accept(targetList, nextElement)			 acc.accept(targetList, nextElement)
 		 * 
 		 * Schritt 3
 		 * 
 		 * targetList = Zielcontainer A
 		 * nextElement = 3
 		 * 
-		 * acc.apply(targetList, nextElement)
+		 * acc.accept(targetList, nextElement)
 		 * 
 		 * 
-		 * Abwarten (wenn nötig) bis die Arbeit auf der CPU b fertig ist.
+		 * Abwarten (wenn nötig) bis die Arbeit auf der CPU B fertig ist.
 		 * 
-		 * In dem Zielcontainer A die Daten aus dem Zielcontainer B übernehmen
+		 * In dem Zielcontainer A die Daten aus dem Zielcontainer B übernehmen:
+		 *   list1 = Zielcontainer A
+		 *   list2 = Zielcontainer B
+		 *   
+		 *   cmb.accept(list1, list2)
+		 *   
 		 * 
 		 * Am Ende den Zielcontainer A zurückliefern
 		 */		
@@ -121,7 +126,6 @@ public class B19_terminal_collect_v1 {
 				.collect(supp, acc, cmb);
 		
 		System.out.println("2. list2: " + list2);
-		
 		
 	}
 

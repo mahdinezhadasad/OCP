@@ -14,6 +14,14 @@
 
 ## Aufgaben
 
+#### 30.10
+- Aufgaben/Words - funkt. Streams.md. Lösung im Package 'aufgaben.words'
+
+- wdh. groupingBy-Collectoren (drei Varianten bitte)
+
+> Versuchen Sie 2-3 eigene Aufgabenpunkte für die groupingBy-Collectoren hinzuzufügen
+
+
 #### 29.10
 - Projekt 'Functional'
 - Package 'streams.wdh'
