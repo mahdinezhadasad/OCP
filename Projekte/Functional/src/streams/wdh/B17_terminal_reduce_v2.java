@@ -8,6 +8,12 @@ public class B17_terminal_reduce_v2 {
 
 	/*
 	 * T reduce(T identity, BinaryOperator<T> accumulator)
+	 * 
+	 * 
+	 * - kann den Datentyp nicht ändern
+	 * - im parallelen Modus wird der Accumulator 
+	 *   auch als Combiner verwendet
+	 * 
 	 */
 	public static void main(String[] args) {
 		

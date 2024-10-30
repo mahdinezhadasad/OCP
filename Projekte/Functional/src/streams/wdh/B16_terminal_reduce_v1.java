@@ -13,6 +13,11 @@ public class B16_terminal_reduce_v1 {
 	 * 
 	 * Optional<T> reduce(BinaryOperator<T> accumulator)
 	 * 
+	 * 
+	 * - kann den Datentyp nicht ändern
+	 * - im parallelen Modus wird der Accumulator 
+	 *   auch als Combiner verwendet
+	 * 
 	 */
 	public static void main(String[] args) {
 
