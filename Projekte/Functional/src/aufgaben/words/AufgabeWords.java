@@ -1,7 +1,13 @@
 package aufgaben.words;
 
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.TreeMap;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import words.Words;
 
@@ -9,19 +15,93 @@ public class AufgabeWords {
 
 	public static void main(String[] args) {
 		
-		List<String> daten = Words.passwords();
+//		List<String> daten = Words.passwords();
+		List<String> daten = Words.englishWords();
+		
 		a1(daten);
 		a2(daten);
 		a3(daten);
 		a4(daten);
 		a5(daten);
 				
+		a6(Words.passwords());
+		a7(Words.englishWords());
+		a8(Words.englishWords());
+		
 	} // end of main
 	
+	static void a8(List<String> daten) {
+		System.out.println("\n*** A8");
+		
+		Collector<String, ?, Long> downstream = Collectors.counting();
+		
+		Collector<String, ?, Map<Integer, Long>> c1 = 
+				Collectors.groupingBy(String::length, downstream);
+		
+		Map<Integer, Long> groupMap = daten.stream()
+				.collect(c1);
+		
+		groupMap.forEach( (length, count) -> {
+			System.out.println(length + ": " +  count);
+		});
+	}
+
+	static void a7(List<String> daten) {
+		System.out.println("\n*** A7");
+		
+		Function<String, Integer> classifier = String::length;
+		
+		Map<Integer, List<String>> groupMap = daten.stream()
+				.collect(Collectors.groupingBy(classifier));
+
+		System.out.println("*** nicht sortierte Keys: ");
+		groupMap.forEach( (length, list) -> {
+			System.out.println(length + ": " + list.size());
+		});
+		
+//		System.out.println( daten.stream().max(Comparator.comparing(String::length)).get() );
+		
+		System.out.println("\n*** sortierte Keys: ");
+		
+		TreeMap<Integer, List<String>> groupMap2 = daten.stream()
+				.collect(Collectors.groupingBy(String::length, 
+						TreeMap::new, Collectors.toList()));
+		
+		groupMap2.forEach( (length, list) -> {
+			System.out.println(length + ": " + list.size());
+		});
+	}
+		
+	static void a6(List<String> daten) {
+		System.out.println("\n*** A6");
+		
+		String myPassword = "12345";
+		
+		Optional<String> maybeString =daten.stream()
+			.filter(s -> s.equals(myPassword))
+			.findAny();
+		
+		if(maybeString.isPresent()) {
+			System.out.println("Passwort " + myPassword + " gefunden");
+		} else {
+			System.out.println("Passwort " + myPassword + " NICHT gefunden");
+		}
+	}
+		
 	static void a5(List<String> daten) {
 		System.out.println("\n*** A5");
 		
-		throw new UnsupportedOperationException("noch nicht gelöst");
+		LinkedList<String> list = daten.stream()
+			.filter(s -> s.contains("aba"))
+			.collect(LinkedList::new, LinkedList::add, LinkedList::addAll);
+			
+		System.out.println("Wörter mit aba-Substring: " + list.size());
+		
+		list = daten.stream()
+				.filter(s -> s.contains("aba"))
+				.collect(Collectors.toCollection(LinkedList::new));
+
+		System.out.println("Wörter mit aba-Substring: " + list.size());
 	}
 	
 	static void a4(List<String> daten) {

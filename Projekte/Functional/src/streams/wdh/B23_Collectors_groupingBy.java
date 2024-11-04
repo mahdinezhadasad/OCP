@@ -3,8 +3,10 @@ package streams.wdh;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Deque;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -17,7 +19,7 @@ public class B23_Collectors_groupingBy {
 
 		testV1();
 		testV2();
-
+		testV3();
 	}
 	
 	/*
@@ -42,7 +44,7 @@ public class B23_Collectors_groupingBy {
      *
 	 */
 	static void testV1() {
-		System.out.println("*** groupngBy. V1");
+		System.out.println("*** groupingBy. V1");
 		
 		List<Integer> datenquelle = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
 		
@@ -88,7 +90,7 @@ public class B23_Collectors_groupingBy {
      *  downstream  : - Die Logiken zum Verwalten der Elemente einer Gruppe
 	 */
 	static void testV2() {
-		System.out.println("*** groupngBy. V2");
+		System.out.println("*** groupingBy. V2");
 		
 		List<Integer> datenquelle = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
 		
@@ -134,6 +136,64 @@ public class B23_Collectors_groupingBy {
 		Map<String, TreeSet<Integer>> gruppenMap2 = datenquelle.stream().collect(c2);
 		
 		System.out.println("gruppenMap2 (String-to-TreeSet): " + gruppenMap2);
+		
+		/*
+		 * Exam
+		 */
+		
+		gruppenMap2 = datenquelle.stream()
+			.collect(Collectors.groupingBy(i -> i%2==0?"gerade":"ungerade",
+				Collectors.toCollection(() -> new TreeSet<>(Comparator.reverseOrder()))));
+		
+		System.out.println("gruppenMap2 (String-to-TreeSet): " + gruppenMap2);
+		
+	}
+	
+	/*
+	 * static <T, K, D, A, M extends Map<K, D>>
+            Collector<T, ?, M> groupingBy(Function<? super T, ? extends K> classifier,
+                                  Supplier<M> mapFactory,
+                                  Collector<? super T, A, D> downstream)
+	 */
+	static void testV3() {
+		System.out.println("*** groupingBy. V3");
+		
+		List<Integer> datenquelle = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
+		
+		/*
+		 * Aufgabe: zwei Gruppen bilden:
+		 * 
+		 * "ungerade" -> 1 3 5 7
+		 * "gerade" -> 2 4 6
+		 * 
+		 * Die Elemente einer Gruppe sollen in einem ArrayDeque gespeichert werden
+		 * 
+		 * Die Gruppen-Map soll eine TreeMep sein
+		 */
+		Function<Integer, String> classifier = i -> i % 2 == 0 ? "gerade" : "ungerade";
+		
+		Collector<Integer, ?, ArrayDeque<Integer>> downstream = 
+				Collectors.toCollection(ArrayDeque::new);
+		
+		Supplier<TreeMap<String, ArrayDeque<Integer>>> mapFactory = TreeMap::new;
+		
+		Collector<Integer, ?, TreeMap<String, ArrayDeque<Integer>>> c1 = 
+				Collectors.groupingBy(classifier, mapFactory, downstream);
+		
+		TreeMap<String, ArrayDeque<Integer>> gruppenMap = datenquelle.stream().collect(c1);
+		
+		System.out.println("gruppenMap: " + gruppenMap);
+		
+		/*
+		 * Exam
+		 */
+		Map<String, ArrayDeque<Integer>> gruppenMap2 = datenquelle.stream()
+			.collect(Collectors.groupingBy(i->i%2==0?"gerade":"ungerade", 
+					TreeMap::new, 
+					   Collectors.toCollection(ArrayDeque::new)));
+	
+		System.out.println("gruppenMap2: " + gruppenMap2);
+		
 	}
 
 }
