@@ -11,6 +11,8 @@ public class B09_intermediate_weitere {
 		 * parallel()
 		 * sequential()
 		 * unoredered()
+		 * 
+		 * s. auch Bsp. B26
 		 */
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 		

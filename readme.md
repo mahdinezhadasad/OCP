@@ -26,6 +26,21 @@
 > Versuchen Sie 2-3 eigene Aufgabenpunkte für die groupingBy-Collectoren hinzuzufügen
 
 
+#### 04.11
+- Projekt 'Functional'
+- Package 'streams.wdh'
+- Wdh. groupingBy-Collectors, partitioningBy-Collectors
+- Streams mit primitiven
+
+- Projekt 'IO'
+- Reader/Writer
+- FileReader/FileWriter
+- BufferedReader/BufferedWriter
+
+- Aufgaben/IO - save-load array.md
+
+
+
 #### 29.10
 - Projekt 'Functional'
 - Package 'streams.wdh'
