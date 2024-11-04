@@ -1,5 +1,4 @@
-###### Achtung! Unterrichtsfreie Tage: 31.10, 01.11, 20.11
-# Achtung! 31.10 und 01.11 sind frei!
+# Achtung! Der 20.11. ist frei!
 
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
@@ -10,7 +9,12 @@
 - 13:30 - 15:00 Uhr
 - 15:15 - 16:45 Uhr
 
-> Bitte immer wieder eigene Fehlzeiten überprüfen
+## Änderung bei Fehlzeiten
+
+- Bitte immer wieder eigene Fehlzeiten überprüfen
+- Eine Korrektur durch die Verwaltung ist grundsätzlich nicht mehr gestattet
+- Sollten Sie vergessen haben sich ein - bzw. auszuloggen bitten wir Sie am Ende des Monats über die Fehlzeitenmeldungen eine Stellungnahme diesbezüglich abzugeben
+- Sollten technische Probleme vorliegen, wenden Sie sich unverzüglich über die Feedbackfunktion im CC-Portal an den IT-Support
 
 ## Aufgaben
 
