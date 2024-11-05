@@ -8,6 +8,10 @@ import java.io.IOException;
 
 public class B03_Buffered {
 
+	/*
+	 * BufferedReader unf BufferedWriter haben beide auch die Konstruktoren-Varianten,
+	 * die es erlauben die Größe des internen Puffers festzulegen 
+	 */
 	public static void main(String[] args) {
 
 		try (BufferedReader in = new BufferedReader(new FileReader("autos.txt"));

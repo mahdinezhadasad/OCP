@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>133</y>
+      <y>152</y>
       <w>190</w>
       <h>114</h>
     </coordinates>
@@ -18,7 +18,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>703</x>
-      <y>133</y>
+      <y>152</y>
       <w>190</w>
       <h>114</h>
     </coordinates>
@@ -31,7 +31,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>247</x>
-      <y>133</y>
+      <y>152</y>
       <w>228</w>
       <h>114</h>
     </coordinates>
@@ -44,7 +44,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>969</x>
-      <y>133</y>
+      <y>152</y>
       <w>228</w>
       <h>133</h>
     </coordinates>
@@ -58,7 +58,7 @@ flush() : void</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>608</x>
-      <y>380</y>
+      <y>399</y>
       <w>190</w>
       <h>57</h>
     </coordinates>
@@ -69,7 +69,7 @@ flush() : void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>684</x>
-      <y>228</y>
+      <y>247</y>
       <w>133</w>
       <h>190</h>
     </coordinates>
@@ -80,7 +80,7 @@ flush() : void</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>912</x>
-      <y>380</y>
+      <y>399</y>
       <w>190</w>
       <h>57</h>
     </coordinates>
@@ -91,7 +91,7 @@ flush() : void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>988</x>
-      <y>247</y>
+      <y>266</y>
       <w>133</w>
       <h>171</h>
     </coordinates>
@@ -102,7 +102,7 @@ flush() : void</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>684</x>
-      <y>532</y>
+      <y>551</y>
       <w>266</w>
       <h>114</h>
     </coordinates>
@@ -115,7 +115,7 @@ readLine() : String</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>779</x>
-      <y>228</y>
+      <y>247</y>
       <w>95</w>
       <h>342</h>
     </coordinates>
@@ -126,18 +126,20 @@ readLine() : String</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1083</x>
-      <y>532</y>
+      <y>551</y>
       <w>228</w>
-      <h>57</h>
+      <h>114</h>
     </coordinates>
-    <panel_attributes>BufferedWriter</panel_attributes>
+    <panel_attributes>BufferedWriter
+--
+newLine() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1102</x>
-      <y>247</y>
+      <y>266</y>
       <w>133</w>
       <h>323</h>
     </coordinates>
