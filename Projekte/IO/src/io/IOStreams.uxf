@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>152</y>
+      <y>209</y>
       <w>190</w>
       <h>114</h>
     </coordinates>
@@ -18,7 +18,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>703</x>
-      <y>152</y>
+      <y>209</y>
       <w>190</w>
       <h>114</h>
     </coordinates>
@@ -31,7 +31,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>247</x>
-      <y>152</y>
+      <y>209</y>
       <w>228</w>
       <h>114</h>
     </coordinates>
@@ -44,7 +44,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>969</x>
-      <y>152</y>
+      <y>209</y>
       <w>228</w>
       <h>133</h>
     </coordinates>
@@ -58,7 +58,7 @@ flush() : void</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>608</x>
-      <y>399</y>
+      <y>456</y>
       <w>190</w>
       <h>57</h>
     </coordinates>
@@ -69,7 +69,7 @@ flush() : void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>684</x>
-      <y>247</y>
+      <y>304</y>
       <w>133</w>
       <h>190</h>
     </coordinates>
@@ -80,7 +80,7 @@ flush() : void</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>912</x>
-      <y>399</y>
+      <y>456</y>
       <w>190</w>
       <h>57</h>
     </coordinates>
@@ -91,7 +91,7 @@ flush() : void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>988</x>
-      <y>266</y>
+      <y>323</y>
       <w>133</w>
       <h>171</h>
     </coordinates>
@@ -102,7 +102,7 @@ flush() : void</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>684</x>
-      <y>551</y>
+      <y>608</y>
       <w>266</w>
       <h>114</h>
     </coordinates>
@@ -115,7 +115,7 @@ readLine() : String</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>779</x>
-      <y>247</y>
+      <y>304</y>
       <w>95</w>
       <h>342</h>
     </coordinates>
@@ -126,7 +126,7 @@ readLine() : String</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1083</x>
-      <y>551</y>
+      <y>608</y>
       <w>228</w>
       <h>114</h>
     </coordinates>
@@ -139,11 +139,33 @@ newLine() : void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1102</x>
-      <y>266</y>
+      <y>323</y>
       <w>133</w>
       <h>323</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;50.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1330</x>
+      <y>304</y>
+      <w>190</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>PrintWriter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1178</x>
+      <y>266</y>
+      <w>190</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;30.0</additional_attributes>
   </element>
 </diagram>

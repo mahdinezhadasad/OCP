@@ -18,6 +18,12 @@
 
 ## Aufgaben
 
+#### 05.11
+- Projekt 'IO'
+- PrintWriter
+- Console
+
+
 #### 04.11
 - Projekt 'Functional'
 - Package 'streams.wdh'

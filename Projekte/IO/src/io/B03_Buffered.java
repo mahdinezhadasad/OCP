@@ -5,6 +5,8 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.StringReader;
+import java.util.stream.Stream;
 
 public class B03_Buffered {
 
@@ -29,6 +31,20 @@ public class B03_Buffered {
 			e.printStackTrace();
 		}
 
+		/*
+		 * Interessant: es gibt Methode lines(), die ein Stream<String> öffnet
+		 */
+		
+		String s = "Line A\nLine B\nLine C";
+		
+		try(BufferedReader br = new BufferedReader(new StringReader(s))) {
+			br.lines() // Stream<String>
+			  .forEach(System.out::println);
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 }

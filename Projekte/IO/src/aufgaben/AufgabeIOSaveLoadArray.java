@@ -1,10 +1,14 @@
 package aufgaben;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.UncheckedIOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class AufgabeIOSaveLoadArray {
 
@@ -39,7 +43,22 @@ public class AufgabeIOSaveLoadArray {
 	}
 
 	static int[] loadArray(String fileName) {
-		return null;
+		
+		List<Integer> values = new ArrayList<>();
+		
+		try(BufferedReader in = new BufferedReader(new FileReader(fileName))) {
+			
+			String line;
+			while( (line = in.readLine()) != null ) {
+				int x = Integer.parseInt(line);
+				values.add(x);
+			}
+			
+		} catch (IOException e) {
+			throw new UncheckedIOException(e);
+		}
+		
+		return values.stream().mapToInt(x -> x).toArray();
 	}
 	
 }
