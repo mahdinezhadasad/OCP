@@ -40,7 +40,20 @@ public class B01_Regeln {
 	 *        aufgerufen.
 	 *        Wenn diese Nicht-Serializable-Basisklasse keinen noargs-Konstruktor hat,
 	 *        gibt es beim Deserialisiren eine Exception.
-	 *   	  
+	 *        
+	 *        Z.B.:
+	 *        
+	 *           Object
+	 *              |
+	 *           GameObject      Serializable
+	 *              |               |
+	 *              ----------------
+	 *                      |
+	 *                     Auto
+	 *                     
+	 *   	  Klasse GameObject muss den noargs-Konstruktor haben, 
+	 *        damit ein Auto-Objekt deserialisiert werden kann.
+	 *   
 	 */
 	public static void main(String[] args) {
 		
