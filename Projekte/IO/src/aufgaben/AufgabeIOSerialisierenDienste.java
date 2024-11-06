@@ -2,14 +2,25 @@ package aufgaben;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 class Dienst {
 	private String name;
+	
+	public Dienst() {} 
 
 	public Dienst(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
 		this.name = name;
 	}
 }
@@ -50,7 +61,31 @@ class SpeicherManager extends Dienst implements Serializable {
 	}
 
 	public String toString() {
-		return "Manager. Size: " + size + ". Defrag-Dienst: " + defrag;
+		return getName() + ". Size: " + size + ". Defrag-Dienst: " + defrag;
+	}
+	
+	private void writeObject(ObjectOutputStream oos) throws IOException {
+		System.out.println("in writeObject");
+		
+		oos.defaultWriteObject();
+		
+		oos.writeInt(defrag.getZeitabstand());
+		oos.writeUTF(defrag.getLaufwerk());
+		
+		oos.writeUTF(getName());
+	}
+	
+	private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+		System.out.println("in readObject");
+		
+		ois.defaultReadObject();
+		
+		int zeitabstand = ois.readInt();
+		String laufwerk = ois.readUTF();
+		
+		this.defrag = new Defragmentierung(zeitabstand, laufwerk);
+		
+		setName(ois.readUTF());
 	}
 }
 
@@ -59,7 +94,8 @@ public class AufgabeIOSerialisierenDienste {
 	/*
 	 *  Object
 	 *     |
-	 *  Dienst
+	 *  Dienst <- muss fürs Deserialisieren eines SpeicherManager-Objektes
+	 *     |      den noargs-Konstruktor haben
 	 *     |
 	 *  SpeicherManager <- Serializable
 	 * 

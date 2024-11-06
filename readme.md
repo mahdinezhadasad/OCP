@@ -18,6 +18,11 @@
 
 ## Aufgaben
 
+#### 06.11
+- Projekt 'IO'
+- Package 'nio'
+
+
 #### 05.11
 - Projekt 'IO'
 - PrintWriter
