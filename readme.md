@@ -21,7 +21,13 @@
 #### 06.11
 - Projekt 'IO'
 - Package 'nio'
+- relative und absolute Pfadangabe
+- Windows- und Unix-Notation
+- Spezielle Pfadangaben mit . und ..
+- Path API
+- Klasse Files. createFile, createDirectory, delete
 
+- Optional: Aufgaben/Files - Verzeichnisse.md
 
 #### 05.11
 - Projekt 'IO'

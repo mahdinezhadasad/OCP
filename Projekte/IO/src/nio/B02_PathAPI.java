@@ -7,12 +7,110 @@ import java.nio.file.Paths;
 public class B02_PathAPI {
 
 	public static void main(String[] args) {
-		bilden();
+		bilden(); // Exam!
+		
 		test_getNameCount_getName_subpath();
-		test_();
+		test_getFileName_getParent_getRoot();
+		test_toAbsolutePath_normalize();
+		
+		test_resolve(); // Exam!
+		test_relativize(); // Exam!
 	}
-	static void test_() {
-		System.out.println("\n*** ");
+	
+	static void test_relativize() {
+		System.out.println("\n*** relativize");
+		
+		System.out.println("***** beide Pfade sind relativ: ");
+		
+		Path p1 = Paths.get("a/b/c/d");
+		Path p2 = Paths.get("a/b/x/y");
+		System.out.println("p1: " + p1);
+		System.out.println("p2: " + p2);
+		
+		Path p3 = p1.relativize(p2);
+		System.out.println("p1.relativize(p2): : " + p3); // ..\..\x\y
+		
+		p1 = Paths.get("c/d");
+		p2 = Paths.get("x/y");
+		System.out.println("p1: " + p1);
+		System.out.println("p2: " + p2);
+		
+		p3 = p2.relativize(p1);
+		System.out.println("p1.relativize(p2): : " + p3); // ..\..\c\d
+		
+		System.out.println("***** beide Pfade sind absolut (derselber logischer Laufwerk): ");
+		
+		p1 = Paths.get("C:\\mydir\\c\\d");
+		p2 = Paths.get("C:\\mydir\\x\\y");
+		System.out.println("p1: " + p1);
+		System.out.println("p2: " + p2);
+		
+		p3 = p1.relativize(p2);
+		System.out.println("p1.relativize(p2): : " + p3); // ..\..\x\y
+		
+		System.out.println("***** ein Pfad ist relativ, anderer ist absolut");
+		
+		p1 = Paths.get("C:\\mydir\\c\\d");
+		p2 = Paths.get("x\\y");
+		System.out.println("p1: " + p1);
+		System.out.println("p2: " + p2);
+		
+		try {
+			p3 = p2.relativize(p1);
+		} catch (Exception e) {
+			System.out.println("Fehler! Ein Path ist relativ, der andere ist absolut");
+		}
+	}
+		
+	/*
+	 * Path resolve(String subPath)
+	 * Path resolve(Path subPath)
+	 */
+	static void test_resolve() {
+		System.out.println("\n*** resolve");
+
+		System.out.println("***** beide Pfade sind relativ: ");
+		Path parent = Paths.get("mydir");
+		System.out.println("parent: " + parent); // mydir
+		
+		Path file = parent.resolve("mysubdir/myfile");
+		System.out.println("file: " + file);  // mydir\mysubdir\myfile
+		
+		System.out.println("***** 1. Pfad ist absolut, 2. Pfad ist relativ: ");
+		parent = Paths.get("C:\\mydir");
+		System.out.println("parent: " + parent); // C:\mydir
+		
+		file = parent.resolve("mysubdir/myfile");
+		System.out.println("file: " + file);  // C:\mydir\mysubdir\myfile
+		
+		System.out.println("***** 2. Pfad ist absolut: "); 
+		// resolve liefert einfach den 2. Pfad zurück
+		parent = Paths.get("C:\\mydir");
+		System.out.println("parent: " + parent); // C:\mydir
+		
+		file = parent.resolve("C:/mysubdir/myfile");
+		System.out.println("file: " + file);  // C:\mysubdir\myfile
+	}
+		
+	static void test_toAbsolutePath_normalize() {
+		System.out.println("\n*** toAbsolutePath, normalize");
+		
+		Path p1 = Paths.get("dir/file");
+		System.out.println("p1: " + p1);
+		
+		Path pathAbs = p1.toAbsolutePath();
+		System.out.println("p1.toAbsolutePath(): " + pathAbs); // absoluter aktueller Pfad
+		
+		Path p2 = Paths.get("dir/subdirA/../subdirB/./file");
+		System.out.println("p2: " + p2);
+		
+		Path pathNorm = p2.normalize();
+		System.out.println("p2.normalize(): " + pathNorm); // dir\subdirB\file
+		
+	}
+	
+	static void test_getFileName_getParent_getRoot() {
+		System.out.println("\n*** getFileName, getParent, getRoot");
 		
 		Path p1 = Paths.get("C:\\Windows\\MyDir");
 		
@@ -20,7 +118,11 @@ public class B02_PathAPI {
 		Path fileName = p1.getFileName();
 		System.out.println("getFileName: " + fileName); // MyDir
 		
+		Path parent = p1.getParent();
+		System.out.println("getParent(): " + parent); // C:\Windows
 		
+		Path root = p1.getRoot();
+		System.out.println("getRoot(): " + root); // C:\
 	}
 	
 	static void test_getNameCount_getName_subpath() {
