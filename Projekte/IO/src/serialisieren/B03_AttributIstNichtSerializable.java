@@ -18,7 +18,7 @@ public class B03_AttributIstNichtSerializable {
 	}
 	
 	static class Auto implements Serializable {
-		transient Motor motor; // wird beim Serialisieren übersprungen
+		transient Motor motor; // wird beim Serialisieren übersprungen (transient)
 		int baujahr;
 		
 		@Override

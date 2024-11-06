@@ -32,6 +32,9 @@ public class B01_Regeln {
 	 *        - transient-Attribute werden beim Serialisieren übersprungen.
 	 *        
 	 * 		- Objekt ist ein Array (Arrays sind serialisierbar)
+	 * 		  - alle Elemente von einem Referenzen-Array (rekursiv) 
+	 *          müssen die Regeln fürs Serialisieren erfüllen 
+	 *        - Primitive Elemente sind automatisch serialisierbar.
 	 * 
 	 * Deserialisieren:
 	 * 
