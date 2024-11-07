@@ -18,6 +18,17 @@
 
 ## Aufgaben
 
+#### 07.11
+- Klasse Files
+    - copy, move
+    - Zugriff auf Attribute der Dateien/Verzeichnisse
+    - lines, readAllLines
+    - list
+    - find
+    - walk
+
+- Aufgaben/Words - IO.md
+
 #### 06.11
 - Projekt 'IO'
 - Package 'nio'
