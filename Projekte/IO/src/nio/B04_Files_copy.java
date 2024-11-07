@@ -10,10 +10,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-public class B04_Files_copy_move {
+public class B04_Files_copy {
 
 	/*
 	 * static Path copy(Path source, Path target, CopyOption... options)
+	 * 	throws IOException
 	 * 
 	 * - eine mögliche CopyOption in der Prüfung:
 	 * 
@@ -21,6 +22,12 @@ public class B04_Files_copy_move {
 	 * 
 	 * - Source-File muss existieren
 	 * - ohne REPLACE_EXISTING-Option: Target-File darf nicht existieren
+	 * - Zielverzeichnis muss existieren
+	 * 
+	 *   Unwahrscheinlich in der Prüfung:
+	 * - Methode copy kann als Source ein Verzeichnis bekommen. Sie erstellt 
+	 *   dabei ein neues LEERES Verzeichnis. Sie kann keine Inhalte aus dem 
+	 *   Source-Verzeichnis kopieren.
 	 * 
 	 */
 	public static void main(String[] args) {
