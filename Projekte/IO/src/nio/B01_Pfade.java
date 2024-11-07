@@ -74,6 +74,15 @@ public class B01_Pfade {
 		Path p10 = Paths.get("dirA/dirB/dirC/file");
 		Path p11 = Paths.get("dirA", "dirB/dirC/file");
 		
+		/*
+		 * File to Path to File
+		 */
+		File f = new File(".");
+		
+		Path p = f.toPath();
+		
+		f = p.toFile();
+		
 	}
 
 }
