@@ -50,6 +50,10 @@ public class B08_Files_Attribute_mehrereAufEinmal {
 			System.out.println("Fehler! Keine Posix-Attribute unter Windows!");
 		}
 		
+		a1.isDirectory();
+		a1.isRegularFile();
+		//...
+		
 		// cf: Dos <- IST-KEIN <- Basic
 //		DosFileAttributes a4 = Files.readAttributes(path, BasicFileAttributes.class);
 		
