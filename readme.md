@@ -20,7 +20,10 @@
 
 #### 08.11
 - Projekt 'Localization'
+- Properties (auch System.getProperties())
+- Klasse Locale (einfache API)
 
+- Optional: Aufgaben/Locale - format.md
 
 #### 07.11
 - Klasse Files

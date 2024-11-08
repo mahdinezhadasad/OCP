@@ -43,6 +43,10 @@ public class B03_SystemProperties {
 		 *  z.B.
 		 *  
 		 *   	java -Dserver-ip=192.168.1.12 MyApp
+		 *   
+		 *  Zum Testen unter Eclipse kann die Option -Dserver-ip=192.168.1.12
+		 *  im Menu Run->Run Configurations im Tab 'Arguments' unter 'VM arguments'
+		 *  festgelegt werden. 
 		 */
 		
 		String serverIP = System.getProperty("server-ip", "192.168.0.1");
