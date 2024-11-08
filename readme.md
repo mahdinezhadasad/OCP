@@ -18,6 +18,10 @@
 
 ## Aufgaben
 
+#### 08.11
+- Projekt 'Localization'
+
+
 #### 07.11
 - Klasse Files
     - copy, move
