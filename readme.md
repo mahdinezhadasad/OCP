@@ -18,6 +18,15 @@
 
 ## Aufgaben
 
+#### 11.11
+- Klasse ResourceBundle
+- .properties-Dateien als Ressourcen für ResourceBundle
+- Ressourcen kombinieren
+- Klasse ListResourceBundle
+
+- Aufgaben/Localization - Simple.md
+
+
 #### 08.11
 - Projekt 'Localization'
 - Properties (auch System.getProperties())
