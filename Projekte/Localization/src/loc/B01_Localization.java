@@ -14,7 +14,5 @@ public class B01_Localization {
 		 *  
 		 *  https://www.w3.org/International/questions/qa-i18n
 		 */
-
 	}
-
 }
