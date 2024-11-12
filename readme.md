@@ -20,7 +20,11 @@
 
 #### 12.11
 - Projekt 'Threads'
-- 
+- extra-Thread starten
+- eigene Logik in einem extra-Thread ausführen
+- Einfache Thread-API
+
+- Aufgaben/Threads - Simple API.md
 
 #### 11.11
 - Klasse ResourceBundle

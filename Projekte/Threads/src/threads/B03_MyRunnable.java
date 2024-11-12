@@ -1,19 +1,24 @@
 package threads;
 
-public class B01_Thread_starten {
+class MyRunnable implements Runnable {
+	@Override
+	public void run() {
+		System.out.println("run");
+	}
+}
+
+public class B03_MyRunnable {
 
 	public static void main(String[] args) {
-
-		/*
-		 * Einen neuen Thread (Zustand: NEW) reservieren.
-		 */
-		Thread th = new Thread();
 		
-		/*
-		 * Den Thread beim Scheduler als RUNNABLE registrieren:
-		 */
-		th.start();
+		Runnable task = new MyRunnable();
 
+		// 1. Reservieren (NEW)
+		Thread th = new Thread(task);
+		
+		// 2. Als RUNNABLE registrieren
+		th.start();
+		
 		/*
 		 * Wenn der Scheduler den extra-Thread in den Zustand RUNNABLE 
 		 * versetzt, wird die Methode run() in diesem Thread ausgeführt:
@@ -21,11 +26,13 @@ public class B01_Thread_starten {
 		 * public void run() {
 		 *   Runnable task = hier die Task suchen...
 		 *   if (task != null) {
-         *      hier die task aktivieren...
+         *      hier die task aktivieren: task.run()
 		 *   }
 		 * }
 		 * 
 		 */
+		
+		System.out.println("main");
 	}
 
 }
