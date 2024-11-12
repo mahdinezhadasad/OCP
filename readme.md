@@ -18,6 +18,10 @@
 
 ## Aufgaben
 
+#### 12.11
+- Projekt 'Threads'
+- 
+
 #### 11.11
 - Klasse ResourceBundle
 - .properties-Dateien als Ressourcen für ResourceBundle

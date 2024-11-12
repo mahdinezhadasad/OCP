@@ -10,7 +10,7 @@ public class B03_SystemProperties {
 		 * Alle System-Properties erhalten:
 		 */
 		Properties props = System.getProperties();
-//		printProps(props);
+		printProps(props);
 
 		/*
 		 * Eine spezielle Property lesen:
