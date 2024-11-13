@@ -21,6 +21,9 @@ public class B07_Thread_join {
 		th.start();
 		
 		/*
+		 * void join() throws InterruptedException
+		 * 
+		 * 
 		 * Der Thread 1, in dem die join() aufgerufen wird, wird 
 		 * angehalten, bis der Thread 2, zu dem die join() aufgerufen wurde,
 		 * beendet wurde.
@@ -29,6 +32,11 @@ public class B07_Thread_join {
 		 * 
 		 * Hier: Der main-Thread wird angehalten bis der Thread th fertig ist. 
 		 * 
+		 * 
+		 * Weitere überladene Varianten:
+		 * 
+		 * 		th.join(millis)
+		 * 		th.join(millis, nanos)
 		 * 
 		 */
 		try {

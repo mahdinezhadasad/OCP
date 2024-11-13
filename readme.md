@@ -18,6 +18,12 @@
 
 ## Aufgaben
 
+#### 13.11
+
+- Methode join()
+- Methoden interrupt(), isInterrupted()
+- Aufgaben/Threads - Interact - Simple.md
+
 #### 12.11
 - Projekt 'Threads'
 - extra-Thread starten
