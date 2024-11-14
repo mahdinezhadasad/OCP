@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1.0">
-  <zoom_level>13</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
       <x>0</x>
-      <y>442</y>
-      <w>26</w>
-      <h>26</h>
+      <y>585</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>195</x>
-      <y>429</y>
-      <w>117</w>
-      <h>52</h>
+      <x>135</x>
+      <y>576</y>
+      <w>81</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>NEW</panel_attributes>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>13</x>
-      <y>429</y>
-      <w>208</w>
-      <h>52</h>
+      <x>9</x>
+      <y>576</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 new Thread()</panel_attributes>
@@ -38,10 +38,10 @@ new Thread()</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>494</x>
-      <y>429</y>
-      <w>117</w>
-      <h>52</h>
+      <x>342</x>
+      <y>576</y>
+      <w>81</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>RUNNABLE</panel_attributes>
     <additional_attributes/>
@@ -49,10 +49,10 @@ new Thread()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>299</x>
-      <y>429</y>
-      <w>221</w>
-      <h>52</h>
+      <x>207</x>
+      <y>576</y>
+      <w>153</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 start()</panel_attributes>
@@ -61,10 +61,10 @@ start()</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>767</x>
-      <y>429</y>
-      <w>117</w>
-      <h>52</h>
+      <x>531</x>
+      <y>576</y>
+      <w>81</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>RUNNING</panel_attributes>
     <additional_attributes/>
@@ -72,10 +72,10 @@ start()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>598</x>
-      <y>429</y>
-      <w>195</w>
-      <h>52</h>
+      <x>414</x>
+      <y>576</y>
+      <w>135</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 Scheduler</panel_attributes>
@@ -84,10 +84,10 @@ Scheduler</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>598</x>
-      <y>442</y>
-      <w>195</w>
-      <h>39</h>
+      <x>414</x>
+      <y>585</y>
+      <w>135</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
     <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
@@ -95,10 +95,10 @@ Scheduler</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>1001</x>
-      <y>429</y>
-      <w>117</w>
-      <h>52</h>
+      <x>693</x>
+      <y>576</y>
+      <w>81</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>DEAD</panel_attributes>
     <additional_attributes/>
@@ -106,10 +106,10 @@ Scheduler</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>871</x>
-      <y>429</y>
-      <w>156</w>
-      <h>78</h>
+      <x>603</x>
+      <y>576</y>
+      <w>108</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 run()
@@ -120,10 +120,10 @@ fertig</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>1209</x>
-      <y>442</y>
-      <w>26</w>
-      <h>26</h>
+      <x>837</x>
+      <y>585</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>type=final</panel_attributes>
     <additional_attributes/>
@@ -131,10 +131,10 @@ fertig</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1105</x>
-      <y>442</y>
-      <w>130</w>
-      <h>39</h>
+      <x>765</x>
+      <y>585</y>
+      <w>90</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
@@ -142,10 +142,10 @@ fertig</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>624</x>
-      <y>156</y>
-      <w>117</w>
-      <h>52</h>
+      <x>432</x>
+      <y>387</y>
+      <w>81</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>SLEEPING</panel_attributes>
     <additional_attributes/>
@@ -153,10 +153,10 @@ fertig</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>715</x>
-      <y>195</y>
-      <w>169</w>
-      <h>260</h>
+      <x>495</x>
+      <y>414</y>
+      <w>117</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 sleep(zeit)</panel_attributes>
@@ -165,10 +165,10 @@ sleep(zeit)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>195</y>
-      <w>182</w>
-      <h>260</h>
+      <x>360</x>
+      <y>414</y>
+      <w>126</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 Die Zeit ist
@@ -178,10 +178,10 @@ abgelaufen</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>637</x>
-      <y>676</y>
-      <w>117</w>
-      <h>52</h>
+      <x>441</x>
+      <y>747</y>
+      <w>81</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>JOINING</panel_attributes>
     <additional_attributes/>
@@ -189,10 +189,10 @@ abgelaufen</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>715</x>
-      <y>468</y>
-      <w>234</w>
-      <h>234</h>
+      <x>495</x>
+      <y>603</y>
+      <w>162</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 otherThread.join()</panel_attributes>
@@ -201,10 +201,10 @@ otherThread.join()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>533</x>
-      <y>468</y>
-      <w>195</w>
-      <h>234</h>
+      <x>369</x>
+      <y>603</y>
+      <w>135</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 otherThread
@@ -212,5 +212,44 @@ ist vorbei
 oder
 ist noch NEW</panel_attributes>
     <additional_attributes>90.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>432</x>
+      <y>252</y>
+      <w>81</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>BLOCKED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>252</y>
+      <w>549</w>
+      <h>351</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+der Thread versucht
+in den synchronized Block
+zu gehen, aber
+der andere Thread hat den Lock auf
+den Monitor</panel_attributes>
+    <additional_attributes>120.0;370.0;390.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>99</x>
+      <y>261</y>
+      <w>351</w>
+      <h>333</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+anderer Thread gibt den Lock ab</panel_attributes>
+    <additional_attributes>370.0;10.0;10.0;10.0;280.0;350.0</additional_attributes>
   </element>
 </diagram>

@@ -18,6 +18,16 @@
 
 ## Aufgaben
 
+#### 14.11
+
+- Race Condition
+- Synchronizieren
+- synchronized Blöcke
+- synchronized Methoden (statische/nichtsatische)
+
+- Aufgaben/Threads - Printer.md
+- Aufgaben/Threads - Logger.md
+
 #### 13.11
 
 - Methode join()
