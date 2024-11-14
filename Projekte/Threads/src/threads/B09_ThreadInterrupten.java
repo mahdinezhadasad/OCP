@@ -19,6 +19,7 @@ class ThreadDerInterruptedWerdenKann extends Thread {
 			 */
 			try {
 				Thread.sleep(2000);
+				
 			} catch (InterruptedException e) {
 				System.out.println(getName() + " wurde interrupted");
 				break; // Schleife beenden
