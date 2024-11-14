@@ -2,6 +2,8 @@ package aufgaben;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Stream;
 
 class TaskRandomInts implements Runnable {
@@ -14,8 +16,11 @@ class TaskRandomInts implements Runnable {
 	}
 	@Override
 	public void run() {
+//		Random rnd = new Random(); // geht auch
+		Random rnd = ThreadLocalRandom.current();
+		
 		for (int i = 0; i < numberOfValues; i++) {
-			int value = 1;
+			int value = rnd.nextInt();
 			ints.add(value);
 		}
 	}
@@ -24,13 +29,20 @@ class TaskRandomInts implements Runnable {
 	}
 }
 
-public class AufgabeThreadsInteract {
-	public static void main(String[] args) {
+public class AufgabeThreadsInteractA1 {
+	public static void main(String[] args) throws InterruptedException {
+		
 		TaskRandomInts taskA = new TaskRandomInts(20);
 		TaskRandomInts taskB = new TaskRandomInts(30);
 		
-		new Thread(taskA).start();
-		new Thread(taskB).start();
+		Thread tA = new Thread(taskA);
+		Thread tB = new Thread(taskB);
+		
+		tA.start();
+		tB.start();
+		
+		tA.join();
+		tB.join();
 		
 		List<Integer> listA = taskA.getInts();
 		List<Integer> listB = taskB.getInts();
