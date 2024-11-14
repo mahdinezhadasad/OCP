@@ -5,7 +5,7 @@ public class B11_Synchronisieren {
 	static int count;
 
 	/*
-     * *** Eine Möglichkeit aus zwei:
+     * *** Eine Möglichkeit aus wenigen:
 	 * 
 	 * Thread A						    Thread B
 	 * 
