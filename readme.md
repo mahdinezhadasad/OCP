@@ -18,6 +18,14 @@
 
 ## Aufgaben
 
+#### 15.11
+- Deadlock
+- Probleme beim Programmieren mit Threads
+- AtomicInteger und AtomicLong
+- Lock-Interface
+
+- Aufgaben/Threads - Philosophenproblem - Lock.md
+
 #### 14.11
 
 - Race Condition

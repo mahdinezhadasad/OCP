@@ -12,6 +12,7 @@ class Deadlock implements Runnable {
 		synchronized (m1) {
 			System.out.println("m1");
 			
+			// Thread 2 kommt hier an und hat den Lock auf m1
 			synchronized (m2) {
 				System.out.println("m1.m2");
 			}
@@ -20,6 +21,7 @@ class Deadlock implements Runnable {
 		synchronized (m2) {
 			System.out.println("m2");
 			
+			// Thread 1 kommt hier an und hat den Lock auf m2
 			synchronized (m1) {
 				System.out.println("m2.m1");
 			}

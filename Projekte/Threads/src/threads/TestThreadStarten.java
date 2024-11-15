@@ -4,9 +4,23 @@ public class TestThreadStarten {
 
 	public static void main(String[] args) {
 //		f1();
-		f2();
+//		f2();
+		f3();
 	}
 	
+	/*
+	 * Ergebnis: a b c ODER a c b
+	 */
+	static void f3() {
+		
+		System.out.println("a");
+		
+		Runnable task = () -> System.out.println("b");
+		Thread t1 = new Thread(task);
+		t1.start(); // endlich richtig
+		
+		System.out.println("c");
+	}
 	/*
 	 * Ergebnis: a b c
 	 */
