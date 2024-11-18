@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1.0">
-  <zoom_level>9</zoom_level>
+  <zoom_level>11</zoom_level>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>18</x>
-      <y>333</y>
-      <w>18</w>
-      <h>18</h>
+      <x>0</x>
+      <y>440</y>
+      <w>22</w>
+      <h>22</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>153</x>
-      <y>324</y>
-      <w>81</w>
-      <h>36</h>
+      <x>165</x>
+      <y>429</y>
+      <w>99</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>NEW</panel_attributes>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>27</x>
-      <y>324</y>
-      <w>144</w>
-      <h>36</h>
+      <x>11</x>
+      <y>429</y>
+      <w>176</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 new Thread()</panel_attributes>
@@ -38,10 +38,10 @@ new Thread()</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>360</x>
-      <y>324</y>
-      <w>81</w>
-      <h>36</h>
+      <x>418</x>
+      <y>429</y>
+      <w>99</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>RUNNABLE</panel_attributes>
     <additional_attributes/>
@@ -49,10 +49,10 @@ new Thread()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>225</x>
-      <y>324</y>
-      <w>153</w>
-      <h>36</h>
+      <x>253</x>
+      <y>429</y>
+      <w>187</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 start()</panel_attributes>
@@ -61,10 +61,10 @@ start()</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>549</x>
-      <y>324</y>
-      <w>81</w>
-      <h>36</h>
+      <x>649</x>
+      <y>429</y>
+      <w>99</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>RUNNING</panel_attributes>
     <additional_attributes/>
@@ -72,10 +72,10 @@ start()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
-      <y>324</y>
-      <w>135</w>
-      <h>36</h>
+      <x>506</x>
+      <y>429</y>
+      <w>165</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 Scheduler</panel_attributes>
@@ -84,10 +84,10 @@ Scheduler</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
-      <y>333</y>
-      <w>135</w>
-      <h>27</h>
+      <x>506</x>
+      <y>440</y>
+      <w>165</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
     <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
@@ -95,10 +95,10 @@ Scheduler</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>711</x>
-      <y>324</y>
-      <w>81</w>
-      <h>36</h>
+      <x>847</x>
+      <y>429</y>
+      <w>99</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>DEAD</panel_attributes>
     <additional_attributes/>
@@ -106,10 +106,10 @@ Scheduler</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>621</x>
-      <y>324</y>
-      <w>108</w>
-      <h>54</h>
+      <x>737</x>
+      <y>429</y>
+      <w>132</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 run()
@@ -120,10 +120,10 @@ fertig</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>855</x>
-      <y>333</y>
-      <w>18</w>
-      <h>18</h>
+      <x>1023</x>
+      <y>440</y>
+      <w>22</w>
+      <h>22</h>
     </coordinates>
     <panel_attributes>type=final</panel_attributes>
     <additional_attributes/>
@@ -131,10 +131,10 @@ fertig</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>783</x>
-      <y>333</y>
-      <w>90</w>
-      <h>27</h>
+      <x>935</x>
+      <y>440</y>
+      <w>110</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
@@ -142,10 +142,10 @@ fertig</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>450</x>
-      <y>135</y>
-      <w>81</w>
-      <h>36</h>
+      <x>528</x>
+      <y>198</y>
+      <w>99</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>SLEEPING</panel_attributes>
     <additional_attributes/>
@@ -153,10 +153,10 @@ fertig</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>162</y>
-      <w>117</w>
-      <h>180</h>
+      <x>605</x>
+      <y>231</y>
+      <w>143</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 sleep(zeit)</panel_attributes>
@@ -165,10 +165,10 @@ sleep(zeit)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>162</y>
-      <w>126</w>
-      <h>180</h>
+      <x>440</x>
+      <y>231</y>
+      <w>154</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 Die Zeit ist
@@ -178,10 +178,10 @@ abgelaufen</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>459</x>
-      <y>495</y>
-      <w>81</w>
-      <h>36</h>
+      <x>539</x>
+      <y>638</y>
+      <w>99</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>JOINING</panel_attributes>
     <additional_attributes/>
@@ -189,10 +189,10 @@ abgelaufen</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>351</y>
-      <w>162</w>
-      <h>162</h>
+      <x>605</x>
+      <y>462</y>
+      <w>198</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 otherThread.join()</panel_attributes>
@@ -201,10 +201,10 @@ otherThread.join()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>387</x>
-      <y>351</y>
-      <w>135</w>
-      <h>162</h>
+      <x>451</x>
+      <y>462</y>
+      <w>165</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 otherThread
@@ -216,10 +216,10 @@ ist noch NEW</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>450</x>
-      <y>0</y>
-      <w>81</w>
-      <h>36</h>
+      <x>528</x>
+      <y>33</y>
+      <w>99</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>BLOCKED</panel_attributes>
     <additional_attributes/>
@@ -227,10 +227,10 @@ ist noch NEW</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>522</x>
-      <y>0</y>
-      <w>549</w>
-      <h>351</h>
+      <x>616</x>
+      <y>33</y>
+      <w>671</w>
+      <h>429</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 der Thread versucht
@@ -243,10 +243,10 @@ den Monitor</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>117</x>
-      <y>9</y>
-      <w>351</w>
-      <h>333</h>
+      <x>121</x>
+      <y>44</y>
+      <w>429</w>
+      <h>407</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 anderer Thread gibt den Lock ab</panel_attributes>
@@ -255,10 +255,10 @@ anderer Thread gibt den Lock ab</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>531</x>
-      <y>342</y>
-      <w>450</w>
-      <h>405</h>
+      <x>627</x>
+      <y>451</y>
+      <w>550</w>
+      <h>495</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 der Thread
@@ -270,10 +270,10 @@ auf</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>459</x>
-      <y>711</y>
-      <w>81</w>
-      <h>36</h>
+      <x>539</x>
+      <y>902</y>
+      <w>99</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>WAITING</panel_attributes>
     <additional_attributes/>
@@ -281,10 +281,10 @@ auf</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>81</x>
-      <y>351</y>
-      <w>396</w>
-      <h>396</h>
+      <x>77</x>
+      <y>462</y>
+      <w>484</w>
+      <h>484</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 anderer Thread
