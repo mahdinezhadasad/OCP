@@ -1,7 +1,9 @@
-package aufgaben.philosophenproblem;
+package aufgaben.philosophenproblem.lock;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -16,31 +18,31 @@ public class AufgabePhilosophenproblem {
 		
 		int anzahlPlatze = 5;
 		
-		List<PhilosophMitDeadlock> philosophen = Arrays.stream(namen)
+		List<Philosoph> philosophen = Arrays.stream(namen)
 			.limit(anzahlPlatze)
-			.map(PhilosophMitDeadlock::new)
+			.map(Philosoph::new)
 			.collect(Collectors.toList());
 		
-		List<Object> gabeln = Stream.generate(Object::new)
+		List<Lock> locks = Stream.generate(ReentrantLock::new)
 				.limit(anzahlPlatze)
 				.collect(Collectors.toList());
 
-		// Gabeln verteilen
+		// Lock-Objekte verteilen
 		for (int index = 0; index < anzahlPlatze; index++) {
-			PhilosophMitDeadlock p = philosophen.get(index);
+			Philosoph p = philosophen.get(index);
 
-			p.setLinkeGabel(gabeln.get(index));
+			p.setLeftLock(locks.get(index));
 			
 			int indexRechteGabel = index + 1;
 			if(index == anzahlPlatze-1) {
-				indexRechteGabel = 0; // Gabel für den letzten Philosophen
+				indexRechteGabel = 0; // Lock-Objekt für den letzten Philosophen
 			}
 			
-			p.setRechteGabel(gabeln.get(indexRechteGabel));
+			p.setRightGabel(locks.get(indexRechteGabel));
 		}
 		
 		// Threads starten
-		philosophen.forEach(PhilosophMitDeadlock::start);
+		philosophen.forEach(Philosoph::start);
 	}
 
 }

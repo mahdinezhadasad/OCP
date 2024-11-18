@@ -11,6 +11,8 @@ public class TestThreadStarten {
 	
 	/*
 	 * Ergebnis: a danach Exception
+	 * 			 oder
+	 * 			 a b danach Exception
 	 */
 	static void f4() {
 		

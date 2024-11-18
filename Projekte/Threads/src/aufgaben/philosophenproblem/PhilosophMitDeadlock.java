@@ -1,13 +1,13 @@
 package aufgaben.philosophenproblem;
 
-public class Philosoph extends Thread {
+public class PhilosophMitDeadlock extends Thread {
 	
 	private String name;
 	
 	private Object linkeGabel;
 	private Object rechteGabel;
 	
-	public Philosoph(String name) {
+	public PhilosophMitDeadlock(String name) {
 		this.name = name;
 	}
 	
@@ -18,6 +18,9 @@ public class Philosoph extends Thread {
 		this.rechteGabel = rechteGabel;
 	}
 
+	/*
+	 * Achtung! Falsche Lösung! Der Code hat Deadlock
+	 */
 	@Override
 	public void run() {
 		
@@ -29,6 +32,7 @@ public class Philosoph extends Thread {
 			
 			synchronized (linkeGabel) {
 				System.out.println(name + " nimmt die linke Gabel");
+//				job(1000);
 				
 				synchronized (rechteGabel) {
 					System.out.println(name + " nimmt die rechte Gabel");
