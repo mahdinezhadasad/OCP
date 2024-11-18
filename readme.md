@@ -18,6 +18,15 @@
 
 ## Aufgaben
 
+#### 18.11
+- 'normale' Collections und Multithreading
+- java.util.Collections.synchronizedXxx
+- CopyOnWriteArrayList (was ist SnapShot-Iterator?)
+- Concurrent-Collections (nur wissen, dass sie threadsicher sind)
+- BlockingQueue
+
+- Optional: Aufgaben/Threads - Blocking - Permutation.md
+
 #### 15.11
 - Deadlock
 - Probleme beim Programmieren mit Threads
