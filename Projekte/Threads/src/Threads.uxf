@@ -5,7 +5,7 @@
     <id>UMLSpecialState</id>
     <coordinates>
       <x>0</x>
-      <y>440</y>
+      <y>418</y>
       <w>22</w>
       <h>22</h>
     </coordinates>
@@ -16,7 +16,7 @@
     <id>UMLState</id>
     <coordinates>
       <x>165</x>
-      <y>429</y>
+      <y>407</y>
       <w>99</w>
       <h>44</h>
     </coordinates>
@@ -27,7 +27,7 @@
     <id>Relation</id>
     <coordinates>
       <x>11</x>
-      <y>429</y>
+      <y>407</y>
       <w>176</w>
       <h>44</h>
     </coordinates>
@@ -39,7 +39,7 @@ new Thread()</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>418</x>
-      <y>429</y>
+      <y>407</y>
       <w>99</w>
       <h>44</h>
     </coordinates>
@@ -50,7 +50,7 @@ new Thread()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>253</x>
-      <y>429</y>
+      <y>407</y>
       <w>187</w>
       <h>44</h>
     </coordinates>
@@ -62,7 +62,7 @@ start()</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>649</x>
-      <y>429</y>
+      <y>407</y>
       <w>99</w>
       <h>44</h>
     </coordinates>
@@ -73,7 +73,7 @@ start()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>506</x>
-      <y>429</y>
+      <y>407</y>
       <w>165</w>
       <h>44</h>
     </coordinates>
@@ -85,7 +85,7 @@ Scheduler</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>506</x>
-      <y>440</y>
+      <y>418</y>
       <w>165</w>
       <h>33</h>
     </coordinates>
@@ -96,7 +96,7 @@ Scheduler</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>847</x>
-      <y>429</y>
+      <y>407</y>
       <w>99</w>
       <h>44</h>
     </coordinates>
@@ -107,7 +107,7 @@ Scheduler</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>737</x>
-      <y>429</y>
+      <y>407</y>
       <w>132</w>
       <h>66</h>
     </coordinates>
@@ -121,7 +121,7 @@ fertig</panel_attributes>
     <id>UMLSpecialState</id>
     <coordinates>
       <x>1023</x>
-      <y>440</y>
+      <y>418</y>
       <w>22</w>
       <h>22</h>
     </coordinates>
@@ -132,7 +132,7 @@ fertig</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>935</x>
-      <y>440</y>
+      <y>418</y>
       <w>110</w>
       <h>33</h>
     </coordinates>
@@ -143,7 +143,7 @@ fertig</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>528</x>
-      <y>198</y>
+      <y>176</y>
       <w>99</w>
       <h>44</h>
     </coordinates>
@@ -154,7 +154,7 @@ fertig</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>605</x>
-      <y>231</y>
+      <y>209</y>
       <w>143</w>
       <h>220</h>
     </coordinates>
@@ -166,7 +166,7 @@ sleep(zeit)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>440</x>
-      <y>231</y>
+      <y>209</y>
       <w>154</w>
       <h>220</h>
     </coordinates>
@@ -179,7 +179,7 @@ abgelaufen</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>539</x>
-      <y>638</y>
+      <y>616</y>
       <w>99</w>
       <h>44</h>
     </coordinates>
@@ -190,7 +190,7 @@ abgelaufen</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>605</x>
-      <y>462</y>
+      <y>440</y>
       <w>198</w>
       <h>198</h>
     </coordinates>
@@ -202,7 +202,7 @@ otherThread.join()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>451</x>
-      <y>462</y>
+      <y>440</y>
       <w>165</w>
       <h>198</h>
     </coordinates>
@@ -217,7 +217,7 @@ ist noch NEW</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>528</x>
-      <y>33</y>
+      <y>11</y>
       <w>99</w>
       <h>44</h>
     </coordinates>
@@ -228,7 +228,7 @@ ist noch NEW</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>616</x>
-      <y>33</y>
+      <y>11</y>
       <w>671</w>
       <h>429</h>
     </coordinates>
@@ -244,7 +244,7 @@ den Monitor</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>121</x>
-      <y>44</y>
+      <y>22</y>
       <w>429</w>
       <h>407</h>
     </coordinates>
@@ -256,7 +256,7 @@ anderer Thread gibt den Lock ab</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>627</x>
-      <y>451</y>
+      <y>429</y>
       <w>550</w>
       <h>495</h>
     </coordinates>
@@ -271,7 +271,7 @@ auf</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>539</x>
-      <y>902</y>
+      <y>880</y>
       <w>99</w>
       <h>44</h>
     </coordinates>
@@ -282,7 +282,7 @@ auf</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>77</x>
-      <y>462</y>
+      <y>440</y>
       <w>484</w>
       <h>484</h>
     </coordinates>
