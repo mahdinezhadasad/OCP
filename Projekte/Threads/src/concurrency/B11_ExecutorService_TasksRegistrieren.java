@@ -30,7 +30,7 @@ public class B11_ExecutorService_TasksRegistrieren {
 		 * 
 		 * <T> Future<T> submit(Callable<T> task)
 		 * 
-		 * 
+		 * weitere submit-Varianten werden überprüft in TestSubmit.java
 		 */
 		Callable<Void> task2 = () -> {
 			System.out.println("task 2 im Thread " + Thread.currentThread().getName());

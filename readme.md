@@ -18,6 +18,15 @@
 
 ## Aufgaben
 
+#### 19.11
+- ExecutorService
+- Strategien auswählen
+- Tasks registrieren (Runnable und Callable)
+- Service herunterfahren
+
+- Aufgaben/Threads - ExecutorService - simple.md
+- Aufgaben/Threads - ExecutorService - english words.md
+
 #### 18.11
 - 'normale' Collections und Multithreading
 - java.util.Collections.synchronizedXxx
