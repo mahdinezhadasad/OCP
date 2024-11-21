@@ -1,5 +1,6 @@
 package aufgaben.concurrency;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -18,6 +19,30 @@ public class AufgabeThreadsExecutorServiceSimple {
 //		a1();
 //		a2();
 		a3v1();
+		a3v2();
+	}
+	
+	static void a3v2() throws Exception {
+		ExecutorService service = Executors.newSingleThreadExecutor();
+		
+		Callable<Integer> task = () -> {
+			return ThreadLocalRandom.current().nextInt();
+//			return 1;
+		};
+		
+		Collection<Callable<Integer>> tasks = Stream.generate(() -> task)
+				.limit(100)
+				.collect(Collectors.toList());
+		
+		List<Future<Integer>> futures = service.invokeAll(tasks);
+		
+		int summe = 0;
+		for(Future<Integer> f : futures) {
+			summe += f.get();
+		}
+		System.out.println("summe = " + summe);
+		
+		service.shutdown();
 	}
 	
 	static void a3v1() throws Exception {
