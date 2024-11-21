@@ -43,7 +43,7 @@ public class B10_ExecutorService_Strategien {
 		 *       wenn eine neue Task registriert wird und es 
 		 *       keinen freien Thread im Thread-Pool gibt,
 		 *       ansonsten wird für die neue registrierte Task
-		 *       ein freier Thread aus dem Thread-Ool wiederverwendet.
+		 *       ein freier Thread aus dem Thread-Pool wiederverwendet.
 		 *              
 		 *  	- wenn ein Thread mit seiner Task fertig ist,
 		 *        wird der Thread für eine bestimmte Zeil (60 Sek)

@@ -24,7 +24,7 @@
 - Tasks registrieren (Runnable und Callable)
 - Service herunterfahren
 
-- Aufgaben/Threads - ExecutorService - simple.md
+- Aufgaben/Threads - ExecutorService - simple.md (Lösung im Package 'aufgaben.concurrency')
 - Aufgaben/Threads - ExecutorService - english words.md
 
 #### 18.11
