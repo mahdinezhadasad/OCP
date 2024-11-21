@@ -18,6 +18,17 @@
 
 ## Aufgaben
 
+#### 21.11
+
+- Threads visualisiert: https://sourceforge.net/projects/javaconcurrenta/
+
+- ForkJoin
+- RecursiveAction
+- RecursiveTask
+
+- Aufgaben/Threads - Fork-Join - mit List.md
+
+
 #### 19.11
 - ExecutorService
 - Strategien auswählen

@@ -21,7 +21,7 @@ public class B15_ForkJoin {
 			 *  SONST
 			 *  	- die Aufgabe in zwei (oder mehr) einfachere Aufgaben teilen
 			 *      - die einfache Teilaufgaben an die Threads des ForkJoin-Pools
-			 *        zum ausführen übergeben  
+			 *        zum Ausführen übergeben  
 			 */
 			
 			System.out.println("MyRecursiveAction. in compute im Thread " + Thread.currentThread().getName());
@@ -31,8 +31,22 @@ public class B15_ForkJoin {
 	static class MyRecursiveTask extends RecursiveTask<Integer> {
 		@Override
 		protected Integer compute() {
-			// Hier kommt der spezielle Algorithmus,
-			// um die Aufgabe rekursiv zu lösen...
+			/*
+			 *  Hier kommt der spezielle Algorithmus,
+			 *  um die Aufgabe rekursiv zu lösen...
+			 *  
+			 *  FALLS 
+			 *  	die Aufgabe ist einfach genug und das Ergebnis zurück liefern
+			 *  DANN
+			 *  	die Aufgabe lösen
+			 *  SONST
+			 *  	- die Aufgabe in zwei einfachere Aufgaben teilen
+			 *      - die Unteraufgabe B in einem anderen Thread aktivieren (fork)
+			 *      - die Unteraufgabe A in dem aktuellen Thread aktivieren
+			 *      - das Ergebnis der Unteraufgabe B im aktuellen Thread abwarten (join)
+			 *      - die Ergebnisse A und B kombinieren und zurück liefern
+			 */
+
 			System.out.println("MyRecursiveTask. in compute im Thread " + Thread.currentThread().getName());
 			return 42;
 		}
