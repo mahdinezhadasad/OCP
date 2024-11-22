@@ -16,7 +16,38 @@
 - Sollten Sie vergessen haben sich ein - bzw. auszuloggen bitten wir Sie am Ende des Monats über die Fehlzeitenmeldungen eine Stellungnahme diesbezüglich abzugeben
 - Sollten technische Probleme vorliegen, wenden Sie sich unverzüglich über die Feedbackfunktion im CC-Portal an den IT-Support
 
+#### Klausur
+- Termin: 02.12., 08:45 Uhr
+- Dauer: 2 Stunden
+- Hilfsmittel: alle (aber selbständig)
+- Typ: Multiple Choice
+
+- Themen:
+    - Design Patterns
+    - Interfaces (Elemente in Interfaces, Interfaces impplementieren)
+    - Wrapper-Klassen (Konstanten-Pools, Autoboxing)
+    - Innere Klassen (Instanziieren)
+    - Path-API
+    - Collections und Maps (auch API)
+    - Sortieren und Vergleichen (Comparable/Comparator)
+    - Generics (Zuweisungen der parametrisierten Referenzen)
+    - enums
+    - Exceptions, Errors, try/catch
+    - try-with-resources
+    - Lambdas (Syntax), Methodenreferenzen
+    - Thread (einfache API)
+    - ExecutorService, Runnable, Callable, Future
+    - funktionale Streams (reduce, collect)
+    - ResourceBundle (sehr einfach)
+
+
 ## Aufgaben
+
+#### 22.11
+- CyclicBarrier
+- Aufgaben/Threads - Cyclic Barrier.md
+
+- Bsp. TestScheduledExecutors.java bitte auch 
 
 #### 21.11
 
