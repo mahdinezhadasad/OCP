@@ -28,7 +28,7 @@ public class TestForkJoin3 {
 
 	/*
 	 * A. mo di ODER di mo
-	 * B. mo di						<- mo di 
+	 * B. mo di						<- richtig
 	 * C. di mo
 	 * D. Exception 
 	 */
