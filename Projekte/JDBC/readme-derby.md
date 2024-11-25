@@ -1,6 +1,10 @@
 # JDBC
 
-## Derby 
+## SQL
+
+Tutorial: https://www.w3schools.com/sql/
+
+## Derby 'embedded'
 
 #### Herunterladen: 
   
@@ -23,3 +27,15 @@
     - im Menü: 'Properties'
     - im neuen Fenster Java Buildpath'
     - rechts unter 'Libraries' die Schaltfläche 'Add Jars'
+
+#### Datenbanke erzeugen/löschen
+
+- Erzeugen: Connection öffnen mit der Url, die als Parameter ';create=true' hat
+
+> In der URL "jdbc:derby:dir/mydb" ist dir/mydb der Pfad zu dem Verzeichnis mit der Datenbank. Der Pfad darf auch absolut sein: "jdbc:derby:C:/dir/mydb"
+
+- Löschen: 
+    - Zuerst Datenbank schliessen, dafür Connection öffnen mit der Url, die als Parameter ';shutdown=true' hat
+    - Danach das Verzeichnis mit der Datenbank löschen (z.B. mit Files.walkFileTree)
+
+

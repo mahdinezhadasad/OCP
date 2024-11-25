@@ -46,6 +46,11 @@
 #### 25.11
 - Projekt 'JDBC'
 
+- Connection erstellen
+- SQL-Insert 
+- SQL-Select
+
+- Testen Sie Derby-Datenbank. Erzeugen Sie eine einfache Tabelle mit zwei Spalten. Speichern Sie 2-3 Datensätze. Lesen Sie danach alle Datensätze und geben Sie die Daten aus.
 
 #### 22.11
 - CyclicBarrier
