@@ -9,7 +9,7 @@ public class B03_Collections_normal {
 		/*
 		 * Race Condition bei allen:
 		 */
-//		test(new ArrayList<>());
+		test(new ArrayList<>());
 //		test(new LinkedList<>());
 //		test(new HashSet<>());
 //		test(new LinkedHashSet<>());
@@ -20,7 +20,7 @@ public class B03_Collections_normal {
 		/*
 		 * Vector ist threadsicher
 		 */
-		test(new Vector<>());
+//		test(new Vector<>());
 	}
 	
 	static void test(Collection<Integer> coll) {
