@@ -21,8 +21,10 @@ class RaceCar implements Runnable {
 	public void run() {
 		System.out.println(name + " started.");
 		
-		finish.add(this);
-		System.out.println(name + " finished.");
+		synchronized (finish) {
+			finish.add(this);
+			System.out.println(name + " finished.");
+		}
 		
 		try {
 			barrier.await();

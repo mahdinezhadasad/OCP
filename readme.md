@@ -43,6 +43,10 @@
 
 ## Aufgaben
 
+#### 25.11
+- Projekt 'JDBC'
+
+
 #### 22.11
 - CyclicBarrier
 - Aufgaben/Threads - Cyclic Barrier.md
