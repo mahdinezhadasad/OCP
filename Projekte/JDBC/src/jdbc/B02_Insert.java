@@ -16,7 +16,7 @@ public class B02_Insert {
 			
 			createTestTable(stm); // Tabelle zum Testen erzeugen
 			
-			String sql = "INSERT INTO animals (name, age) VALUES ('Rex', 3)";
+			String sql = "INSERT INTO animals (name, age) VALUES ('Tom', 5)";
 			stm.executeUpdate(sql);
 			
 			System.out.println("Neue Zeile erzeugt");

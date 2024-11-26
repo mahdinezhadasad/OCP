@@ -35,7 +35,7 @@ Tutorial: https://www.w3schools.com/sql/
 > In der URL "jdbc:derby:dir/mydb" ist dir/mydb der Pfad zu dem Verzeichnis mit der Datenbank. Der Pfad darf auch absolut sein: "jdbc:derby:C:/dir/mydb"
 
 - Löschen: 
-    - Zuerst Datenbank schliessen, dafür Connection öffnen mit der Url, die als Parameter ';shutdown=true' hat
+    - Zuerst Datenbank schliessen, dafür Connection öffnen mit der Url, die als Parameter ';shutdown=true' hat (dabei wird SQLExeption geworfen, es ist so gedacht)
     - Danach das Verzeichnis mit der Datenbank löschen (z.B. mit Files.walkFileTree)
 
 

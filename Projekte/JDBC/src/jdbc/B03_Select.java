@@ -10,9 +10,11 @@ public class B03_Select {
 
 	public static void main(String[] args) {
 		
+		String sql = "select * from animals";
+		
 		try(Connection c = DriverManager.getConnection("jdbc:derby:mydb");
 				Statement stm = c.createStatement();
-					ResultSet res = stm.executeQuery("select * from animals");) {
+					ResultSet res = stm.executeQuery(sql);) {
 			
 			while( res.next() ) {
 
