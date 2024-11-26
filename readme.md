@@ -43,6 +43,18 @@
 
 ## Aufgaben
 
+#### 26.11
+- Projekt 'JDBC'
+- SQL-Update
+- SQL-Delete
+- Driver manuell laden für JDBC 3
+- Connection
+- Statement
+- ResultSet
+
+- Aufgaben/JDBC.md (Punkt 6 noch nicht)
+
+
 #### 25.11
 - Projekt 'JDBC'
 

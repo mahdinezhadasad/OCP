@@ -57,6 +57,7 @@ public class JDBCUtils {
 			sql = "CREATE TABLE kunden (id INT, name VARCHAR(255), kontostand INT)";
 			stm.executeUpdate(sql);
 
+			// todo: besser wäre mit PreparedStatement die Datensätze zu speichern
 			sql = getSqlInsertIntoTestTable(1, "Peter", 2000);
 			stm.executeUpdate(sql);
 			sql = getSqlInsertIntoTestTable(2, "Paul", 111);
@@ -84,7 +85,7 @@ public class JDBCUtils {
 			
 			String fmt = "|%3s|%6s|%12s|%n";
 			
-			System.out.println("*** Tabelle 'kunden':");
+			System.out.println("\n*** Tabelle 'kunden':");
 			System.out.format(fmt, "id", "name", "kontostand");
 			
 			while(res.next()) {
