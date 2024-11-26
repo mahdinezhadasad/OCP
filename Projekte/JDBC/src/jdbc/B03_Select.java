@@ -35,7 +35,6 @@ public class B03_Select {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 }
