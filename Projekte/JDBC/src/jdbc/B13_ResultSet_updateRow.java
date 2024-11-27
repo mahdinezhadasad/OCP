@@ -6,10 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class B12_ResultSet_insertRow {
+public class B13_ResultSet_updateRow {
 
 	public static void main(String[] args) {
-		
 		JDBCUtils.rebuildTestTable();
 		JDBCUtils.printTestTable();
 
@@ -23,40 +22,32 @@ public class B12_ResultSet_insertRow {
 			/*
 			 * Spezielles ResultSet (CONCUR_UPDATABLE)
 			 * kommt aus dem speziellen Statement.
-			 * Spezielles ResultSet hat eine spezielle Zeile: 'insert-row'
+			 * 
+			 * Dieses ResultSet kann Daten in der Tabelle ändern.
 			 */
 			
 			/*
-			 * Den Cursor zu der 'insert-row' bewegen
+			 * Der Cursor muss auf eine Zeile zeigen
 			 */
-			res.moveToInsertRow();
+			res.next();
 			
 			/*
-			 * Daten für den neuen Eintrg in der 'insert-row' vorbereiten
+			 * Änderungen vorbereiten
 			 */
-			res.updateInt(1, 4); 				// Spalte 1 (id)
-			res.updateString("name", "Jerry");  
-			res.updateInt("kontostand", 12345);
+			res.updateString("name", "PETER");
+			res.updateInt("kontostand", 0);
 			
 			/*
-			 * vorbereitete Daten in die Tabelle der Datenbank übertragen
+			 * Änderungen in die Datenbank übertragen
 			 */
-			res.insertRow();
-			
-			/*
-			 * Optional. Den Cursor zu seiner ursprünglichen Position bewegen 
-			 */
-			res.moveToCurrentRow();
-			
-			/*
-			 * wieder normal mit dem ResultSet arbeiten...
-			 */
+			res.updateRow();
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		
 		JDBCUtils.printTestTable();
+		
 	}
 
 }

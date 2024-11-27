@@ -45,6 +45,14 @@
 
 #### 26.11
 - Projekt 'JDBC'
+- ResultSet. insertRow()
+- ResultSet. updateRow()
+- ResultSet. Scroll (Cursor bewegen)
+- ResultSetMetaData
+
+
+#### 26.11
+- Projekt 'JDBC'
 - SQL-Update
 - SQL-Delete
 - Driver manuell laden für JDBC 3
