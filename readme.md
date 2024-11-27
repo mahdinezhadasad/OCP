@@ -49,7 +49,9 @@
 - ResultSet. updateRow()
 - ResultSet. Scroll (Cursor bewegen)
 - ResultSetMetaData
+- Transaktionen
 
+- Aufgaben/JDBC.md (Punkt 6 noch nicht)
 
 #### 26.11
 - Projekt 'JDBC'
