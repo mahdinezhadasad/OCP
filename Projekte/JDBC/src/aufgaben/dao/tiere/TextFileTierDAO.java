@@ -1,6 +1,7 @@
 package aufgaben.dao.tiere;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,6 +13,15 @@ import java.util.stream.Stream;
 public class TextFileTierDAO implements TierDAO {
 	
 	private Path file = Paths.get("tiere.txt");
+	
+	public TextFileTierDAO() {
+		try {
+			if(!Files.exists(file))
+				Files.createFile(file);
+		} catch (IOException e) {
+			throw new UncheckedIOException(e);
+		}
+	}
 
 	@Override
 	public List<Tier> getAllTiere() throws UncheckedIOException, IllegalArgumentException {
@@ -45,14 +55,47 @@ public class TextFileTierDAO implements TierDAO {
 	}
 
 	@Override
-	public void deleteOnId(int id) {
-		throw new UnsupportedOperationException("not yet implemented");
+	public boolean deleteOnId(int id) {
+		
+		List<Tier> tiere = getAllTiere();
+		
+		int size = tiere.size();
+		
+		tiere.removeIf(t -> t.getId()==id);
+		
+		if(tiere.size() == size) {
+			return false;
+		}
+		
+		save(tiere);
+		return true;
 	}
 
 	@Override
-	public void add(Tier t) {
-		throw new UnsupportedOperationException("not yet implemented");
+	public void add(Tier newTier) throws IllegalArgumentException {
+		
+		List<Tier> alleTiere = getAllTiere();
+		
+		boolean idExistiert = alleTiere.stream().anyMatch(t -> t.getId()==newTier.getId());
+		
+		if(idExistiert) {
+			throw new IllegalArgumentException("Es gibt bereits ein Tier mit der id = " + newTier.getId());
+		}
+		
+		alleTiere.add(newTier);
+		save(alleTiere);
 	}
 	
+	private void save(List<Tier> tiere) {
+		try (PrintWriter out = new PrintWriter(file.toFile())) {
+			
+			for(Tier t : tiere) {
+				out.format("%d, %s, %s, %d%n", t.getId(), t.getName(), t.getArt(), t.getGeburtsjahr());
+			}
+			
+		} catch (IOException e) {
+			throw new UncheckedIOException(e);
+		}
+	}
 	
 }

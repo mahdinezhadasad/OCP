@@ -6,11 +6,21 @@ public interface TierDAO {
 	
 	static TierDAO getInstance() {
 		return new TextFileTierDAO();
+//		return new DerbyTierDAO();
 	}
 
 	List<Tier> getAllTiere();
 
-	void deleteOnId(int id);
+	/**
+	 * @param id
+	 * @return false, falls kein Tier mit der id gefunden war
+	 */
+	boolean deleteOnId(int id);
 	
-	void add(Tier t);
+	/**
+	 * 
+	 * @param t
+	 * @throws IllegalArgumentException wenn es Tier mit der id bereits existiert
+	 */
+	void add(Tier t) throws IllegalArgumentException;
 }

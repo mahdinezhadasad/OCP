@@ -49,6 +49,8 @@
 - DAO und JDBC
 - Aufgaben/JDBC.md (auch Punkt 6)
 
+- Optional. Das Package 'aufgaben.dao.tiere' kopieren und mit 'DerbyTierDAO' die aktuelle TextFileTierDAO-Realisierung ersetzen.
+
 - Klausurvorbereitung
 - eigenes Projekt
 - alte ungelöste Aufgaben lösen

@@ -57,7 +57,11 @@ public class AppMain {
 	private static void printAllAnimals(TierDAO dao) {
 		List<Tier> alleTiere = dao.getAllTiere();
 		
-		System.out.println("Alle Tiere: ");
+		System.out.println("\n*** Alle Tiere: ");
+		
+		if(alleTiere.isEmpty()) {
+			System.out.println("Es gibt keine Tiere");
+		}
 		
 		String fmt = "%02d. %10s. %10s. %d%n";
 		for (Tier t : alleTiere) {
@@ -65,24 +69,41 @@ public class AppMain {
 		}
 	}
 	private static void deleteAnimal(TierDAO dao) {
-		throw new UnsupportedOperationException("not yet implemented");
 		
-		// User nach Tier-ID fragen
-		// int id = ...;
-		// Tier löschen
-		// dao.deleteOnId(id);
+		System.out.println("\n*** Tier löschen");
+		System.out.print("Bitte die id vom Tier eingeben: ");
+		int id = readUserInt();
+		
+		if(!dao.deleteOnId(id)) {
+			System.out.println("Es gibt kein Tier mit der id=" + id);
+		} else {
+			System.out.println("Das Tier wurde entfernt");
+		}
 	}
 	private static void createAnimal(TierDAO dao) {
-		throw new UnsupportedOperationException("not yet implemented");
-		
+		System.out.println("\n*** Tier erzeugen");
 		// User nach Daten für das neue Tier fragen
-		// danach
-		// Tier t = new Tier(...);
-		// dao.add(t);
+		
+		System.out.print("id: ");
+		int id = readUserInt();
+		
+		System.out.print("Name: ");
+		String name = readUserString();
+		
+		System.out.print("Art: ");
+		String art = readUserString();
+		
+		System.out.print("Geburtsjahr: ");
+		int geburtsjahr = readUserInt();
+		
+		Tier t = new Tier(id, name, art, geburtsjahr);
+		dao.add(t);
+		
+		System.out.println("Das Tier gespeichert");
 	}
 
 	private static void printMenu() {
-		System.out.println("Bitte eine Option auswählen: ");
+		System.out.println("\n*** Bitte eine Option auswählen: ");
 		
 		for (AppAction a : AppAction.values()) {
 			System.out.println(a.ordinal() + " = " + a);
@@ -92,12 +113,17 @@ public class AppMain {
 	}
 	
 	private static AppAction readUserChoice() {
-		
 		String line = new Scanner(System.in).nextLine();
-		
 		int value = Integer.parseInt(line);
-		
 		return AppAction.values()[value];
+	}
+	
+	private static int readUserInt() {
+		String line = new Scanner(System.in).nextLine();
+		return Integer.parseInt(line);
+	}
+	private static String readUserString() {
+		return new Scanner(System.in).nextLine();
 	}
 	
 }
