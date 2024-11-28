@@ -1,5 +1,3 @@
-# Achtung! Der 20.11. ist frei!
-
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
 - 09:45 - 11:15 Uhr
