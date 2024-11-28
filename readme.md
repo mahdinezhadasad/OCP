@@ -1,3 +1,5 @@
+## 28.11. Dozent-Vertretung ab 13:30 Uhr. 
+
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
 - 09:45 - 11:15 Uhr
@@ -41,7 +43,18 @@
 
 ## Aufgaben
 
-#### 26.11
+#### 28.11. Dozent-Vertretung ab 13:30 Uhr. 
+
+#### 28.11 - 29.11
+- DAO und JDBC
+- Aufgaben/JDBC.md (auch Punkt 6)
+
+- Klausurvorbereitung
+- eigenes Projekt
+- alte ungelöste Aufgaben lösen
+
+
+#### 27.11
 - Projekt 'JDBC'
 - ResultSet. insertRow()
 - ResultSet. updateRow()

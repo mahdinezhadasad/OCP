@@ -13,6 +13,8 @@ public class B14_ResultSet_Scroll {
 		JDBCUtils.rebuildTestTable();
 
 		/*
+		 * Standard-Typ von einem ResultSet ist TYPE_FOWARD_ONLY
+		 * 
 		 * Damit der Cursor auch rückwärts bewegt werden kann,
 		 * muss das ResultSet den Typ TYPE_SCROLL_INSENSITIVE 
 		 * oder TYPE_SCROLL_SENSITIVE haben.
