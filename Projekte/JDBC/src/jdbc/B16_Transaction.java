@@ -73,6 +73,8 @@ public class B16_Transaction {
 			if(kontostandA >= betrag) {
 				kontostandA -= betrag;
 				setKontostand(idKontoA, kontostandA, stm);
+			} else {
+				throw new RuntimeException("Nicht genug Geld auf dem Konto mit id=" + idKontoA);
 			}
 			
 			/*
