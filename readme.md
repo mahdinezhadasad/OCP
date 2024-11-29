@@ -1,5 +1,3 @@
-## 28.11. Dozent-Vertretung ab 13:30 Uhr. 
-
 ## Wissensvermittlung
 - 08:45 - 09:30 Uhr
 - 09:45 - 11:15 Uhr
@@ -43,13 +41,14 @@
 
 ## Aufgaben
 
-#### 28.11. Dozent-Vertretung ab 13:30 Uhr. 
-
 #### 28.11 - 29.11
+- Projekt 'JDBC'
 - DAO und JDBC
 - Aufgaben/JDBC.md (auch Punkt 6)
 
 - Optional. Das Package 'aufgaben.dao.tiere' kopieren und mit 'DerbyTierDAO' die aktuelle TextFileTierDAO-Realisierung ersetzen.
+
+- Projekt 'DateAndTime'
 
 - Klausurvorbereitung
 - eigenes Projekt

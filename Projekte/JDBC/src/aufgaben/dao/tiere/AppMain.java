@@ -55,7 +55,7 @@ public class AppMain {
 	}
 	
 	private static void printAllAnimals(TierDAO dao) {
-		List<Tier> alleTiere = dao.getAllTiere();
+		List<Tier> alleTiere = dao.getAllTiere(); // Datenverwaltung (READ)
 		
 		System.out.println("\n*** Alle Tiere: ");
 		
@@ -74,7 +74,7 @@ public class AppMain {
 		System.out.print("Bitte die id vom Tier eingeben: ");
 		int id = readUserInt();
 		
-		if(!dao.deleteOnId(id)) {
+		if(!dao.deleteOnId(id)) { // Datenverwaltung (DELETE)
 			System.out.println("Es gibt kein Tier mit der id=" + id);
 		} else {
 			System.out.println("Das Tier wurde entfernt");
@@ -97,7 +97,7 @@ public class AppMain {
 		int geburtsjahr = readUserInt();
 		
 		Tier t = new Tier(id, name, art, geburtsjahr);
-		dao.add(t);
+		dao.add(t); // Datenverwaltung (CREATE)
 		
 		System.out.println("Das Tier gespeichert");
 	}

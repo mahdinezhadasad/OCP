@@ -9,6 +9,9 @@ import java.io.Writer;
 public class B01_KonzeptLesenSchreiben {
 
 	/*
+	 * Viele Fragen im OCP-Buch sind unnötig kompliziert.
+	 * 
+	 * 
 	 * Bitte in der Praxis die Mehoden 'read()' und 'write(int)' 
 	 * nicht verwenden. Es gibt alternativen, die effizienter arbeiten
 	 */

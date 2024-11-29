@@ -5,7 +5,8 @@ public class DAO {
 	/*
 	 * DAO = Data Access Object
 	 * 
-	 * DAO: Design Pattern. Datenverwaltung vom Rest der Anwendung trennen
+	 * DAO: Design Pattern. Datenverwaltung vom Rest der Anwendung trennen 
+	 *      und die Details der Realisierung der Datenverwaltung zu verstecken
 	 * 
 	 * Datenverwaltung: Speichern, Laden, Ändern, Löschen der Daten (CRUD)
 	 * 
@@ -17,7 +18,27 @@ public class DAO {
 	 * DAO-Interface sollte keine Details zu der konkreten Realisierung 
 	 * der Datenverwaltung verraten 
 	 * 
-	 * Beispiel: im Package 'aufgaben.dao.tiere'
+	 * Beispiel im Package 'aufgaben.dao.tiere':
+	 * 
+	 * 		DAO-Interface: TierDAO
+	 * 
+	 * 		DAO-Implementierung: TextFileTierDAO
+	 * 
+	 * 		Rest der Anwendung: AppMain (benutzt nur die Methoden vom TierDAO,
+	 * 		kennt keine Details der Realisierung der Datenverwaltung)
+	 * 
+	 * Exam:
+	 * 
+	 * Welche Methoden sind für folgendes DAO-Interface sinnvoll?
+	 * 
+	 * interface PersonDAO {
+	 *        void create(Person p);					// ok
+	 *        void removeOnId(int id, Connection c);	// nicht sinnvoll: verrät Details der Realisierung
+	 *        List<Person> getAll();					// ok
+	 *        void setName(String name);				// nicht sinnvoll: ist sinnvoll
+	 *        Person getOnId(int id);					// ok
+	 * }
+	 * 		 
 	 */
 	public static void main(String[] args) {
 
