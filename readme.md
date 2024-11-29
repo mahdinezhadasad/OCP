@@ -14,7 +14,7 @@
 - Sollten Sie vergessen haben sich ein - bzw. auszuloggen bitten wir Sie am Ende des Monats über die Fehlzeitenmeldungen eine Stellungnahme diesbezüglich abzugeben
 - Sollten technische Probleme vorliegen, wenden Sie sich unverzüglich über die Feedbackfunktion im CC-Portal an den IT-Support
 
-#### Klausur
+#### Comcave-Klausur
 - Termin: 02.12., 08:45 Uhr
 - Dauer: 2 Stunden
 - Hilfsmittel: alle (aber selbständig)
