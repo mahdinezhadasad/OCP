@@ -14,29 +14,50 @@
 - Sollten Sie vergessen haben sich ein - bzw. auszuloggen bitten wir Sie am Ende des Monats über die Fehlzeitenmeldungen eine Stellungnahme diesbezüglich abzugeben
 - Sollten technische Probleme vorliegen, wenden Sie sich unverzüglich über die Feedbackfunktion im CC-Portal an den IT-Support
 
-#### Comcave-Klausur
-- Termin: 02.12., 08:45 Uhr
-- Dauer: 2 Stunden
-- Hilfsmittel: alle (aber selbständig)
-- Typ: Multiple Choice
 
-- Themen:
-    - Design Patterns
-    - Interfaces (Elemente in Interfaces, Interfaces impplementieren)
-    - Wrapper-Klassen (Konstanten-Pools, Autoboxing)
-    - Innere Klassen (Instanziieren)
-    - Path-API
-    - Collections und Maps (auch API)
-    - Sortieren und Vergleichen (Comparable/Comparator)
-    - Generics (Zuweisungen der parametrisierten Referenzen)
-    - enums
-    - Exceptions, Errors, try/catch
-    - try-with-resources
-    - Lambdas (Syntax), Methodenreferenzen
-    - Thread (einfache API)
-    - ExecutorService, Runnable, Callable, Future
-    - funktionale Streams (reduce, collect)
-    - ResourceBundle (sehr einfach)
+#### Comcave-Klausur
+- Start: 09:20 Uhr
+
+> Klausur-Datei aus Teams, Kanal 'Allgemein' 
+> unter 'Dateien' finden und herunterladen (rechter Mausklick)
+
+- Dauer: 2 Stunden
+- Ende: 11:20 Uhr
+- Nach der Klausur: 20 Min zum Senden der Lösung
+
+> Die Teilnehmer/-innen speichern das Klausurdokument lokal auf 
+> ihrem PC/Laptop und versenden es direkt im Anschluss via E-Mail 
+> an ihr jeweiliges Standort-Klausurenpostfach: 
+
+- bspw. Klausuren-Dortmund@comcave.com 
+- oder bspw. Klausuren-Koeln@comcave.com
+- oder bspw. Klausuren-Osnabrueck@comcave.com 
+...
+
+> Bitte die Klausur auch an den Dozenten senden: a.patrin@comcave.com
+
+- Danach: Pause bis 12:00 Uhr
+
+- Hilfsmittel: alle (aber selbständig)
+
+
+Viel Erfolg!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Aufgaben
@@ -519,4 +540,28 @@ Mögliche Techniken dabei:
 ##### Oracle-Prüfung: 19.12.2024 (ein möglicher Termin)
 > Beachten Sie die Datei 'Prüfungsnameldung.pdf' unter Teams/Dateien
 
+
+#### Comcave-Klausur
+- Termin: 02.12., 08:45 Uhr
+- Dauer: 2 Stunden
+- Hilfsmittel: alle (aber selbständig)
+- Typ: Multiple Choice
+
+- Themen:
+    - Design Patterns
+    - Interfaces (Elemente in Interfaces, Interfaces impplementieren)
+    - Wrapper-Klassen (Konstanten-Pools, Autoboxing)
+    - Innere Klassen (Instanziieren)
+    - Path-API
+    - Collections und Maps (auch API)
+    - Sortieren und Vergleichen (Comparable/Comparator)
+    - Generics (Zuweisungen der parametrisierten Referenzen)
+    - enums
+    - Exceptions, Errors, try/catch
+    - try-with-resources
+    - Lambdas (Syntax), Methodenreferenzen
+    - Thread (einfache API)
+    - ExecutorService, Runnable, Callable, Future
+    - funktionale Streams (reduce, collect)
+    - ResourceBundle (sehr einfach)
 

@@ -5,8 +5,8 @@ import java.util.List;
 public interface TierDAO {
 	
 	static TierDAO getInstance() {
-		return new TextFileTierDAO();
-//		return new DerbyTierDAO();
+//		return new TextFileTierDAO();
+		return new TestDerbyTierDAO();
 	}
 
 	List<Tier> getAllTiere();
