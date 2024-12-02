@@ -16,51 +16,24 @@
 
 
 #### Comcave-Klausur
-- Start: 09:20 Uhr
 
-> Klausur-Datei aus Teams, Kanal 'Allgemein' 
-> unter 'Dateien' finden und herunterladen (rechter Mausklick)
-
-- Dauer: 2 Stunden
-- Ende: 11:20 Uhr
-- Nach der Klausur: 20 Min zum Senden der Lösung
-
-> Die Teilnehmer/-innen speichern das Klausurdokument lokal auf 
-> ihrem PC/Laptop und versenden es direkt im Anschluss via E-Mail 
-> an ihr jeweiliges Standort-Klausurenpostfach: 
-
-- bspw. Klausuren-Dortmund@comcave.com 
-- oder bspw. Klausuren-Koeln@comcave.com
-- oder bspw. Klausuren-Osnabrueck@comcave.com 
-...
-
-> Bitte die Klausur auch an den Dozenten senden: a.patrin@comcave.com
-
-- Danach: Pause bis 12:00 Uhr
-
-- Hilfsmittel: alle (aber selbständig)
-
-
-Viel Erfolg!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Note kommt in das Comcave-Portal
+- Klausur-Besprechung am 03.12., 08:45 Uhr
 
 
 ## Aufgaben
+
+#### ab dem 03.12
+
+- in den nächsten Tagen: Prüfungsanmeldung
+
+> Datei 'Prüfungsanmeldung.pdf' aus Teams/Dateien beachten
+
+#### 02.12
+
+- Wiederholung 
+- Ungelöste Aufgaben lösen
+- eigenes Projekt
 
 #### 28.11 - 29.11
 - Projekt 'JDBC'
