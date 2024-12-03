@@ -15,12 +15,6 @@
 - Sollten technische Probleme vorliegen, wenden Sie sich unverzüglich über die Feedbackfunktion im CC-Portal an den IT-Support
 
 
-#### Comcave-Klausur
-
-- Note kommt in das Comcave-Portal
-- Klausur-Besprechung am 03.12., 08:45 Uhr
-
-
 ## Aufgaben
 
 #### ab dem 03.12
@@ -28,6 +22,13 @@
 - in den nächsten Tagen: Prüfungsanmeldung
 
 > Datei 'Prüfungsanmeldung.pdf' aus Teams/Dateien beachten
+
+- Wiederholung 
+    - mit dem OCP-Buch
+    - mit den Dozenten-Projekten
+
+> Beachten Sie Hinweise im Appendix vom OCP-Buch, um den Zugang zu hub.totalsem.com/mheclaim mit dem Fragenkatalog zu bekommen
+
 
 #### 02.12
 

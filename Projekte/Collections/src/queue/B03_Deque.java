@@ -121,6 +121,14 @@ public class B03_Deque {
 		
 		// HEAD [6, -3, 17, 92] TAIL
 		System.out.println("8. deque: " + deque);
+		
+		/*
+		 * Hinweis:
+		 */
+		System.out.println(deque.add(100));
+		System.out.println(deque.offer(100));
+//		System.out.println(deque.push(100));  // cf: push ist void
+		
 	}
 
 }

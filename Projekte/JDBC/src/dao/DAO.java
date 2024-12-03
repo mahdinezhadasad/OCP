@@ -35,7 +35,7 @@ public class DAO {
 	 *        void create(Person p);					// ok
 	 *        void removeOnId(int id, Connection c);	// nicht sinnvoll: verrät Details der Realisierung
 	 *        List<Person> getAll();					// ok
-	 *        void setName(String name);				// nicht sinnvoll: ist sinnvoll
+	 *        void setName(String name);				// nicht sinnvoll: ist sinnvoll in einer einfachen Klasse 'Person' 
 	 *        Person getOnId(int id);					// ok
 	 * }
 	 * 		 
