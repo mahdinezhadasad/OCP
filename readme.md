@@ -15,6 +15,8 @@
 - Sollten technische Probleme vorliegen, wenden Sie sich unverzüglich über die Feedbackfunktion im CC-Portal an den IT-Support
 
 
+> Dozent: Kap. 2, F.9
+
 ## Aufgaben
 
 #### ab dem 03.12
@@ -26,6 +28,7 @@
 - Wiederholung 
     - mit dem OCP-Buch
     - mit den Dozenten-Projekten
+    - ...
 
 > Beachten Sie Hinweise im Appendix vom OCP-Buch, um den Zugang zu hub.totalsem.com/mheclaim mit dem Fragenkatalog zu bekommen
 
