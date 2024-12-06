@@ -15,7 +15,7 @@
 - Sollten technische Probleme vorliegen, wenden Sie sich unverzüglich über die Feedbackfunktion im CC-Portal an den IT-Support
 
 
-> Dozent: Kap. 3, F.3
+> Dozent: Kap. 5, F.5
 
 ## Aufgaben
 
