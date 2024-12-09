@@ -15,7 +15,7 @@ public class B10_Files_list {
 		
 		try (Stream<Path> s = Files.list(dir)) {
 			
-			s .forEach(System.out::println);
+			s.forEach(System.out::println);
 			
 		} catch (IOException e) {
 			e.printStackTrace();

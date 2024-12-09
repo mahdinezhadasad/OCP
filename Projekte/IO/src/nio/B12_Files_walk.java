@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public class B12_Files_walk {
 
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		/*
 		 * static Stream<Path> walk(Path start,
@@ -44,7 +44,16 @@ public class B12_Files_walk {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		
+		/*
+		 * Exam:
+		 */
+		System.out.println("-----------------");
+		long result = Files.walk(Paths.get("."))
+				.filter(Files::isDirectory)
+				.peek(System.out::println)
+				.count();
+		System.out.println("result: " + result);
 	}
 
 }
