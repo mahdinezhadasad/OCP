@@ -12,6 +12,8 @@ public class B03_Typparameter {
 	}
 	
 	class C2 <A> { // ok
+		// static A staticRef;
+		A ref;
 	}
 	
 	
