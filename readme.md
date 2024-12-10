@@ -7,6 +7,8 @@
 - 13:30 - 15:00 Uhr
 - 15:15 - 16:45 Uhr
 
+> Dozent: Vergleichen/Sortieren
+
 > Dozent: Kap. 6, F.12
 
 ## Aufgaben
