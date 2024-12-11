@@ -28,8 +28,6 @@ class Foo implements Comparable<Foo> {
 public class B01_SortierenVonArrays {
 
 	public static void main(String[] args) {
-		"".compareTo(null)
-		
 		/*
 		 * primitive Arrays
 		 */
