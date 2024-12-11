@@ -9,7 +9,7 @@
 
 > Dozent: Vergleichen/Sortieren
 
-> Dozent: Kap. 6, F.12
+> Dozent: Kap. 7, F2
 
 ## Aufgaben
 
