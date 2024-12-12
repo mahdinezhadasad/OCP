@@ -66,12 +66,15 @@ public class B07_anonymeKlassenVsLambdas {
 		
 		List<Integer> v7 = new ArrayList<Integer> () {
 			
+			int att;
+			
 			// init-Block
 			{
 				add(12);
 				add(13);
 				add(14);
 				
+				System.out.println(att);
 				myMethod();
 			}
 			

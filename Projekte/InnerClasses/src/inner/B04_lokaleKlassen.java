@@ -10,6 +10,7 @@ public class B04_lokaleKlassen {
 	 * 		  bis zum Ende der Methode gültig 
 	 */
 	public static void main(String[] args) {
+		// Game g1 = new Game(); // cf: unbekannte Klasse
 
 	}
 	
