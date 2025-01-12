@@ -30,14 +30,15 @@ class TimeMachine implements AutoCloseable {
 public class TimeTraveler {
     
     
+    private static String formatMe(ZonedDateTime date) {
+        DateTimeFormatter f = DateTimeFormatter.ofLocalizedTime (FormatStyle.MEDIUM);
+        return f.format (date);
+        
+    }
+    
     public static void main(String[] twelve) {
         
-        LocalDate xmas = LocalDate.of(2017,12,25);
-        LocalDate  blackFriday = LocalDate.of(2017,11,24);
-        long shoppnDaysLeft = blackFriday.until (xmas, ChronoUnit.DAYS);
-        ChronoUnit.DAYS.between (blackFriday,xmas);
-        System.out.println (shoppnDaysLeft);
-        
+    
         
     }
 }
