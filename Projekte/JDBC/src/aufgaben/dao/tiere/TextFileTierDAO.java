@@ -1,5 +1,6 @@
-package aufgaben.dao.tiere;
+package JDBC.src.aufgaben.dao.tiere;
 
+/*
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UncheckedIOException;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class TextFileTierDAO implements TierDAO {
+public class TextFileTierDAO implements aufgaben.dao.tiere.TierDAO {
 	
 	private Path file = Paths.get("tiere.txt");
 	
@@ -24,7 +25,7 @@ public class TextFileTierDAO implements TierDAO {
 	}
 
 	@Override
-	public List<Tier> getAllTiere() throws UncheckedIOException, IllegalArgumentException {
+	public List<aufgaben.dao.tiere.Tier> getAllTiere() throws UncheckedIOException, IllegalArgumentException {
 		
 		if(!Files.isRegularFile(file)) {
 			throw new IllegalArgumentException("Datei mit Tieren nicht gefunden: " + file);
@@ -38,12 +39,14 @@ public class TextFileTierDAO implements TierDAO {
 		}
 	}
 	
-	/*
+	*/
+/*
 	 * Format der line:
 	 * 
 	 * 		id, Name, Art, 1960
-	 */
-	private static Tier parseTier(String line) {
+	 *//*
+
+	private static aufgaben.dao.tiere.Tier parseTier(String line) {
 		String[] data = line.split(", ");
 		
 		int id = Integer.parseInt(data[0]);
@@ -51,7 +54,7 @@ public class TextFileTierDAO implements TierDAO {
 		String art = data[2];
 		int geburtsjahr = Integer.parseInt(data[3]);
 		
-		return new Tier(id, name, art, geburtsjahr);
+		return new aufgaben.dao.tiere.Tier (id, name, art, geburtsjahr);
 	}
 
 	@Override
@@ -72,9 +75,9 @@ public class TextFileTierDAO implements TierDAO {
 	}
 
 	@Override
-	public void add(Tier newTier) throws IllegalArgumentException {
+	public void add(aufgaben.dao.tiere.Tier newTier) throws IllegalArgumentException {
 		
-		List<Tier> alleTiere = getAllTiere();
+		List<aufgaben.dao.tiere.Tier> alleTiere = getAllTiere();
 		
 		boolean idExistiert = alleTiere.stream().anyMatch(t -> t.getId()==newTier.getId());
 		
@@ -98,4 +101,4 @@ public class TextFileTierDAO implements TierDAO {
 		}
 	}
 	
-}
+}*/

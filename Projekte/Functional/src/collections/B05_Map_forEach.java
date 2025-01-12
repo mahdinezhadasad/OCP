@@ -1,4 +1,4 @@
-package collections;
+package Functional.src.collections;
 
 import java.util.Map;
 import java.util.function.BiConsumer;
@@ -7,7 +7,7 @@ public class B05_Map_forEach {
 
 	public static void main(String[] args) {
 		
-		Map<Integer, String> map = MyMapUtils.mapWoche();
+		Map<Integer, String> map = collections.MyMapUtils.mapWoche();
 		
 		/*
 		 * default void forEach(BiConsumer<? super K, ? super V> action)

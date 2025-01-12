@@ -16,7 +16,7 @@ public class AufgabePhilosophenproblem {
 		
 		int anzahlPlatze = 5;
 		
-		List<PhilosophMitDeadlock> philosophen = Arrays.stream(namen)
+		List<aufgaben.philosophenproblem.PhilosophMitDeadlock> philosophen = Arrays.stream(namen)
 			.limit(anzahlPlatze)
 			.map(PhilosophMitDeadlock::new)
 			.collect(Collectors.toList());
@@ -27,7 +27,7 @@ public class AufgabePhilosophenproblem {
 
 		// Gabeln verteilen
 		for (int index = 0; index < anzahlPlatze; index++) {
-			PhilosophMitDeadlock p = philosophen.get(index);
+			aufgaben.philosophenproblem.PhilosophMitDeadlock p = philosophen.get(index);
 
 			p.setLinkeGabel(gabeln.get(index));
 			

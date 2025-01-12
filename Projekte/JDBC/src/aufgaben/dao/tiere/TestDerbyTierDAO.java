@@ -1,4 +1,4 @@
-package aufgaben.dao.tiere;
+package JDBC.src.aufgaben.dao.tiere;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+/*
 
 public class TestDerbyTierDAO implements TierDAO {
 
@@ -98,7 +99,7 @@ public class TestDerbyTierDAO implements TierDAO {
     }
 
     @Override
-    public void add(Tier newTier) {
+    public void add(aufgaben.dao.tiere.Tier newTier) {
         
     	String checkIdSQL = "SELECT COUNT(*) FROM Tiere WHERE id = ?";
     	  
@@ -131,5 +132,4 @@ public class TestDerbyTierDAO implements TierDAO {
     }
 
 
-}
-
+}*/

@@ -1,4 +1,4 @@
-package collections;
+package Functional.src.collections;
 
 import java.util.Map;
 import java.util.function.Function;
@@ -7,7 +7,7 @@ public class B07_Map_computeIfAbsent {
 
 	public static void main(String[] args) {
 
-		Map<Integer, String> map = MyMapUtils.mapWoche();
+		Map<Integer, String> map = collections.MyMapUtils.mapWoche();
 		
 		// {1=mo, 2=di, 3=mi, 4=do, 5=fr}
 		System.out.println("1. map: " + map);

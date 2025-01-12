@@ -2,6 +2,7 @@ package aufgaben.dao.tiere;
 
 import java.util.List;
 import java.util.Scanner;
+/*
 
 public class AppMain {
 	enum AppAction {
@@ -127,3 +128,4 @@ public class AppMain {
 	}
 	
 }
+*/

@@ -1,4 +1,4 @@
-package aufgaben.filescount;
+package Threads.src.aufgaben.filescount;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -18,7 +18,7 @@ public class FilesCounter {
 		
 		try (Stream<Path> s = Files.walk(dir)) {
 			return (int)s.filter(Files::isRegularFile)
-					.filter(f -> PathUtils.hasExtension(f, extension))
+					.filter(f -> aufgaben.filescount.PathUtils.hasExtension(f, extension))
 					.count();
 			
 		} catch (IOException e) {

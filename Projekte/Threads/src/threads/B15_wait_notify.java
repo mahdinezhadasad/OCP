@@ -1,4 +1,4 @@
-package threads;
+package Threads.src.threads;
 
 import java.time.LocalTime;
 
@@ -10,7 +10,7 @@ class Producer implements Runnable {
 	public void run() {
 		while(true) {
 			System.out.println("Producer produziert...");
-			MyThreadUtils.pause(2000);
+			threads.MyThreadUtils.pause(2000);
 			
 			synchronized (this) {
 				data = "Neue Daten von " + LocalTime.now();

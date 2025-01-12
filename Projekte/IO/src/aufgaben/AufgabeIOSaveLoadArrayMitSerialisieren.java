@@ -14,7 +14,7 @@ public class AufgabeIOSaveLoadArrayMitSerialisieren {
 
 		int len = new java.util.Random().nextInt(100) + 1;
 		
-		int[] arr1 = MyArrayUtils.createArray(len, -20, 21);
+		int[] arr1 = aufgaben.MyArrayUtils.createArray(len, -20, 21);
 		
 		System.out.println("arr1: " + Arrays.toString(arr1));
 	

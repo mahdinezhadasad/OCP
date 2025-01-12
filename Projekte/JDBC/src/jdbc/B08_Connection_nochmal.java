@@ -32,7 +32,7 @@ public class B08_Connection_nochmal {
 	}
 	
 	public static void main(String[] args) {
-		JDBCUtils.rebuildTestTable();
+		jdbc.JDBCUtils.rebuildTestTable();
 			
 		try {
 			Connection c = getConnection();

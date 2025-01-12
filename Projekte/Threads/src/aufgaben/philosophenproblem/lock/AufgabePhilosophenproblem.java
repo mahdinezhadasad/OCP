@@ -1,4 +1,4 @@
-package aufgaben.philosophenproblem.lock;
+package Threads.src.aufgaben.philosophenproblem.lock;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,9 +18,9 @@ public class AufgabePhilosophenproblem {
 		
 		int anzahlPlatze = 5;
 		
-		List<Philosoph> philosophen = Arrays.stream(namen)
+		List<aufgaben.philosophenproblem.lock.Philosoph> philosophen = Arrays.stream(namen)
 			.limit(anzahlPlatze)
-			.map(Philosoph::new)
+			.map(aufgaben.philosophenproblem.lock.Philosoph::new)
 			.collect(Collectors.toList());
 		
 		List<Lock> locks = Stream.generate(ReentrantLock::new)
@@ -29,7 +29,7 @@ public class AufgabePhilosophenproblem {
 
 		// Lock-Objekte verteilen
 		for (int index = 0; index < anzahlPlatze; index++) {
-			Philosoph p = philosophen.get(index);
+			aufgaben.philosophenproblem.lock.Philosoph p = philosophen.get(index);
 
 			p.setLeftLock(locks.get(index));
 			
@@ -42,7 +42,7 @@ public class AufgabePhilosophenproblem {
 		}
 		
 		// Threads starten
-		philosophen.forEach(Philosoph::start);
+		philosophen.forEach(aufgaben.philosophenproblem.lock.Philosoph::start);
 	}
 
 }

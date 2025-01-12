@@ -141,9 +141,9 @@ public class B23_Collectors_groupingBy {
 		 * Exam
 		 */
 		
-		gruppenMap2 = datenquelle.stream()
-			.collect(Collectors.groupingBy(i -> i%2==0?"gerade":"ungerade",
-				Collectors.toCollection(() -> new TreeSet<>(Comparator.reverseOrder()))));
+		//gruppenMap2 = datenquelle.stream()
+		//	.collect(Collectors.groupingBy(i -> i%2==0?"gerade":"ungerade",
+		//		Collectors.toCollection(() -> new TreeSet<>(Comparator.reverseOrder()))));
 		
 		System.out.println("gruppenMap2 (String-to-TreeSet): " + gruppenMap2);
 		

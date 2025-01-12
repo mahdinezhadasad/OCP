@@ -6,8 +6,8 @@ public class AutoCloseableUndSuppressedExceptions {
 //		b1();
 //		b2();
 //		b3();
-//		b4();
-		b5();
+		b4();
+	//	b5();
 	}
 	//----------------------------------------
 	static class R5 implements AutoCloseable {
