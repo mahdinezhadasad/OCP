@@ -136,7 +136,7 @@ abstract class SwingDancer extends Dancer {
 
 class Ready {
     protected static int first = 2;
-    private  final short DEFAULT_VALUE = 10; // Changed to static to make it accessible in the static nested class
+    private static final short DEFAULT_VALUE = 10; // Changed to static to make it accessible in the static nested class
     
     private static class GetSet {
         int first = 5;
