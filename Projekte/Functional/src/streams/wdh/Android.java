@@ -95,7 +95,7 @@ class Ballot{
 class searchinginStream{
     
     public static void main(String[] args) {
-        
+      /*
         Set<String> set = new HashSet<> ();
         set.add("tire-");
         
@@ -109,6 +109,72 @@ class searchinginStream{
                 .flatMap(collection -> collection.stream())
                 // or .flatMap(Collection::stream)
                 .forEach(System.out::print);
+        */
         
+        List<String> words = Arrays.asList("a", "bb", "", "ccc", "dddd", "bb", "");
+        
+        // I. Map<Integer, List<String>> using groupingBy
+        Map<Integer, List<String>> map1 = words.stream()
+                .collect(Collectors.groupingBy(String::length));
+        // Example output might look like: {0=["",""], 1=["a"], 2=["bb","bb"], 3=["ccc"], 4=["dddd"]}
+        System.out.println("Map<Integer, List<String>> = " + map1);
+        
+        // II. Map<Boolean, HashSet<String>> using groupingBy + toCollection
+        // Here, we group by whether the string is empty; collecting each group into a HashSet
+        Map<Boolean, HashSet<String>> map2 = words.stream()
+                .collect(Collectors.groupingBy(
+                        s -> s.isEmpty(),
+                        Collectors.toCollection(HashSet::new) // So each group is a HashSet<String>
+                ));
+        // Example output might look like: {false=[a, bb, ccc, dddd], true=[]}
+        System.out.println("Map<Boolean, HashSet<String>> = " + map2);
+        
+        // III. List<String> is NOT from groupingBy -- you use toList() instead.
+        List<String> list = words.stream().collect(Collectors.toList());
+        // Example output might be: [a, bb, , ccc, dddd, bb, ]
+        System.out.println("List<String> = " + list);
+        
+    }
+}
+
+class FlatMapDemo {
+    public static void main(String[] args) {
+        // Example 1: an empty List
+        List<String> list = new LinkedList<>();
+        System.out.println("Calling withFlatMap(list):");
+        withFlatMap(list);
+        System.out.println("Calling withoutFlatMap(list):");
+        withoutFlatMap(list);
+        
+        // Example 2: a non-empty Deque
+        Deque<String> queue = new ArrayDeque<>();
+        queue.push("allqueuedup");
+        queue.push("last");
+        // So 'last' is at the front
+        
+        System.out.println("\nCalling withFlatMap(queue):");
+        withFlatMap(queue);
+        System.out.println("Calling withoutFlatMap(queue):");
+        withoutFlatMap(queue);
+    }
+    
+    // Uses flatMap() to flatten each collection into its contents
+    private static void withFlatMap(Collection<?> coll) {
+        Stream.of(coll)
+                // x is a Collection<?>, so x.stream() is a Stream of the inner elements
+                .flatMap(c -> c.stream())
+                .forEach(System.out::print);
+        System.out.println();
+    }
+    
+    // Tries to replicate the logic but uses filter/map instead of flatMap
+    private static void withoutFlatMap(Collection<?> coll) {
+        Stream.of(coll)
+                // If coll is empty, we skip it
+                .filter(c -> !c.isEmpty())
+                // But after filter, we're still streaming the entire Collection as one item
+                //.map(c -> c)  // This line effectively does nothing: the item is still one Collection
+                .forEach(System.out::print);
+        System.out.println();
     }
 }
