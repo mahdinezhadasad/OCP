@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Cereal implements Serializable {
     
@@ -38,25 +40,24 @@ public class Cereal implements Serializable {
     
     public static void main(String[] args) {
         
-        Cereal c = new Cereal();
-        c.setName("CornLoops");  // We set it to "CornLoops"
-        
-        // Serialize to a file
-        try (ObjectOutputStream oos =
-                     new ObjectOutputStream (new FileOutputStream ("cereal.txt"))) {
-            oos.writeObject(c);
-        } catch (IOException e) {
-            e.printStackTrace();
+        System.out.println (Paths.get("/sang").getParent());
+        System.out.println (Paths.get("/sang").getRoot ());
+    }
+}
+
+ class Surgeon {
+    public Path dissectAndRebuild(Path p) {
+        Path v = p.getRoot(); // Start with the root
+        for (int i = 0; i < p.getNameCount(); i++) {
+            v = v.resolve(p.getName(i));
         }
-        
-        // Deserialize from that file
-        try (ObjectInputStream ois =
-                     new ObjectInputStream(new FileInputStream ("cereal.txt"))) {
-            Cereal deserialized = (Cereal) ois.readObject();
-            System.out.println("Deserialized name = " + deserialized.getName());
-            // This should print "CornLoops"
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        return v;
+    }
+    
+    public static void main(String... tools) throws Exception {
+        final Surgeon a1 = new Surgeon();
+        Path original = Paths.get("/tissue/heart/chambers.txt");
+        Path repaired = a1.dissectAndRebuild(original);
+        System.out.print(original.equals(repaired)); // Output: true
     }
 }
