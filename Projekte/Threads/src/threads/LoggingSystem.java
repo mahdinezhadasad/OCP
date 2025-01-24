@@ -1,8 +1,16 @@
 package Threads.src.threads;
 
+import java.sql.SQLOutput;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.function.BiFunction;
 import java.util.logging.Logger;
 
 public class LoggingSystem {
@@ -11,97 +19,41 @@ public class LoggingSystem {
     private static volatile boolean isRunning = true;
     
     
-    public static void main(String[] args) {
-        
-        // Eine Liste von Zahlen
-        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        
-        // Serialer Stream
-        Optional<Integer> serialResult = numbers.stream()
-                .findAny();
-        System.out.println("Serialer Stream - findAny: " + serialResult.orElse(-1));
-        
-        // Paralleler Stream
-        Optional<Integer> parallelResult = numbers.parallelStream()
-                .findAny();
-        System.out.println("Paralleler Stream - findAny: " + parallelResult.orElse(-1));
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         
         
+        ExecutorService executor = Executors.newFixedThreadPool(3);
         
-        Thread loggerThread  = new Thread( () -> {
-            
-            try{
-                
-                while(isRunning || !logQueue.isEmpty()){
-                    
-                    String logMessage = logQueue.poll();
-                    
-                    if(logMessage != null){
-                        
-                        writeLogToFile(logMessage);
-                    }
+        // Erstellen von Callable-Aufgaben
+        List<Callable<String>> tasks = Arrays.asList(
+                () -> {
+                    Thread.sleep(2000);
+                    return "Task 1 abgeschlossen";
+                },
+                () -> {
+                    Thread.sleep(1000);
+                    return "Task 2 abgeschlossen";
+                },
+                () -> {
+                    Thread.sleep(3000);
+                    return "Task 3 abgeschlossen";
                 }
-                
-            }catch (Exception e){
-                
-                e.printStackTrace();
-                
-            }
-              });
-        loggerThread.start ();
+        );
         
-        Thread appThread1 = new Thread( () -> generateLogs("AppThread-1"));
-        Thread appThread2 = new Thread (() ->  generateLogs("AppThread-2"));
-        Thread  appThread3 = new Thread (() -> generateLogs("AppThread-3"));
+        // Die schnellste Aufgabe ausführen
+        System.out.println("invokeAny startet...");
+        String result = executor.invokeAny (tasks); // Gibt das Ergebnis der ersten Aufgabe zurück
+        System.out.println("Starte alle Aufgaben mit invokeAll...");
+        List<Future<String>> results = executor.invokeAll(tasks);
         
-        appThread1.start ();
-        appThread2.start ();
-        appThread3.start ();
-        
-        try{
-            
-            appThread1.join ();
-            appThread2.join ();
-            appThread3.join ();
-        }catch (InterruptedException e){
-            
-            Thread.currentThread().interrupt ();
+        // Ergebnisse verarbeiten
+        for (Future<String> future : results) {
+            System.out.println(future.get()); // Wartet auf die Fertigstellung jeder Aufgabe
         }
+        System.out.println("Ergebnis: " + result);
         
-        System.out.println ("Logging system has shut down ");
-        
-    }
-    
-    private static void generateLogs(String threadName){
-        
-        
-        for(int i = 0; i <=5; i++){
-            
-            
-            String logMessage = threadName + " - Log Message: " + i;
-            try{
-                
-                logQueue.put (logMessage);
-                System.out.println ("Generated log message: " + logMessage);
-            }catch (Exception e){
-                
-                Thread.currentThread().interrupt ();
-            }
-            
-        }
-        
-    
-    }
-    
-    // Method to simulate writing a log to a file
-    private static void writeLogToFile(String logMessage) {
-        System.out.println("Logging: " + logMessage);
-        // Simulating a delay to write to a file
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+        executor.shutdown();
+      
     }
     
 }
