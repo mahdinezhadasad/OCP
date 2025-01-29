@@ -48,21 +48,3 @@ class Student{
          return subjects;
      }
 }
-
-class Test{
-    public static void main(String[] args) {
-        
-        List<String> subjects = new ArrayList<>();
-        subjects.add("Java");
-        subjects.add("C++");
-        
-        Student  student = new Student(subjects);
-        
-        System.out.println ("Vorher: " + student.getSubjects ());
-        
-        List<String>  subectsFromGetter = student.getSubjects ();
-        
-        
-        
-    }
-}
