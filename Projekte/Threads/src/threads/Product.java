@@ -1,16 +1,21 @@
 package Threads.src.threads;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.function.BinaryOperator;
 import java.util.function.LongSupplier;
 import java.util.function.ObjDoubleConsumer;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toMap;
 
 public class Product {
     
@@ -51,6 +56,26 @@ public class Product {
                ));
         
         System.out.println (result);
+        
+        Stream<String>  s = Stream.of("speak","bark","meow","growl");
+        BinaryOperator<String>  merge = (a,b)->b;
+        
+        Map<Integer,String>  mapp = s.collect (toMap(String::length,k->k,merge));
+        System.out.println (mapp.size () + " " + mapp.get (5));
+        List<String> words = Arrays.asList("apple", "banana", "apple", "orange", "banana", "apple");
+        
+        Map<String,Long> countMap = words.stream().collect(Collectors.toMap (word ->word,word ->1L,Long::sum));
+        
+        
+        System.out.println (countMap);
+        
+        IntStream pages = IntStream.of(200,300);
+        IntSummaryStatistics stats = pages.summaryStatistics ();
+        long total = stats.getSum();
+        long count = stats.getCount();
+        System.out.println (total + "-"+ count);
+        
+        
         
     }
 }
