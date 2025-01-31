@@ -1,7 +1,16 @@
 package Threads.src.threads;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.function.LongSupplier;
 import java.util.function.ObjDoubleConsumer;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+import java.util.stream.Stream;
 
 public class Product {
     
@@ -27,16 +36,21 @@ public class Product {
     
     public static void main(String[] args) {
         
-        ObjDoubleConsumer<Product> discountApplier = (product, discount) -> product.applyDiscount(discount);
-        Product laptop = new Product("Laptop", 1000);
-        System.out.println("Before Discount: " + laptop);
+        Map<Integer,Integer>  map = new HashMap<> ();
+        map.put(9,3);
+        map.put(5,2);
+        map.put(4,1);
+        map.put(3,8);
         
-        discountApplier.accept(laptop, 10.0);  // Applying 10% discount
         
-        System.out.println("After Discount: " + laptop);
+       Map<Integer,List<Integer>>  result = map.entrySet ()
+               .stream ()
+               .collect(Collectors.groupingBy (
+                       Map.Entry::getValue,
+                       Collectors.mapping(Map.Entry::getKey, Collectors.toList())
+               ));
         
-        LongSupplier timeSupplier = System::currentTimeMillis;
+        System.out.println (result);
         
-        System.out.println("Current Time (ms): " + timeSupplier.getAsLong());
     }
 }
