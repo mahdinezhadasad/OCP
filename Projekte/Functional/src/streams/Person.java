@@ -1,9 +1,20 @@
 package Functional.src.streams;
 
+
+
+import org.w3c.dom.ls.LSOutput;
+
+import javax.swing.text.html.Option;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.LongSummaryStatistics;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.LongStream;
+import java.util.stream.Stream;
 
 class Person {
     
@@ -64,8 +75,31 @@ class PartitioningAndMapping{
                         Collectors.mapping (e -> e.name,Collectors.toList ())
                 )
         );
+        ageGroups.putIfAbsent ("Teen", new ArrayList<> (Arrays.asList ("Leo","Mia")));
+        ageGroups.putIfAbsent ("Young", new ArrayList<> (Arrays.asList ("Mike","John")));
         
+        System.out.println(ageGroups);
         System.out.println("Average Salary of High-income employees: " + averageSalaries.get(true));
         System.out.println("Average Salary of Low-income employees: " + averageSalaries.get(false));
+        
+        LongStream stream = LongStream.of (6,7);
+        LongSummaryStatistics stats = stream.summaryStatistics ();
+        System.out.println (stats.getAverage ());
+        eatDessert (Optional.of ("Cupcake"));
+        
+        /*Stream<Character>  chars = Stream.generate(() -> 'a');
+        chars.filter(c -> c < 'b')
+                .sorted ()
+                .findFirst ()
+                .ifPresent (System.out::println);*/
+        
+        Stream<String> streeam = Stream.of ("Java","Spring");
+        streeam.flatMap (s -> Stream.of ("Lang " + s, "Tech: " +s))
+                .forEach (System.out::println);
+    }
+    
+    public static void eatDessert(Optional<String> opt){
+        
+        System.out.println (opt.orElseGet (()->("No dessert today")));
     }
 }
