@@ -1,12 +1,8 @@
 package Generics.src.generics;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Comparator;
 import java.util.List;
-import java.util.TreeMap;
-import java.util.TreeSet;
 
 public class JellyBean {
     String flavor;
@@ -43,6 +39,7 @@ public class JellyBean {
         add(list1,3);
         
         System.out.println ( list1);
-        
+       
+     
     }
 }
