@@ -1,14 +1,17 @@
 package Threads.src.concurrency;
 
+import java.util.Arrays;
+import java.util.List;
+
 class InformationException extends Exception {}
 public class LackOfInformationException extends InformationException {
     public LackOfInformationException() {  // t1
         super();
     }
     public LackOfInformationException(String s) {  // t2
-        this(new Exception(s));
+        this(Arrays.asList ("dadad", "eewer" ,s));
     }
-    public LackOfInformationException(Exception c) {  // t3
+    public LackOfInformationException(List<String> c) {  // t3
         super();
     }
     @Override public String getMessage() {
